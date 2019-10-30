@@ -1,0 +1,142 @@
+\form#0:$ N $
+\form#1:$ {| 0 \rangle}^{\otimes N} $
+\form#2:$ {| + \rangle}^{\otimes N} = \frac{1}{\sqrt{2^N}} (| 0 \rangle + | 1 \rangle)^{\otimes N} $
+\form#3:$N$
+\form#4:$\frac{1}{\sqrt{2^N}}$
+\form#5:$ \hat{H}^{\otimes N} {|0\rangle}^{\otimes N} $
+\form#6:$ | 00 \dots 00 \rangle $
+\form#7:$ | 00 \dots 01 \rangle $
+\form#8:$ | 11 \dots 11 \rangle $
+\form#9:$ 2^N - 1 $
+\form#10:$ |0\rangle $
+\form#11:$ |1\rangle $
+\form#12:$\theta$
+\form#13:\[ \begin{pmatrix} 1 & 0 \\ 0 & \exp(i \theta) \end{pmatrix} \]
+\form#14:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {rot}; \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {$R_\theta$}; \end{tikzpicture} } \]
+\form#15:$ \exp(i \theta) $
+\form#16:$ |11\rangle $
+\form#17:\[ \begin{pmatrix} 1 & & & \\ & 1 & & \\ & & 1 & \\ & & & \exp(i \theta) \end{pmatrix} \]
+\form#18:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {qubit1}; \node[draw=none] at (-3.5, 0) {qubit2}; \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, 1); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {$R_\theta$}; \end{tikzpicture} } \]
+\form#19:$ |1 \dots 1 \rangle $
+\form#20:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {controls}; \node[draw=none] at (1, .7) {$\theta$}; \node[draw=none] at (0, 6) {$\vdots$}; \draw (0, 5) -- (0, 4); \draw (-2, 4) -- (2, 4); \draw[fill=black] (0, 4) circle (.2); \draw (0, 4) -- (0, 2); \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, 0); \draw (-2,0) -- (2, 0); \draw[fill=black] (0, 0) circle (.2); \end{tikzpicture} } \]
+\form#21:\[ \begin{pmatrix} 1 \\ & 1 \\\ & & 1 \\ & & & -1 \end{pmatrix} \]
+\form#22:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {idQubit1}; \node[draw=none] at (-3.5, 0) {idQubit2}; \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, 0); \draw (-2,0) -- (2, 0); \draw[fill=black] (0, 0) circle (.2); \end{tikzpicture} } \]
+\form#23:\[ \begin{pmatrix} 1 \\ & 1 \\\ & & \ddots \\ & & & 1 \\ & & & & -1 \end{pmatrix} \]
+\form#24:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {controls}; \node[draw=none] at (0, 6) {$\vdots$}; \draw (0, 5) -- (0, 4); \draw (-2, 4) -- (2, 4); \draw[fill=black] (0, 4) circle (.2); \draw (0, 4) -- (0, 2); \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, 0); \draw (-2,0) -- (2, 0); \draw[fill=black] (0, 0) circle (.2); \end{tikzpicture} } \]
+\form#25:$\pi/2$
+\form#26:\[ \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \]
+\form#27:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {target}; \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {S}; \end{tikzpicture} } \]
+\form#28:$\pi/4$
+\form#29:\[ \begin{pmatrix} 1 & 0 \\ 0 & \exp\left(i \frac{\pi}{4}\right) \end{pmatrix} \]
+\form#30:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {target}; \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {T}; \end{tikzpicture} } \]
+\form#31:$2^{N}$
+\form#32:$N = $
+\form#33:$\alpha$
+\form#34:$\beta$
+\form#35:\[ U = \begin{pmatrix} \alpha & -\beta^* \\ \beta & \alpha^* \end{pmatrix} \]
+\form#36:$|\alpha|^2 + |\beta|^2 = 1$
+\form#37:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {target}; \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {U}; \end{tikzpicture} } \]
+\form#38:\[ \begin{pmatrix} \cos\theta/2 & -i \sin \theta/2\\ -i \sin \theta/2 & \cos \theta/2 \end{pmatrix} \]
+\form#39:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {rot}; \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {$R_x(\theta)$}; \end{tikzpicture} } \]
+\form#40:\[ \begin{pmatrix} \cos\theta/2 & - \sin \theta/2\\ \sin \theta/2 & \cos \theta/2 \end{pmatrix} \]
+\form#41:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {rot}; \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {$R_y(\theta)$}; \end{tikzpicture} } \]
+\form#42:\[ \begin{pmatrix} \exp(-i \theta/2) & 0 \\ 0 & \exp(i \theta/2) \end{pmatrix} \]
+\form#43:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {rot}; \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {$R_z(\theta)$}; \end{tikzpicture} } \]
+\form#44:$\vec{n}$
+\form#45:$R_{\hat{n}} = \exp \left(- i \frac{\theta}{2} \hat{n} \cdot \vec{\sigma} \right) $
+\form#46:$\vec{\sigma}$
+\form#47:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {control}; \node[draw=none] at (-3.5, 0) {target}; \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, 1); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {$R_x(\theta)$}; \end{tikzpicture} } \]
+\form#48:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {control}; \node[draw=none] at (-3.5, 0) {target}; \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, 1); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {$R_y(\theta)$}; \end{tikzpicture} } \]
+\form#49:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {control}; \node[draw=none] at (-3.5, 0) {target}; \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, 1); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {$R_z(\theta)$}; \end{tikzpicture} } \]
+\form#50:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {control}; \node[draw=none] at (-3.5, 0) {target}; \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, 1); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {$R_{\hat{n}}(\theta)$}; \end{tikzpicture} } \]
+\form#51:\[ \begin{pmatrix} 1 \\ & 1 \\ & & \alpha & -\beta^* \\ & & \beta & \alpha^* \end{pmatrix} \]
+\form#52:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {control}; \node[draw=none] at (-3.5, 0) {target}; \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, 1); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {$U_{\alpha, \beta}$}; \end{tikzpicture} } \]
+\form#53:\[ \begin{pmatrix} 1 \\ & 1 \\ & & u_{00} & u_{01}\\ & & u_{10} & u_{11} \end{pmatrix} \]
+\form#54:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {control}; \node[draw=none] at (-3.5, 0) {target}; \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, 1); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {U}; \end{tikzpicture} } \]
+\form#55:\[ \begin{pmatrix} 1 \\ & 1 \\\ & & \ddots \\ & & & u_{00} & u_{01}\\ & & & u_{10} & u_{11} \end{pmatrix} \]
+\form#56:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 3) {controls}; \node[draw=none] at (-3.5, 0) {target}; \node[draw=none] at (0, 6) {$\vdots$}; \draw (0, 5) -- (0, 4); \draw (-2, 4) -- (2, 4); \draw[fill=black] (0, 4) circle (.2); \draw (0, 4) -- (0, 2); \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, 1); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {U}; \end{tikzpicture} } \]
+\form#57:$\pi$
+\form#58:\[ \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \]
+\form#59:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {target}; \draw (-2,0) -- (2, 0); \draw (0, 0) circle (.5); \draw (0, .5) -- (0, -.5); \end{tikzpicture} } \]
+\form#60:\[ \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} \]
+\form#61:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {target}; \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {$\sigma_y$}; \end{tikzpicture} } \]
+\form#62:\[ \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \]
+\form#63:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {target}; \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {$\sigma_z$}; \end{tikzpicture} } \]
+\form#64:$|0\rangle$
+\form#65:$|+\rangle$
+\form#66:$|1\rangle$
+\form#67:$|-\rangle$
+\form#68:\[ \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \]
+\form#69:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {target}; \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {H}; \end{tikzpicture} } \]
+\form#70:\[ \begin{pmatrix} 1 \\ & 1 \\\ & & & 1 \\ & & 1 \end{pmatrix} \]
+\form#71:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {control}; \node[draw=none] at (-3.5, 0) {target}; \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, -.5); \draw (-2,0) -- (2, 0); \draw (0, 0) circle (.5); \end{tikzpicture} } \]
+\form#72:\[ \begin{pmatrix} 1 \\ & 1 \\\ & & & -i \\ & & i \end{pmatrix} \]
+\form#73:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {control}; \node[draw=none] at (-3.5, 0) {target}; \draw (-2, 2) -- (2, 2); \draw[fill=black] (0, 2) circle (.2); \draw (0, 2) -- (0, 1); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {Y}; \end{tikzpicture} } \]
+\form#74:$ \langle \text{bra} | \text{ket} \rangle $
+\form#75:\[ ((\rho_1, \rho_2))_{HS} := \text{Tr}[ \rho_1^\dagger \rho_2 ], \]
+\form#76:\[ ((\rho_1, \rho_2))_{HS} = \sum\limits_i \sum\limits_j (\rho_1)_{ij}^* (\rho_2)_{ij} \]
+\form#77:\[ ((\rho_1, \rho_2))_{HS} = ((\rho_2, \rho_1))_{HS} \]
+\form#78:\[ ((\rho_1, \rho_2))_{HS} = |\langle \text{bra} | \text{ket} \rangle|^2. \]
+\form#79:$\rho$
+\form#80:\[ (1 - \text{prob}) \, \rho + \text{prob} \; Z_q \, \rho \, Z_q \]
+\form#81:\[ (1 - \text{prob}) \, \rho + \frac{\text{prob}}{3} \; \left( Z_a \, \rho \, Z_a + Z_b \, \rho \, Z_b + Z_a Z_b \, \rho \, Z_a Z_b \right) \]
+\form#82:\[ (1 - \text{prob}) \, \rho + \frac{\text{prob}}{3} \; \left( X_q \, \rho \, X_q + Y_q \, \rho \, Y_q + Z_q \, \rho \, Z_q \right) \]
+\form#83:\[ (1 - \text{prob}) \, \rho + \text{prob} \; \left( \sigma^{-} \, \rho \, sigma^{+} \right) \]
+\form#84:$\{ IX, IY, IZ, XI, YI, ZI, XX, XY, XZ, YX, YY, YZ, ZX, ZY, ZZ \}$
+\form#85:$II$
+\form#86:\[ (1 - \text{prob}) \, \rho \; + \; \frac{\text{prob}}{15} \; \left( \sum \limits_{\sigma_a \in \{X_a,Y_a,Z_a,I_a\}} \sum \limits_{\sigma_b \in \{X_b,Y_b,Z_b,I_b\}} \sigma_a \sigma_b \; \rho \; \sigma_a \sigma_b \right) - \frac{\text{prob}}{15} I_a I_b \; \rho \; I_a I_b \]
+\form#87:\[ (1 - \text{prob}) \, \rho + \frac{\text{prob}}{15} \; \left( X_a \, \rho \, X_a + X_b \, \rho \, X_b + Y_a \, \rho \, Y_a + Y_b \, \rho \, Y_b + Z_a \, \rho \, Z_a + Z_b \, \rho \, Z_b + X_a X_b \, \rho \, X_a X_b + X_a Y_b \, \rho \, X_a Y_b + X_a Z_b \, \rho \, X_a Z_b + Y_a X_b \, \rho \, Y_a X_b + Y_a Y_b \, \rho \, Y_a Y_b + Y_a Z_b \, \rho \, Y_a Z_b + Z_a X_b \, \rho \, Z_a X_b + Z_a Y_b \, \rho \, Z_a Y_b + Z_a Z_b \, \rho \, Z_a Z_b \right) \]
+\form#88:\[ (1 - \text{probX} - \text{probY} - \text{probZ}) \, \rho + \;\;\; (\text{probX})\; X_q \, \rho \, X_q + \;\;\; (\text{probY})\; Y_q \, \rho \, Y_q + \;\;\; (\text{probZ})\; Z_q \, \rho \, Z_q \]
+\form#89:$\text{Tr}(\rho^2)$
+\form#90:\[ |\langle \text{qureg} | \text{pureState} \rangle|^2 \]
+\form#91:\[ \langle \text{pureState} | \text{qureg} | \text{pureState} \rangle \]
+\form#92:\[ \begin{pmatrix} 1 \\ & & 1 \\\ & 1 \\ & & & 1 \end{pmatrix} \]
+\form#93:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {qubit1}; \node[draw=none] at (-3.5, 0) {qubit2}; \draw (-2, 2) -- (2, 2); \draw (0, 2) -- (0, 0); \draw (-2,0) -- (2, 0); \draw (-.35,-.35) -- (.35,.35); \draw (-.35,.35) -- (.35,-.35); \draw (-.35,-.35 + 2) -- (.35,.35 + 2); \draw (-.35,.35 + 2) -- (.35,-.35 + 2); \end{tikzpicture} } \]
+\form#94:\[ \begin{pmatrix} 1 \\ & \frac{1}{2}(1+i) & \frac{1}{2}(1-i) \\\ & \frac{1}{2}(1-i) & \frac{1}{2}(1+i) \\ & & & 1 \end{pmatrix} \]
+\form#95:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 2) {qubit1}; \node[draw=none] at (-3.5, 0) {qubit2}; \draw (-2, 2) -- (2, 2); \draw (0, 2) -- (0, 0); \draw (-2,0) -- (2, 0); \draw (-.35,-.35) -- (.35,.35); \draw (-.35,.35) -- (.35,-.35); \draw (-.35,-.35 + 2) -- (.35,.35 + 2); \draw (-.35,.35 + 2) -- (.35,-.35 + 2); \draw[fill=white] (0, 1) circle (.5); \node[draw=none] at (0, 1) {1/2}; \end{tikzpicture} } \]
+\form#96:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 3) {controls}; \node[draw=none] at (-3.5, 0) {target}; \node[draw=none] at (0, 6) {$\vdots$}; \draw (0, 5) -- (0, 4); \draw (-2, 4) -- (2, 4); \draw[fill=black] (0, 4) circle (.2); \draw (0, 4) -- (0, 2); \draw (-2, 2) -- (2, 2); \draw[fill=white] (0, 2) circle (.2); \draw (0, 2-.2) -- (0, 1); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle; \node[draw=none] at (0, 0) {U}; \end{tikzpicture} } \]
+\form#97:\[ \exp \left( - i \theta/2 \bigotimes_{j} Z_j\right) \]
+\form#98:$j \in$
+\form#99:$\theta =$
+\form#100:$\exp(\pm i \theta/2)$
+\form#101:\[ \exp \left( - i \theta/2 \bigotimes_{j} \hat{\sigma}_j\right) \]
+\form#102:$\hat{\sigma}_j \in \{1, X, Y, Z\}$
+\form#103:$ \exp \left( - i .1/2 X_5 Y_8 Z_9 \right) $
+\form#104:$ \sigma = \otimes_j \hat{\sigma}_j $
+\form#105:$ \langle \psi | \sigma | \psi \rangle $
+\form#106:$ \psi $
+\form#107:$ \text{Trace}(\sigma \rho) $
+\form#108:$ \rho $
+\form#109:$ \langle \psi | I I I I X I Z | \psi \rangle $
+\form#110:$ \sigma | \psi \rangle $
+\form#111:$ \sigma \rho $
+\form#112:$ \sigma^\dagger \rho \sigma $
+\form#113:$ \alpha = \sum_i c_i \otimes_j^{N} \hat{\sigma}_{i,j} $
+\form#114:$ c_i \in $
+\form#115:$ N = $
+\form#116:$ \langle \psi | \alpha | \psi \rangle $
+\form#117:$ \text{Trace}(\alpha \rho) $
+\form#118:$ \langle \psi | (1.5 X I I - 3.6 X Y Z) | \psi \rangle $
+\form#119:$ \hat{\sigma} \rho $
+\form#120:$ \hat{\sigma}^\dagger \rho \hat{\sigma} $
+\form#121:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {target2}; \node[draw=none] at (-3.5, 2) {target1}; \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-2,2) -- (-1, 2); \draw (1, 2) -- (2, 2); \draw (-1,-1)--(-1,3)--(1,3)--(1,-1)--cycle; \node[draw=none] at (0, 1) {U}; \end{tikzpicture} } \]
+\form#122:$ |\text{targetQubit2} \;\; \text{targetQubit1}\rangle : \{ |00\rangle, |01\rangle, |10\rangle, |11\rangle \} $
+\form#123:\[ \begin{pmatrix} u_{00} & u_{01} & u_{02} & u_{03} \\ u_{10} & u_{11} & u_{12} & u_{13} \\ u_{20} & u_{21} & u_{22} & u_{23} \\ u_{30} & u_{31} & u_{32} & u_{33} \end{pmatrix} \begin{pmatrix} |ba\rangle = |00\rangle \\ |ba\rangle = |01\rangle \\ |ba\rangle = |10\rangle \\ |ba\rangle = |11\rangle \end{pmatrix} \]
+\form#124:\[ \begin{pmatrix} 1 \\ & 1 \\ & & 1 \\ & & & 1 \\ & & & & u_{00} & u_{01} & u_{02} & u_{03} \\ & & & & u_{10} & u_{11} & u_{12} & u_{13} \\ & & & & u_{20} & u_{21} & u_{22} & u_{23} \\ & & & & u_{30} & u_{31} & u_{32} & u_{33} \end{pmatrix} \]
+\form#125:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {target1}; \node[draw=none] at (-3.5, 2) {target2}; \node[draw=none] at (-3.5, 4) {control}; \draw (-2, 4) -- (2, 4); \draw[fill=black] (0, 4) circle (.2); \draw(0, 4) -- (0, 3); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-2,2) -- (-1, 2); \draw (1, 2) -- (2, 2); \draw (-1,-1)--(-1,3)--(1,3)--(1,-1)--cycle; \node[draw=none] at (0, 1) {U}; \end{tikzpicture} } \]
+\form#126:\[ \begin{pmatrix} 1 \\ & 1 \\\ & & \ddots \\ & & & u_{00} & u_{01} & u_{02} & u_{03} \\ & & & u_{10} & u_{11} & u_{12} & u_{13} \\ & & & u_{20} & u_{21} & u_{22} & u_{23} \\ & & & u_{30} & u_{31} & u_{32} & u_{33} \end{pmatrix} \]
+\form#127:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 0) {target1}; \node[draw=none] at (-3.5, 2) {target2}; \node[draw=none] at (-3.5, 5) {controls}; \node[draw=none] at (0, 8) {$\vdots$}; \draw (0, 7) -- (0, 6); \draw (-2, 6) -- (2, 6); \draw[fill=black] (0, 6) circle (.2); \draw (0, 6) -- (0, 4); \draw (-2, 4) -- (2, 4); \draw[fill=black] (0, 4) circle (.2); \draw(0, 4) -- (0, 3); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-2,2) -- (-1, 2); \draw (1, 2) -- (2, 2); \draw (-1,-1)--(-1,3)--(1,3)--(1,-1)--cycle; \node[draw=none] at (0, 1) {U}; \end{tikzpicture} } \]
+\form#128:\[ \begin{pmatrix} u_{00} & u_{01} & u_{02} & u_{03} & u_{04} & u_{05} & u_{06} & u_{07} \\ u_{10} & u_{11} & u_{12} & u_{13} & u_{14} & u_{15} & u_{16} & u_{17} \\ u_{20} & u_{21} & u_{22} & u_{23} & u_{24} & u_{25} & u_{26} & u_{27} \\ u_{30} & u_{31} & u_{32} & u_{33} & u_{34} & u_{35} & u_{36} & u_{37} \\ u_{40} & u_{41} & u_{42} & u_{43} & u_{44} & u_{45} & u_{46} & u_{47} \\ u_{50} & u_{51} & u_{52} & u_{53} & u_{54} & u_{55} & u_{56} & u_{57} \\ u_{60} & u_{61} & u_{62} & u_{63} & u_{64} & u_{65} & u_{66} & u_{67} \\ u_{70} & u_{71} & u_{72} & u_{73} & u_{74} & u_{75} & u_{76} & u_{77} \\ \end{pmatrix} \begin{pmatrix} |cba\rangle = |000\rangle \\ |cba\rangle = |001\rangle \\ |cba\rangle = |010\rangle \\ |cba\rangle = |011\rangle \\ |cba\rangle = |100\rangle \\ |cba\rangle = |101\rangle \\ |cba\rangle = |110\rangle \\ |cba\rangle = |111\rangle \end{pmatrix} \]
+\form#129:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 1) {targets}; \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-2,2) -- (-1, 2); \draw (1, 2) -- (2, 2); \draw (-1,-1)--(-1,3)--(1,3)--(1,-1); \node[draw=none] at (0, 1) {U}; \node[draw=none] at (0, -1) {$\vdots$}; \end{tikzpicture} } \]
+\form#130:\[ \begin{pmatrix} 1 \\ & 1 \\\ & & 1 \\ & & & 1 \\ & & & & u_{00} & u_{01} & \dots \\ & & & & u_{10} & u_{11} & \dots \\ & & & & \vdots & \vdots & \ddots \end{pmatrix} \]
+\form#131:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 1) {targets}; \node[draw=none] at (-3.5, 4) {control}; \draw (-2, 4) -- (2, 4); \draw[fill=black] (0, 4) circle (.2); \draw(0, 4) -- (0, 3); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-2,2) -- (-1, 2); \draw (1, 2) -- (2, 2); \draw (-1,-1)--(-1,3)--(1,3)--(1,-1); \node[draw=none] at (0, 1) {U}; \node[draw=none] at (0, -1) {$\vdots$}; \end{tikzpicture} } \]
+\form#132:\[ \begin{pmatrix} 1 \\ & 1 \\\ & & \ddots \\ & & & u_{00} & u_{01} & \dots \\ & & & u_{10} & u_{11} & \dots \\ & & & \vdots & \vdots & \ddots \end{pmatrix} \]
+\form#133:\[ \setlength{\fboxrule}{0.01pt} \fbox{ \begin{tikzpicture}[scale=.5] \node[draw=none] at (-3.5, 1) {targets}; \node[draw=none] at (-3.5, 5) {controls}; \node[draw=none] at (0, 8) {$\vdots$}; \draw (0, 7) -- (0, 6); \draw (-2, 6) -- (2, 6); \draw[fill=black] (0, 6) circle (.2); \draw (0, 6) -- (0, 4); \draw (-2, 4) -- (2, 4); \draw[fill=black] (0, 4) circle (.2); \draw(0, 4) -- (0, 3); \draw (-2,0) -- (-1, 0); \draw (1, 0) -- (2, 0); \draw (-2,2) -- (-1, 2); \draw (1, 2) -- (2, 2); \draw (-1,-1)--(-1,3)--(1,3)--(1,-1); \node[draw=none] at (0, 1) {U}; \node[draw=none] at (0, -1) {$\vdots$}; \end{tikzpicture} } \]
+\form#134:$ K_i $
+\form#135:\[ \sum \limits_i^{\text{numOps}} K_i^\dagger K_i = I \]
+\form#136:$ I $
+\form#137:\[ D(a, b) = \| a - b \|_F = \sqrt{ \text{Tr}[ (a-b)(a-b)^\dagger ] } \]
+\form#138:\[ D(a, b) = \sqrt{ \sum\limits_i \sum\limits_j | a_{ij} - b_{ij} |^2 } \]
+\form#139:$ \alpha | \psi \rangle $
+\form#140:$ |\psi\rangle $
+\form#141:$ (1.5 X I I - 3.6 X Y Z) $
