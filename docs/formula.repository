@@ -164,3 +164,27 @@
 \_form#163:$ |\psi\rangle $
 \_form#164:$\alpha \rho$
 \_form#165:$ (1.5 X I I - 3.6 X Y Z) $
+\_form#166:\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]
+\_form#167:\[ \text{state} \to \text{op} \, \text{state} \]
+\_form#168:$ 0.31 X_0 X_2 Y_3 -0.2 Z_0 Y_1 $
+\_form#169:$ \exp(-i \text{hamil} \, \text{time}) $
+\_form#170:$ \exp(-i \, \text{hamil} \, \text{time}) $
+\_form#171:\[ poop \]
+\_form#172:$ \text{hamil} = \sum_j c_j \, \hat \sigma_j $
+\_form#173:\[ poo \]
+\_form#174:$c_j$
+\_form#175:$\hat \sigma_j$
+\_form#176:\[ \exp(-i \, \text{hamil} \, \text{time}) \approx \prod\limits^{\text{reps}} \prod\limits_j \exp(-i \, c_j \, \text{time} \, \hat\sigma_j) \]
+\_form#177:\[ \exp(-i \, \text{hamil} \, \text{time}) \approx \prod\limits^{\text{reps}} \prod\limits_j \exp(-i \, c_j \, \text{time} \, \hat\sigma_j / \text{reps}) \]
+\_form#178:\[ \exp(-i \, \text{hamil} \, \text{time}) \approx \prod\limits^{\text{reps}} \prod\limits_{j=1}^{\text{hamil.numSumTerms}} \exp(-i \, c_j \, \text{time} \, \hat\sigma_j / \text{reps}) \]
+\_form#179:$ \text{hamil} = \sum_j^N c_j \, \hat \sigma_j $
+\_form#180:\[ \exp(-i \, \text{hamil} \, \text{time}) \approx \prod\limits^{\text{reps}} \prod\limits_{j=1}^{N} \exp(-i \, c_j \, \text{time} \, \hat\sigma_j / \text{reps}) \]
+\_form#181:\[ \exp(-i \, \text{hamil} \, \text{time}) \approx \prod\limits^{\text{reps}} \left[ \prod\limits_{j=1}^{N} \exp(-i \, c_j \, \text{time} \, \hat\sigma_j / \text{reps}) \prod\limits_{j=N}^{1} \exp(-i \, c_j \, \text{time} \, \hat\sigma_j / \text{reps}) \right] \]
+\_form#182:\[ \exp(-i \, \text{hamil} \, \text{time}) \approx \prod\limits^{\text{reps}} \left[ \prod\limits_{j=1}^{N} \exp(-i \, c_j \, \text{time} \, \hat\sigma_j / (2\text{reps})) \prod\limits_{j=N}^{1} \exp(-i \, c_j \, \text{time} \, \hat\sigma_j / (2\text{reps})) \right] \]
+\_form#183:\[ \exp(-i \, \text{hamil} \, \text{time}) \approx \prod\limits^{\text{reps}} \left[ \prod\limits_{j=1}^{N} \exp(-i \, c_j \, \text{time} \, \hat\sigma_j / (2 \, \text{reps})) \prod\limits_{j=N}^{1} \exp(-i \, c_j \, \text{time} \, \hat\sigma_j / (2 \, \text{reps})) \right] \]
+\_form#184:$ S[\text{time}, \text{order}, \text{reps}] $
+\_form#185:\[ S[\text{time}, \text{order}, \text{reps}] = \\ 2 \]
+\_form#186:\[ S[\text{time}, \text{order}, 1] = \left( \prod\limits^2 S[p \, \text{time}, \text{order}-2] \right) \]
+\_form#187:\[ S[\text{time}, \text{order}, 1] = \left( \prod\limits^2 S[p \, \text{time}, \text{order}-2, 1] \right) S[ (1-4p)\,\text{time}, \text{order}-2, 1] \left( \prod\limits^2 S[p \, \text{time}, \text{order}-2, 1] \right) \]
+\_form#188:$ p = \left( 4 - 4^{1/(\text{order}-1)} \right)^{-1} $
+\_form#189:\[ S[\text{time}, \text{order}, \text{reps}] = \prod\limits^{\text{reps}} S[\text{time}/\text{reps}, \text{order}, 1] \]

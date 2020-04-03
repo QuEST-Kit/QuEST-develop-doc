@@ -62,13 +62,90 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga54d4e589468002bdc998200ae45e7312"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__operator.html#ga54d4e589468002bdc998200ae45e7312">applyPauliHamil</a> (<a class="el" href="structQureg.html">Qureg</a> inQureg, <a class="el" href="structPauliHamil.html">PauliHamil</a> hamil, <a class="el" href="structQureg.html">Qureg</a> outQureg)</td></tr>
+<tr class="memdesc:ga54d4e589468002bdc998200ae45e7312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies <code>outQureg</code> to be the result of applying <code><a class="el" href="structPauliHamil.html" title="Represents a weighted sum of pauli products.">PauliHamil</a></code> (a Hermitian but not necessarily unitary operator) to <code>inQureg</code>.  <a href="group__operator.html#ga54d4e589468002bdc998200ae45e7312">More...</a><br /></td></tr>
+<tr class="separator:ga54d4e589468002bdc998200ae45e7312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6fc26cf857db070e12959e59ecfed8a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__operator.html#ga6fc26cf857db070e12959e59ecfed8a6">applyPauliSum</a> (<a class="el" href="structQureg.html">Qureg</a> inQureg, enum <a class="el" href="group__type.html#ga1c703cf89629e4e9c7023cd402d67028">pauliOpType</a> *allPauliCodes, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a> *termCoeffs, int numSumTerms, <a class="el" href="structQureg.html">Qureg</a> outQureg)</td></tr>
 <tr class="memdesc:ga6fc26cf857db070e12959e59ecfed8a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies <code>outQureg</code> to be the result of applying the weighted sum of Pauli products (a Hermitian but not necessarily unitary operator) to <code>inQureg</code>.  <a href="group__operator.html#ga6fc26cf857db070e12959e59ecfed8a6">More...</a><br /></td></tr>
 <tr class="separator:ga6fc26cf857db070e12959e59ecfed8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35b6321c578a8c69470132b5ee95f930"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__operator.html#ga35b6321c578a8c69470132b5ee95f930">applyTrotterCircuit</a> (<a class="el" href="structQureg.html">Qureg</a> qureg, <a class="el" href="structPauliHamil.html">PauliHamil</a> hamil, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a> time, int order, int reps)</td></tr>
+<tr class="memdesc:ga35b6321c578a8c69470132b5ee95f930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a trotterisation of unitary evolution <img class="formulaInl" alt="$ \exp(-i \, \text{hamil} \, \text{time}) $" src="form_170.png"/> to <code>qureg</code>.  <a href="group__operator.html#ga35b6321c578a8c69470132b5ee95f930">More...</a><br /></td></tr>
+<tr class="separator:ga35b6321c578a8c69470132b5ee95f930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Non-physical operators which may be non-unitary, non-norm-preserving, even non-Hermitian. </p>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga54d4e589468002bdc998200ae45e7312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga54d4e589468002bdc998200ae45e7312">&#9670;&nbsp;</a></span>applyPauliHamil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void applyPauliHamil </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structQureg.html">Qureg</a>&#160;</td>
+          <td class="paramname"><em>inQureg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPauliHamil.html">PauliHamil</a>&#160;</td>
+          <td class="paramname"><em>hamil</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structQureg.html">Qureg</a>&#160;</td>
+          <td class="paramname"><em>outQureg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modifies <code>outQureg</code> to be the result of applying <code><a class="el" href="structPauliHamil.html" title="Represents a weighted sum of pauli products.">PauliHamil</a></code> (a Hermitian but not necessarily unitary operator) to <code>inQureg</code>. </p>
+<p>Note that afterward, <code>outQureg</code> may no longer be normalised and ergo not a statevector or density matrix. Users must therefore be careful passing <code>outQureg</code> to other QuEST functions which assume normalisation in order to function correctly.</p>
+<p>This is merely an encapsulation of <a class="el" href="group__operator.html#ga6fc26cf857db070e12959e59ecfed8a6" title="Modifies outQureg to be the result of applying the weighted sum of Pauli products (a Hermitian but no...">applyPauliSum()</a>, which can refer to for elaborated doc.</p>
+<p>Letting <code>hamil</code> be expressed as <img class="formulaInl" alt="$ \alpha = \sum_i c_i \otimes_j^{N} \hat{\sigma}_{i,j} $" src="form_161.png"/> (where <img class="formulaInl" alt="$ c_i \in $" src="form_134.png"/> <code>hamil.termCoeffs</code> and <img class="formulaInl" alt="$ N = $" src="form_135.png"/> <code>hamil.numQubits</code>), this function effects <img class="formulaInl" alt="$ \alpha | \psi \rangle $" src="form_162.png"/> on statevector <img class="formulaInl" alt="$ |\psi\rangle $" src="form_163.png"/> and <img class="formulaInl" alt="$\alpha \rho$" src="form_164.png"/> (left matrix multiplication) on density matrix <img class="formulaInl" alt="$ \rho $" src="form_39.png"/>.</p>
+<p>In theory, <code>inQureg</code> is unchanged though its state is temporarily modified and is reverted by re-applying Paulis (XX=YY=ZZ=I), so may see a change by small numerical errors. The initial state in <code>outQureg</code> is not used.</p>
+<p><code>inQureg</code> and <code>outQureg</code> must both be state-vectors, or both density matrices, of equal dimensions to <code>hamil</code>. <code>inQureg</code> cannot be <code>outQureg</code>.</p>
+<p>This function works by applying each Pauli product in <code>hamil</code> to <code>inQureg</code> in turn, and adding the resulting state (weighted by a coefficient in <code>termCoeffs</code>) to the initially-blanked <code>outQureg</code>. Ergo it should scale with the total number of Pauli operators specified (excluding identities), and the qureg dimension.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inQureg</td><td>the register containing the state which <code>outQureg</code> will be set to, under the action of <code>hamil</code>. <code>inQureg</code> should be unchanged, though may vary slightly due to numerical error. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hamil</td><td>a weighted sum of products of pauli operators </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outQureg</td><td>the qureg to modify to be the result of applyling <code>hamil</code> to the state in <code>inQureg</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">exitWithError</td><td>if any code in <code>hamil.pauliCodes</code> is not a valid Pauli code, or if <code>numSumTerms</code> &lt;= 0, or if <code>inQureg</code> is not of the same type and dimensions as <code>outQureg</code> and <code>hamil</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l00819">819</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                                                                      {</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a031812e1cf2c98d72d795cea7bbe73a5">validateMatchingQuregTypes</a>(inQureg, outQureg, __func__);</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a87d22240ccfd81827a2a34b8d569d347">validateMatchingQuregDims</a>(inQureg, outQureg, __func__);</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a066b0c4d0b02a0f3b9be7e5c68d9de6a">validatePauliHamil</a>(hamil, __func__);</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a2b88b068a8242ee28da42c7324cdd078">validateMatchingQuregPauliHamilDims</a>(inQureg, hamil, __func__);</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    </div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <a class="code" href="QuEST__common_8c.html#af71c2470694795a8d639be8ff9c34ed5">statevec_applyPauliSum</a>(inQureg, hamil.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>, hamil.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a>, hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>, outQureg);</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    </div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <a class="code" href="QuEST__qasm_8c.html#a9a385fde708958617bbeb599064b8dcb">qasm_recordComment</a>(outQureg, <span class="stringliteral">&quot;Here, the register was modified to an undisclosed and possibly unphysical state (applyPauliHamil).&quot;</span>);</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00166">PauliHamil::numSumTerms</a>, <a class="el" href="QuEST_8h_source.html#l00162">PauliHamil::pauliCodes</a>, <a class="el" href="QuEST__qasm_8c_source.html#l00120">qasm_recordComment()</a>, <a class="el" href="QuEST__common_8c_source.html#l00494">statevec_applyPauliSum()</a>, <a class="el" href="QuEST_8h_source.html#l00164">PauliHamil::termCoeffs</a>, <a class="el" href="QuEST__validation_8c_source.html#l00454">validateMatchingQuregDims()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00583">validateMatchingQuregPauliHamilDims()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00458">validateMatchingQuregTypes()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00578">validatePauliHamil()</a>.</p>
+
+</div>
+</div>
 <a id="ga6fc26cf857db070e12959e59ecfed8a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6fc26cf857db070e12959e59ecfed8a6">&#9670;&nbsp;</a></span>applyPauliSum()</h2>
 
@@ -141,30 +218,137 @@ applyPauliSum(inQureg, paulis, coeffs, 2, outQureg);
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l00806">806</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;                                                                                                                       {</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a031812e1cf2c98d72d795cea7bbe73a5">validateMatchingQuregTypes</a>(inQureg, outQureg, __func__);</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a87d22240ccfd81827a2a34b8d569d347">validateMatchingQuregDims</a>(inQureg, outQureg, __func__);</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a5be128290a7bba9a7f12d32cabe2276b">validateNumPauliSumTerms</a>(numSumTerms, __func__);</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    <a class="code" href="QuEST__validation_8c.html#aa194ba5f5c6e19c6caa4c715b3dbefcc">validatePauliCodes</a>(allPauliCodes, numSumTerms*inQureg.<a class="code" href="structQureg.html#ad08dff5316b8937f4b2a1417591543dc">numQubitsRepresented</a>, __func__);</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    </div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    <a class="code" href="QuEST__common_8c.html#af71c2470694795a8d639be8ff9c34ed5">statevec_applyPauliSum</a>(inQureg, allPauliCodes, termCoeffs, numSumTerms, outQureg);</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l00808">808</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;                                                                                                                       {</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a031812e1cf2c98d72d795cea7bbe73a5">validateMatchingQuregTypes</a>(inQureg, outQureg, __func__);</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a87d22240ccfd81827a2a34b8d569d347">validateMatchingQuregDims</a>(inQureg, outQureg, __func__);</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a5be128290a7bba9a7f12d32cabe2276b">validateNumPauliSumTerms</a>(numSumTerms, __func__);</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    <a class="code" href="QuEST__validation_8c.html#aa194ba5f5c6e19c6caa4c715b3dbefcc">validatePauliCodes</a>(allPauliCodes, numSumTerms*inQureg.<a class="code" href="structQureg.html#ad08dff5316b8937f4b2a1417591543dc">numQubitsRepresented</a>, __func__);</div>
 <div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    </div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    <a class="code" href="QuEST__qasm_8c.html#a9a385fde708958617bbeb599064b8dcb">qasm_recordComment</a>(outQureg, <span class="stringliteral">&quot;Here, the register was modified to an undisclosed and possibly unphysical state (applyPauliSum).&quot;</span>);</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;}</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    <a class="code" href="QuEST__common_8c.html#af71c2470694795a8d639be8ff9c34ed5">statevec_applyPauliSum</a>(inQureg, allPauliCodes, termCoeffs, numSumTerms, outQureg);</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    </div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <a class="code" href="QuEST__qasm_8c.html#a9a385fde708958617bbeb599064b8dcb">qasm_recordComment</a>(outQureg, <span class="stringliteral">&quot;Here, the register was modified to an undisclosed and possibly unphysical state (applyPauliSum).&quot;</span>);</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00165">Qureg::numQubitsRepresented</a>, <a class="el" href="QuEST__qasm_8c_source.html#l00120">qasm_recordComment()</a>, <a class="el" href="QuEST__common_8c_source.html#l00493">statevec_applyPauliSum()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00394">validateMatchingQuregDims()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00398">validateMatchingQuregTypes()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00467">validateNumPauliSumTerms()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00458">validatePauliCodes()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00183">Qureg::numQubitsRepresented</a>, <a class="el" href="QuEST__qasm_8c_source.html#l00120">qasm_recordComment()</a>, <a class="el" href="QuEST__common_8c_source.html#l00494">statevec_applyPauliSum()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00454">validateMatchingQuregDims()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00458">validateMatchingQuregTypes()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00529">validateNumPauliSumTerms()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00522">validatePauliCodes()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="test__operators_8cpp_source.html#l00015">TEST_CASE()</a>.</p>
+
+</div>
+</div>
+<a id="ga35b6321c578a8c69470132b5ee95f930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga35b6321c578a8c69470132b5ee95f930">&#9670;&nbsp;</a></span>applyTrotterCircuit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void applyTrotterCircuit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structQureg.html">Qureg</a>&#160;</td>
+          <td class="paramname"><em>qureg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPauliHamil.html">PauliHamil</a>&#160;</td>
+          <td class="paramname"><em>hamil</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a>&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies a trotterisation of unitary evolution <img class="formulaInl" alt="$ \exp(-i \, \text{hamil} \, \text{time}) $" src="form_170.png"/> to <code>qureg</code>. </p>
+<p>This is a sequence of unitary operators, effected by <a class="el" href="group__unitary.html#ga34aa4865c92f9aa5d898c91286c9eca5" title="Apply a multi-qubit multi-Pauli rotation on a selected number of qubits.">multiRotatePauli()</a>, which together approximate the action of full unitary-time evolution under the given Hamiltonian.</p>
+<p>Notate <img class="formulaInl" alt="$ \text{hamil} = \sum_j^N c_j \, \hat \sigma_j $" src="form_179.png"/> where <img class="formulaInl" alt="$c_j$" src="form_174.png"/> is a real coefficient in <code>hamil</code>, <img class="formulaInl" alt="$\hat \sigma_j$" src="form_175.png"/> is the corresponding product of Pauli operators, of which there are a total <img class="formulaInl" alt="$N$" src="form_4.png"/>. Then, <code>order=1</code> performs first-order Trotterisation, whereby </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ \exp(-i \, \text{hamil} \, \text{time}) \approx \prod\limits^{\text{reps}} \prod\limits_{j=1}^{N} \exp(-i \, c_j \, \text{time} \, \hat\sigma_j / \text{reps}) \]" src="form_180.png"/>
+</p>
+<p> <code>order=2</code> performs the lowest order "symmetrized" Suzuki decomposition, whereby </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ \exp(-i \, \text{hamil} \, \text{time}) \approx \prod\limits^{\text{reps}} \left[ \prod\limits_{j=1}^{N} \exp(-i \, c_j \, \text{time} \, \hat\sigma_j / (2 \, \text{reps})) \prod\limits_{j=N}^{1} \exp(-i \, c_j \, \text{time} \, \hat\sigma_j / (2 \, \text{reps})) \right] \]" src="form_183.png"/>
+</p>
+<p> Greater even values of <code>order</code> specify higher-order symmetrized decompositions <img class="formulaInl" alt="$ S[\text{time}, \text{order}, \text{reps}] $" src="form_184.png"/> which satisfy </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ S[\text{time}, \text{order}, 1] = \left( \prod\limits^2 S[p \, \text{time}, \text{order}-2, 1] \right) S[ (1-4p)\,\text{time}, \text{order}-2, 1] \left( \prod\limits^2 S[p \, \text{time}, \text{order}-2, 1] \right) \]" src="form_187.png"/>
+</p>
+<p> and </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ S[\text{time}, \text{order}, \text{reps}] = \prod\limits^{\text{reps}} S[\text{time}/\text{reps}, \text{order}, 1] \]" src="form_189.png"/>
+</p>
+<p> where <img class="formulaInl" alt="$ p = \left( 4 - 4^{1/(\text{order}-1)} \right)^{-1} $" src="form_188.png"/>.</p>
+<p>These formulations are taken from 'Finding Exponential Product Formulas of Higher Orders', Naomichi Hatano and Masuo Suzuki (2005) (<a href="https://arxiv.org/abs/math-ph/0506007">arXiv</a>).</p>
+<p>Note that the applied Trotter circuit is captured by QASM, if QASM logging is enabled on <code>qureg</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">qureg</td><td>the register to modify under the approximate unitary-time evolution </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hamil</td><td>the hamiltonian under which to approxiamte unitary-time evolution </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>the target evolution time, which is permitted to be both positive and negative. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">order</td><td>the order of Trotter-Suzuki decomposition to use. Higher orders (necessarily even) are more accurate but prescribe an exponentially increasing number of gates. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reps</td><td>the number of repetitions of the decomposition of the given order. This improves the accuracy but prescribes a linearly increasing number of gates. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">exitWithError</td><td>if <code>qureg.numQubitsRepresented</code> != <code>hamil.numQubits</code>, or <code>hamil</code> contains invalid parameters or Pauli codes, or if <code>order</code> is not in {1, 2, 4, 6, ...} or if <code>reps</code> &lt;= 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l00830">830</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;                                                                                         {</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a82b142fe77ba20c87142274f32e57689">validateTrotterParams</a>(order, reps, __func__);</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a066b0c4d0b02a0f3b9be7e5c68d9de6a">validatePauliHamil</a>(hamil, __func__);</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a2b88b068a8242ee28da42c7324cdd078">validateMatchingQuregPauliHamilDims</a>(qureg, hamil, __func__);</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;    </div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    <a class="code" href="QuEST__qasm_8c.html#a9a385fde708958617bbeb599064b8dcb">qasm_recordComment</a>(qureg, </div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        <span class="stringliteral">&quot;Beginning of Trotter circuit (time %g, order %d, %d repetitions).&quot;</span>,</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        time, order, reps);</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        </div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    <a class="code" href="QuEST__common_8c.html#a8a8e789585651f90fcc587042d4cdfb8">agnostic_applyTrotterCircuit</a>(qureg, hamil, time, order, reps);</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160; </div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <a class="code" href="QuEST__qasm_8c.html#a9a385fde708958617bbeb599064b8dcb">qasm_recordComment</a>(qureg, <span class="stringliteral">&quot;End of Trotter circuit&quot;</span>);</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="QuEST__common_8c_source.html#l00773">agnostic_applyTrotterCircuit()</a>, <a class="el" href="QuEST__qasm_8c_source.html#l00120">qasm_recordComment()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00583">validateMatchingQuregPauliHamilDims()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00578">validatePauliHamil()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00630">validateTrotterParams()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="aQuEST__validation_8c_html_a5be128290a7bba9a7f12d32cabe2276b"><div class="ttname"><a href="QuEST__validation_8c.html#a5be128290a7bba9a7f12d32cabe2276b">validateNumPauliSumTerms</a></div><div class="ttdeci">void validateNumPauliSumTerms(int numTerms, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00467">QuEST_validation.c:467</a></div></div>
-<div class="ttc" id="aQuEST__validation_8c_html_a87d22240ccfd81827a2a34b8d569d347"><div class="ttname"><a href="QuEST__validation_8c.html#a87d22240ccfd81827a2a34b8d569d347">validateMatchingQuregDims</a></div><div class="ttdeci">void validateMatchingQuregDims(Qureg qureg1, Qureg qureg2, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00394">QuEST_validation.c:394</a></div></div>
+<div class="ttc" id="aQuEST__validation_8c_html_a5be128290a7bba9a7f12d32cabe2276b"><div class="ttname"><a href="QuEST__validation_8c.html#a5be128290a7bba9a7f12d32cabe2276b">validateNumPauliSumTerms</a></div><div class="ttdeci">void validateNumPauliSumTerms(int numTerms, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00529">QuEST_validation.c:529</a></div></div>
+<div class="ttc" id="astructPauliHamil_html_ac1c6c9f6299cf83bbba88123216c3cac"><div class="ttname"><a href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">PauliHamil::termCoeffs</a></div><div class="ttdeci">qreal * termCoeffs</div><div class="ttdoc">The coefficient of each Pauli product. This is a length numSumTerms array.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00164">QuEST.h:164</a></div></div>
+<div class="ttc" id="aQuEST__common_8c_html_a8a8e789585651f90fcc587042d4cdfb8"><div class="ttname"><a href="QuEST__common_8c.html#a8a8e789585651f90fcc587042d4cdfb8">agnostic_applyTrotterCircuit</a></div><div class="ttdeci">void agnostic_applyTrotterCircuit(Qureg qureg, PauliHamil hamil, qreal time, int order, int reps)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__common_8c_source.html#l00773">QuEST_common.c:773</a></div></div>
+<div class="ttc" id="astructPauliHamil_html_a4b8d38c403553c07ceddcd40c46ce6c8"><div class="ttname"><a href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">PauliHamil::pauliCodes</a></div><div class="ttdeci">enum pauliOpType * pauliCodes</div><div class="ttdoc">The Pauli operators acting on each qubit, flattened over every operator.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00162">QuEST.h:162</a></div></div>
+<div class="ttc" id="aQuEST__validation_8c_html_a87d22240ccfd81827a2a34b8d569d347"><div class="ttname"><a href="QuEST__validation_8c.html#a87d22240ccfd81827a2a34b8d569d347">validateMatchingQuregDims</a></div><div class="ttdeci">void validateMatchingQuregDims(Qureg qureg1, Qureg qureg2, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00454">QuEST_validation.c:454</a></div></div>
+<div class="ttc" id="astructPauliHamil_html_a737e46b40ef8990cf004d22eb9dbe2e4"><div class="ttname"><a href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">PauliHamil::numSumTerms</a></div><div class="ttdeci">int numSumTerms</div><div class="ttdoc">The number of terms in the weighted sum, or the number of Pauli products.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00166">QuEST.h:166</a></div></div>
 <div class="ttc" id="aQuEST__qasm_8c_html_a9a385fde708958617bbeb599064b8dcb"><div class="ttname"><a href="QuEST__qasm_8c.html#a9a385fde708958617bbeb599064b8dcb">qasm_recordComment</a></div><div class="ttdeci">void qasm_recordComment(Qureg qureg, char *comment,...)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__qasm_8c_source.html#l00120">QuEST_qasm.c:120</a></div></div>
-<div class="ttc" id="aQuEST__common_8c_html_af71c2470694795a8d639be8ff9c34ed5"><div class="ttname"><a href="QuEST__common_8c.html#af71c2470694795a8d639be8ff9c34ed5">statevec_applyPauliSum</a></div><div class="ttdeci">void statevec_applyPauliSum(Qureg inQureg, enum pauliOpType *allCodes, qreal *termCoeffs, int numSumTerms, Qureg outQureg)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__common_8c_source.html#l00493">QuEST_common.c:493</a></div></div>
-<div class="ttc" id="aQuEST__validation_8c_html_a031812e1cf2c98d72d795cea7bbe73a5"><div class="ttname"><a href="QuEST__validation_8c.html#a031812e1cf2c98d72d795cea7bbe73a5">validateMatchingQuregTypes</a></div><div class="ttdeci">void validateMatchingQuregTypes(Qureg qureg1, Qureg qureg2, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00398">QuEST_validation.c:398</a></div></div>
-<div class="ttc" id="astructQureg_html_ad08dff5316b8937f4b2a1417591543dc"><div class="ttname"><a href="structQureg.html#ad08dff5316b8937f4b2a1417591543dc">Qureg::numQubitsRepresented</a></div><div class="ttdeci">int numQubitsRepresented</div><div class="ttdoc">The number of qubits represented in either the state-vector or density matrix.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00165">QuEST.h:165</a></div></div>
-<div class="ttc" id="aQuEST__validation_8c_html_aa194ba5f5c6e19c6caa4c715b3dbefcc"><div class="ttname"><a href="QuEST__validation_8c.html#aa194ba5f5c6e19c6caa4c715b3dbefcc">validatePauliCodes</a></div><div class="ttdeci">void validatePauliCodes(enum pauliOpType *pauliCodes, int numPauliCodes, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00458">QuEST_validation.c:458</a></div></div>
+<div class="ttc" id="aQuEST__common_8c_html_af71c2470694795a8d639be8ff9c34ed5"><div class="ttname"><a href="QuEST__common_8c.html#af71c2470694795a8d639be8ff9c34ed5">statevec_applyPauliSum</a></div><div class="ttdeci">void statevec_applyPauliSum(Qureg inQureg, enum pauliOpType *allCodes, qreal *termCoeffs, int numSumTerms, Qureg outQureg)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__common_8c_source.html#l00494">QuEST_common.c:494</a></div></div>
+<div class="ttc" id="aQuEST__validation_8c_html_a066b0c4d0b02a0f3b9be7e5c68d9de6a"><div class="ttname"><a href="QuEST__validation_8c.html#a066b0c4d0b02a0f3b9be7e5c68d9de6a">validatePauliHamil</a></div><div class="ttdeci">void validatePauliHamil(PauliHamil hamil, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00578">QuEST_validation.c:578</a></div></div>
+<div class="ttc" id="aQuEST__validation_8c_html_a2b88b068a8242ee28da42c7324cdd078"><div class="ttname"><a href="QuEST__validation_8c.html#a2b88b068a8242ee28da42c7324cdd078">validateMatchingQuregPauliHamilDims</a></div><div class="ttdeci">void validateMatchingQuregPauliHamilDims(Qureg qureg, PauliHamil hamil, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00583">QuEST_validation.c:583</a></div></div>
+<div class="ttc" id="aQuEST__validation_8c_html_a031812e1cf2c98d72d795cea7bbe73a5"><div class="ttname"><a href="QuEST__validation_8c.html#a031812e1cf2c98d72d795cea7bbe73a5">validateMatchingQuregTypes</a></div><div class="ttdeci">void validateMatchingQuregTypes(Qureg qureg1, Qureg qureg2, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00458">QuEST_validation.c:458</a></div></div>
+<div class="ttc" id="astructQureg_html_ad08dff5316b8937f4b2a1417591543dc"><div class="ttname"><a href="structQureg.html#ad08dff5316b8937f4b2a1417591543dc">Qureg::numQubitsRepresented</a></div><div class="ttdeci">int numQubitsRepresented</div><div class="ttdoc">The number of qubits represented in either the state-vector or density matrix.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00183">QuEST.h:183</a></div></div>
+<div class="ttc" id="aQuEST__validation_8c_html_a82b142fe77ba20c87142274f32e57689"><div class="ttname"><a href="QuEST__validation_8c.html#a82b142fe77ba20c87142274f32e57689">validateTrotterParams</a></div><div class="ttdeci">void validateTrotterParams(int order, int reps, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00630">QuEST_validation.c:630</a></div></div>
+<div class="ttc" id="aQuEST__validation_8c_html_aa194ba5f5c6e19c6caa4c715b3dbefcc"><div class="ttname"><a href="QuEST__validation_8c.html#aa194ba5f5c6e19c6caa4c715b3dbefcc">validatePauliCodes</a></div><div class="ttdeci">void validatePauliCodes(enum pauliOpType *pauliCodes, int numPauliCodes, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00522">QuEST_validation.c:522</a></div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 </div>
