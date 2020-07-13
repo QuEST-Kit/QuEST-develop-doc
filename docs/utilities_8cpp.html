@@ -90,6 +90,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gacd00096ffcc67d460c204cb833388b0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#gacd00096ffcc67d460c204cb833388b0f">applyReferenceMatrix</a> (<a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> &amp;state, int *ctrls, int numCtrls, int *targs, int numTargs, <a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> op)</td></tr>
+<tr class="memdesc:gacd00096ffcc67d460c204cb833388b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the density matrix <code>state</code> to be the result of left-multiplying the multi-target operator matrix <code>op</code>, with the specified control and target qubits (in <code>ctrls</code> and <code>targs</code> respectively).  <a href="group__testutilities.html#gacd00096ffcc67d460c204cb833388b0f">More...</a><br /></td></tr>
+<tr class="separator:gacd00096ffcc67d460c204cb833388b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga059fea2ee0415bf25929601ba0788164"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga059fea2ee0415bf25929601ba0788164">applyReferenceMatrix</a> (<a class="el" href="group__testutilities.html#gac9263a65c96a458b810b20baa81c5b94">QVector</a> &amp;state, int *ctrls, int numCtrls, int *targs, int numTargs, <a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> op)</td></tr>
+<tr class="memdesc:ga059fea2ee0415bf25929601ba0788164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the state-vector <code>state</code> to be the result of left-multiplying the multi-target operator matrix <code>op</code>, with the specified control and target qubits (in <code>ctrls</code> and <code>targs</code> respectively).  <a href="group__testutilities.html#ga059fea2ee0415bf25929601ba0788164">More...</a><br /></td></tr>
+<tr class="separator:ga059fea2ee0415bf25929601ba0788164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b197ca736a01f05bf18fbc5c5a9bee6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga2b197ca736a01f05bf18fbc5c5a9bee6">applyReferenceOp</a> (<a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> &amp;state, int *ctrls, int numCtrls, int *targs, int numTargs, <a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> op)</td></tr>
 <tr class="memdesc:ga2b197ca736a01f05bf18fbc5c5a9bee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the density matrix <code>state</code> to be the result of applying the multi-target operator matrix <code>op</code>, with the specified control and target qubits (in <code>ctrls</code> and <code>targs</code> respectively).  <a href="group__testutilities.html#ga2b197ca736a01f05bf18fbc5c5a9bee6">More...</a><br /></td></tr>
 <tr class="separator:ga2b197ca736a01f05bf18fbc5c5a9bee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -382,7 +388,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p>Copies ComplexMatrix structures into a QMatrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l00830">830</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l00850">850</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -420,7 +426,7 @@ Functions</h2></td></tr>
 <div class="line">    } \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l00804">804</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l00824">824</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -1269,13 +1275,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01096">1096</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;  {</div>
-<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;    <span class="keywordtype">int</span> exclude[] = {};  </div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
-<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(std::move(gen), numSamps, exclude, 0)));</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01116">1116</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;  {</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;    <span class="keywordtype">int</span> exclude[] = {};  </div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(std::move(gen), numSamps, exclude, 0)));</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1317,12 +1323,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01081">1081</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;  {    </div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(std::move(gen), numSamps, exclude, numExclude)));</div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01101">1101</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;  {    </div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(std::move(gen), numSamps, exclude, numExclude)));</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1358,13 +1364,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01088">1088</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;  {</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;    <span class="keywordtype">int</span> exclude[] = {excluded};  </div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(std::move(gen), numSamps, exclude, 1)));</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01108">1108</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;  {</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;    <span class="keywordtype">int</span> exclude[] = {excluded};  </div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(std::move(gen), numSamps, exclude, 1)));</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1441,7 +1447,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="aclassSubListGenerator_html"><div class="ttname"><a href="classSubListGenerator.html">SubListGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00974">utilities.cpp:974</a></div></div>
+<div class="ttc" id="aclassSubListGenerator_html"><div class="ttname"><a href="classSubListGenerator.html">SubListGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00994">utilities.cpp:994</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_gac9263a65c96a458b810b20baa81c5b94"><div class="ttname"><a href="group__testutilities.html#gac9263a65c96a458b810b20baa81c5b94">QVector</a></div><div class="ttdeci">std::vector&lt; qcomp &gt; QVector</div><div class="ttdoc">A complex vector, which can be zero-initialised with QVector(numAmps).</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8hpp_source.html#l00060">utilities.hpp:60</a></div></div>
 <div class="ttc" id="agroup__type_html_gad863c5878a01051a2726ce94bf365428"><div class="ttname"><a href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a></div><div class="ttdeci">#define qcomp</div></div>
 <div class="ttc" id="agroup__testutilities_html_gabbc686f5f40eff22e08a2b2012ac4e41"><div class="ttname"><a href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; qcomp &gt; &gt; QMatrix</div><div class="ttdoc">A complex square matrix.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8hpp_source.html#l00049">utilities.hpp:49</a></div></div>
