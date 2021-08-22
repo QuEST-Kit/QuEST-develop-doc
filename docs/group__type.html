@@ -655,31 +655,31 @@ A <a class="el" href="structComplexMatrixN.html" title="Represents a general 2^N
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01313">1313</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;                                                    {</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;     <a class="code" href="QuEST__validation_8c.html#a7c8491926b4c7b4bf8e8123f4464a08e">validateNumQubitsInMatrix</a>(numQubits, __func__);</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160; </div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;     <span class="keywordtype">int</span> numRows = 1 &lt;&lt; numQubits;</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160; </div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;     <a class="code" href="structComplexMatrixN.html">ComplexMatrixN</a> m = {</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;         .<a class="code" href="structComplexMatrixN.html#a606f7afbc3f65a596bdca21cb43be6a8">numQubits</a> = numQubits,</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;         .real = malloc(numRows * <span class="keyword">sizeof</span> *m.<a class="code" href="structComplexMatrixN.html#a446e8a077597e4f76049d547df0c9738">real</a>),</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;         .imag = malloc(numRows * <span class="keyword">sizeof</span> *m.<a class="code" href="structComplexMatrixN.html#afde13e469a3b4f179f45e53d1ec0a7cf">imag</a>)};</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160; </div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n=0; n &lt; 1&lt;&lt;numQubits; n++) {</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;         m.<a class="code" href="structComplexMatrixN.html#a446e8a077597e4f76049d547df0c9738">real</a>[n] = calloc(numRows, <span class="keyword">sizeof</span> **m.<a class="code" href="structComplexMatrixN.html#a446e8a077597e4f76049d547df0c9738">real</a>);</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;         m.<a class="code" href="structComplexMatrixN.html#afde13e469a3b4f179f45e53d1ec0a7cf">imag</a>[n] = calloc(numRows, <span class="keyword">sizeof</span> **m.<a class="code" href="structComplexMatrixN.html#afde13e469a3b4f179f45e53d1ec0a7cf">imag</a>);</div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;     }</div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;     </div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;     <span class="comment">// error if the ComplexMatrixN was not successfully malloc&#39;ds</span></div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;     <a class="code" href="QuEST__validation_8c.html#a6a3d99bc780707a90120a78a6e203792">validateMatrixInit</a>(m, __func__);</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;     </div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;     <span class="keywordflow">return</span> m;</div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160; }</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01335">1335</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;                                                    {</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;     <a class="code" href="QuEST__validation_8c.html#a7c8491926b4c7b4bf8e8123f4464a08e">validateNumQubitsInMatrix</a>(numQubits, __func__);</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160; </div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;     <span class="keywordtype">int</span> numRows = 1 &lt;&lt; numQubits;</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160; </div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;     <a class="code" href="structComplexMatrixN.html">ComplexMatrixN</a> m = {</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;         .<a class="code" href="structComplexMatrixN.html#a606f7afbc3f65a596bdca21cb43be6a8">numQubits</a> = numQubits,</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;         .real = malloc(numRows * <span class="keyword">sizeof</span> *m.<a class="code" href="structComplexMatrixN.html#a446e8a077597e4f76049d547df0c9738">real</a>),</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;         .imag = malloc(numRows * <span class="keyword">sizeof</span> *m.<a class="code" href="structComplexMatrixN.html#afde13e469a3b4f179f45e53d1ec0a7cf">imag</a>)};</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160; </div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n=0; n &lt; 1&lt;&lt;numQubits; n++) {</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;         m.<a class="code" href="structComplexMatrixN.html#a446e8a077597e4f76049d547df0c9738">real</a>[n] = calloc(numRows, <span class="keyword">sizeof</span> **m.<a class="code" href="structComplexMatrixN.html#a446e8a077597e4f76049d547df0c9738">real</a>);</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;         m.<a class="code" href="structComplexMatrixN.html#afde13e469a3b4f179f45e53d1ec0a7cf">imag</a>[n] = calloc(numRows, <span class="keyword">sizeof</span> **m.<a class="code" href="structComplexMatrixN.html#afde13e469a3b4f179f45e53d1ec0a7cf">imag</a>);</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;     }</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;     </div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;     <span class="comment">// error if the ComplexMatrixN was not successfully malloc&#39;ds</span></div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;     <a class="code" href="QuEST__validation_8c.html#a6a3d99bc780707a90120a78a6e203792">validateMatrixInit</a>(m, __func__);</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;     </div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;     <span class="keywordflow">return</span> m;</div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160; }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST_8h_source.html#l00190">ComplexMatrixN::imag</a>, <a class="el" href="QuEST_8h_source.html#l00188">ComplexMatrixN::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00189">ComplexMatrixN::real</a>, <a class="el" href="QuEST__validation_8c_source.html#l00482">validateMatrixInit()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00357">validateNumQubitsInMatrix()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="QuEST__common_8c_source.html#l00691">densmatr_mixMultiQubitKrausMap()</a>, and <a class="el" href="test__data__structures_8cpp_source.html#l00103">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="QuEST__common_8c_source.html#l00697">densmatr_mixMultiQubitKrausMap()</a>, and <a class="el" href="test__data__structures_8cpp_source.html#l00103">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -911,12 +911,12 @@ Distribution</h3>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01481">1481</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;                                                         {</div>
-<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a7891142f169db6d440a4145501cd1d4c">validateNumQubitsInDiagOp</a>(numQubits, env.<a class="code" href="structQuESTEnv.html#af22aacd7c9905accae28484785c193b4">numRanks</a>, __func__);</div>
-<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;    </div>
-<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="QuEST__internal_8h.html#a0b84e6766bd682708e6211276ff0a5bb">agnostic_createDiagonalOp</a>(numQubits, env);</div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01503">1503</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;                                                         {</div>
+<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a7891142f169db6d440a4145501cd1d4c">validateNumQubitsInDiagOp</a>(numQubits, env.<a class="code" href="structQuESTEnv.html#af22aacd7c9905accae28484785c193b4">numRanks</a>, __func__);</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;    </div>
+<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="QuEST__internal_8h.html#a0b84e6766bd682708e6211276ff0a5bb">agnostic_createDiagonalOp</a>(numQubits, env);</div>
+<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l01335">agnostic_createDiagonalOp()</a>, <a class="el" href="QuEST_8h_source.html#l00364">QuESTEnv::numRanks</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00361">validateNumQubitsInDiagOp()</a>.</p>
 
@@ -998,19 +998,19 @@ Distribution</h3>
 <dd>
 Milos Prokop (serial prototype) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01521">1521</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;                                                                      {</div>
-<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;    <a class="code" href="structPauliHamil.html">PauliHamil</a> h = <a class="code" href="group__type.html#gaa77376c5e3518186eb085f37826d6008">createPauliHamilFromFile</a>(fn); <span class="comment">// validates fn</span></div>
-<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;    <a class="code" href="QuEST__validation_8c.html#aab3d6c019d9bbdf3d647c944e8b9e363">validateDiagPauliHamilFromFile</a>(h, env.<a class="code" href="structQuESTEnv.html#af22aacd7c9905accae28484785c193b4">numRanks</a>, __func__);  <span class="comment">// destroys h if invalid</span></div>
-<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160; </div>
-<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;    <a class="code" href="structDiagonalOp.html">DiagonalOp</a> op = <a class="code" href="QuEST__internal_8h.html#a0b84e6766bd682708e6211276ff0a5bb">agnostic_createDiagonalOp</a>(h.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>, env);</div>
-<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;    <a class="code" href="QuEST__internal_8h.html#a81a87bb0f0805c9dfcb691f6cb15a1b5">agnostic_initDiagonalOpFromPauliHamil</a>(op, h);</div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;    </div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;    <a class="code" href="group__type.html#gac1c8ed909b33bd55ae680901006051b6">destroyPauliHamil</a>(h);</div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;    <span class="keywordflow">return</span> op;</div>
-<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01543">1543</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;                                                                      {</div>
+<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;    <a class="code" href="structPauliHamil.html">PauliHamil</a> h = <a class="code" href="group__type.html#gaa77376c5e3518186eb085f37826d6008">createPauliHamilFromFile</a>(fn); <span class="comment">// validates fn</span></div>
+<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;    <a class="code" href="QuEST__validation_8c.html#aab3d6c019d9bbdf3d647c944e8b9e363">validateDiagPauliHamilFromFile</a>(h, env.<a class="code" href="structQuESTEnv.html#af22aacd7c9905accae28484785c193b4">numRanks</a>, __func__);  <span class="comment">// destroys h if invalid</span></div>
+<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160; </div>
+<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;    <a class="code" href="structDiagonalOp.html">DiagonalOp</a> op = <a class="code" href="QuEST__internal_8h.html#a0b84e6766bd682708e6211276ff0a5bb">agnostic_createDiagonalOp</a>(h.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>, env);</div>
+<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;    <a class="code" href="QuEST__internal_8h.html#a81a87bb0f0805c9dfcb691f6cb15a1b5">agnostic_initDiagonalOpFromPauliHamil</a>(op, h);</div>
+<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;    </div>
+<div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;    <a class="code" href="group__type.html#gac1c8ed909b33bd55ae680901006051b6">destroyPauliHamil</a>(h);</div>
+<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;    <span class="keywordflow">return</span> op;</div>
+<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l01335">agnostic_createDiagonalOp()</a>, <a class="el" href="QuEST__cpu_8c_source.html#l01366">agnostic_initDiagonalOpFromPauliHamil()</a>, <a class="el" href="QuEST_8c_source.html#l01383">createPauliHamilFromFile()</a>, <a class="el" href="QuEST_8c_source.html#l01377">destroyPauliHamil()</a>, <a class="el" href="QuEST_8h_source.html#l00287">PauliHamil::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00364">QuESTEnv::numRanks</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00723">validateDiagPauliHamilFromFile()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l01335">agnostic_createDiagonalOp()</a>, <a class="el" href="QuEST__cpu_8c_source.html#l01366">agnostic_initDiagonalOpFromPauliHamil()</a>, <a class="el" href="QuEST_8c_source.html#l01405">createPauliHamilFromFile()</a>, <a class="el" href="QuEST_8c_source.html#l01399">destroyPauliHamil()</a>, <a class="el" href="QuEST_8h_source.html#l00287">PauliHamil::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00364">QuESTEnv::numRanks</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00723">validateDiagPauliHamilFromFile()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="test__data__structures_8cpp_source.html#l00255">TEST_CASE()</a>.</p>
 
@@ -1080,26 +1080,26 @@ Milos Prokop (serial prototype) </dd></dl>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01361">1361</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;                                                            {</div>
-<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a7de9c41e77487a2939ed076f0cf674e7">validateHamilParams</a>(numQubits, numSumTerms, __func__);</div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;    </div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;    <a class="code" href="structPauliHamil.html">PauliHamil</a> h;</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;    h.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a> = numQubits;</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;    h.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a> = numSumTerms;</div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;    h.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a> = malloc(numSumTerms * <span class="keyword">sizeof</span> *h.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a>);</div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;    h.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a> = malloc(numQubits*numSumTerms * <span class="keyword">sizeof</span> *h.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>);</div>
-<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;    </div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;    <span class="comment">// initialise pauli codes to identity </span></div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;numQubits*numSumTerms; i++)</div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;        h.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>[i] = <a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a63800f45b01ccc2608f754aee850bf4a">PAULI_I</a>;</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    </div>
-<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;    <span class="keywordflow">return</span> h;</div>
-<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01383">1383</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;                                                            {</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a7de9c41e77487a2939ed076f0cf674e7">validateHamilParams</a>(numQubits, numSumTerms, __func__);</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;    </div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;    <a class="code" href="structPauliHamil.html">PauliHamil</a> h;</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;    h.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a> = numQubits;</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;    h.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a> = numSumTerms;</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;    h.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a> = malloc(numSumTerms * <span class="keyword">sizeof</span> *h.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a>);</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;    h.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a> = malloc(numQubits*numSumTerms * <span class="keyword">sizeof</span> *h.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>);</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    </div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    <span class="comment">// initialise pauli codes to identity </span></div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;numQubits*numSumTerms; i++)</div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;        h.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>[i] = <a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a63800f45b01ccc2608f754aee850bf4a">PAULI_I</a>;</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;    </div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;    <span class="keywordflow">return</span> h;</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST_8h_source.html#l00287">PauliHamil::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00285">PauliHamil::numSumTerms</a>, <a class="el" href="QuEST_8h_source.html#l00096">PAULI_I</a>, <a class="el" href="QuEST_8h_source.html#l00281">PauliHamil::pauliCodes</a>, <a class="el" href="QuEST_8h_source.html#l00283">PauliHamil::termCoeffs</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00647">validateHamilParams()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="QuEST_8c_source.html#l01383">createPauliHamilFromFile()</a>, and <a class="el" href="test__calculations_8cpp_source.html#l00189">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="QuEST_8c_source.html#l01405">createPauliHamilFromFile()</a>, and <a class="el" href="test__calculations_8cpp_source.html#l00189">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -1159,94 +1159,94 @@ Milos Prokop (serial prototype) </dd></dl>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01383">1383</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;                                              {</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;    </div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;    <span class="comment">/* The validation in this function must close the file handle and free </span></div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;<span class="comment">     * allocated memory before raising an error (whether that&#39;s a C exit, or</span></div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;<span class="comment">     * an overriden C++ exception).</span></div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;    </div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;        FILE* file = fopen(fn, <span class="stringliteral">&quot;r&quot;</span>);</div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    <span class="keywordtype">int</span> success = (file != NULL);</div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a6b9523909701f7bd79f2ab7b56a8e6bd">validateFileOpened</a>(success, fn, __func__);</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;    </div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;    <span class="comment">/* file format: coeff {term} \n where {term} is #numQubits values of </span></div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;<span class="comment">         * 0 1 2 3 signifying I X Y Z acting on that qubit index</span></div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;        </div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;        <span class="comment">// count the number of qubits (ignore trailing whitespace)</span></div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;        <span class="keywordtype">int</span> numQubits = -1; <span class="comment">// to exclude coeff at start</span></div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;        <span class="keywordtype">char</span> ch = getc(file);</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;    <span class="keywordtype">char</span> prev = <span class="charliteral">&#39;0&#39;</span>; <span class="comment">// anything not space</span></div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;        <span class="keywordflow">while</span> (ch != <span class="charliteral">&#39;\n&#39;</span> &amp;&amp; ch != EOF) {</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;                <span class="keywordflow">if</span> (ch == <span class="charliteral">&#39; &#39;</span> &amp;&amp; prev != <span class="charliteral">&#39; &#39;</span>) <span class="comment">// skip multiple spaces</span></div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;                        numQubits++;</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;        prev = ch;</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;        ch = getc(file);</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    }</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;    <span class="comment">// edge-case: if we hit EOF/newline without a space</span></div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;    <span class="keywordflow">if</span> (prev != <span class="charliteral">&#39; &#39;</span>)</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;        numQubits++;</div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160; </div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;    <span class="comment">/* TODO:</span></div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;<span class="comment">     * The below code may break on Windows where newlines are multiple characters</span></div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;        </div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;        <span class="comment">// count the number of terms (being cautious of trailing newlines)</span></div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;    <span class="keywordtype">int</span> numTerms = 0;</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;    prev = <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;    rewind(file);</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;        <span class="keywordflow">while</span> ((ch=getc(file)) != EOF) {</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;                <span class="keywordflow">if</span> (ch == <span class="charliteral">&#39;\n&#39;</span> &amp;&amp; prev != <span class="charliteral">&#39;\n&#39;</span>)</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;                        numTerms++;</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;        prev = ch;</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;    }</div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;    <span class="comment">// edge-case: if we hit EOF without a newline, count that line</span></div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;    <span class="keywordflow">if</span> (prev != <span class="charliteral">&#39;\n&#39;</span>)</div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;        numTerms++;</div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160; </div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;    <span class="comment">// validate the inferred number of terms and qubits (closes file if error)</span></div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a73bb5e6a5dcfba274ce93355d4a04db4">validateHamilFileParams</a>(numQubits, numTerms, file, fn, __func__);</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;    </div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;    <span class="comment">// allocate space for PauliHamil data</span></div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;    <a class="code" href="structPauliHamil.html">PauliHamil</a> h = <a class="code" href="group__type.html#ga35b28710877c462927366fa602e591cb">createPauliHamil</a>(numQubits, numTerms);</div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;     </div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;    <span class="comment">// specifier for a qreal number then a space </span></div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;    <span class="keywordtype">char</span> strSpec[50];</div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;    strcpy(strSpec, REAL_SPECIFIER);</div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;    strcat(strSpec, <span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;    </div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;    <span class="comment">// collect coefficients and terms</span></div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;        rewind(file);</div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> t=0; t&lt;numTerms; t++) {</div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;                </div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;                <span class="comment">// record coefficient, and validate (closes file and frees h if error)</span></div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;        success = fscanf(file, strSpec, &amp;(h.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a>[t])) == 1;</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        <a class="code" href="QuEST__validation_8c.html#a03b219da14463416c174c08b027deb31">validateHamilFileCoeffParsed</a>(success, h, file, fn, __func__);</div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160; </div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;                <span class="comment">// record Pauli operations, and validate (closes file and frees h if error)</span></div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> q=0; q&lt;numQubits; q++) {</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;            <span class="keywordtype">int</span> i = t*numQubits + q;</div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;            </div>
-<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;            <span class="comment">// verbose, to avoid type warnings</span></div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;            <span class="keywordtype">int</span> code;</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;            success = fscanf(file, <span class="stringliteral">&quot;%d &quot;</span>, &amp;code) == 1;</div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;            h.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>[i] = (<span class="keyword">enum</span> <a class="code" href="group__type.html#ga1c703cf89629e4e9c7023cd402d67028">pauliOpType</a>) code;</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;            <a class="code" href="QuEST__validation_8c.html#aab522b9871ea39eaf76d36850817e5bc">validateHamilFilePauliParsed</a>(success, h, file, fn, __func__);</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;            <a class="code" href="QuEST__validation_8c.html#a23a0025b20f876844320f40fc02cdb69">validateHamilFilePauliCode</a>(h.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>[i], h, file, fn, __func__);</div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;                }</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160; </div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;                <span class="comment">// the trailing newline is magically eaten</span></div>
-<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;        }</div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160; </div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;    fclose(file);</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;        <span class="keywordflow">return</span> h;</div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01405">1405</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;                                              {</div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;    </div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    <span class="comment">/* The validation in this function must close the file handle and free </span></div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;<span class="comment">     * allocated memory before raising an error (whether that&#39;s a C exit, or</span></div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;<span class="comment">     * an overriden C++ exception).</span></div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;    </div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;        FILE* file = fopen(fn, <span class="stringliteral">&quot;r&quot;</span>);</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;    <span class="keywordtype">int</span> success = (file != NULL);</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a6b9523909701f7bd79f2ab7b56a8e6bd">validateFileOpened</a>(success, fn, __func__);</div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;    </div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;    <span class="comment">/* file format: coeff {term} \n where {term} is #numQubits values of </span></div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;<span class="comment">         * 0 1 2 3 signifying I X Y Z acting on that qubit index</span></div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;        </div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;        <span class="comment">// count the number of qubits (ignore trailing whitespace)</span></div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;        <span class="keywordtype">int</span> numQubits = -1; <span class="comment">// to exclude coeff at start</span></div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;        <span class="keywordtype">char</span> ch = getc(file);</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;    <span class="keywordtype">char</span> prev = <span class="charliteral">&#39;0&#39;</span>; <span class="comment">// anything not space</span></div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;        <span class="keywordflow">while</span> (ch != <span class="charliteral">&#39;\n&#39;</span> &amp;&amp; ch != EOF) {</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;                <span class="keywordflow">if</span> (ch == <span class="charliteral">&#39; &#39;</span> &amp;&amp; prev != <span class="charliteral">&#39; &#39;</span>) <span class="comment">// skip multiple spaces</span></div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;                        numQubits++;</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;        prev = ch;</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;        ch = getc(file);</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;    }</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;    <span class="comment">// edge-case: if we hit EOF/newline without a space</span></div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;    <span class="keywordflow">if</span> (prev != <span class="charliteral">&#39; &#39;</span>)</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;        numQubits++;</div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160; </div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;    <span class="comment">/* TODO:</span></div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;<span class="comment">     * The below code may break on Windows where newlines are multiple characters</span></div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;        </div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;        <span class="comment">// count the number of terms (being cautious of trailing newlines)</span></div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;    <span class="keywordtype">int</span> numTerms = 0;</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;    prev = <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;    rewind(file);</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;        <span class="keywordflow">while</span> ((ch=getc(file)) != EOF) {</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;                <span class="keywordflow">if</span> (ch == <span class="charliteral">&#39;\n&#39;</span> &amp;&amp; prev != <span class="charliteral">&#39;\n&#39;</span>)</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;                        numTerms++;</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;        prev = ch;</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;    }</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;    <span class="comment">// edge-case: if we hit EOF without a newline, count that line</span></div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;    <span class="keywordflow">if</span> (prev != <span class="charliteral">&#39;\n&#39;</span>)</div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;        numTerms++;</div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160; </div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;    <span class="comment">// validate the inferred number of terms and qubits (closes file if error)</span></div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a73bb5e6a5dcfba274ce93355d4a04db4">validateHamilFileParams</a>(numQubits, numTerms, file, fn, __func__);</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;    </div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;    <span class="comment">// allocate space for PauliHamil data</span></div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;    <a class="code" href="structPauliHamil.html">PauliHamil</a> h = <a class="code" href="group__type.html#ga35b28710877c462927366fa602e591cb">createPauliHamil</a>(numQubits, numTerms);</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;     </div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;    <span class="comment">// specifier for a qreal number then a space </span></div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;    <span class="keywordtype">char</span> strSpec[50];</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;    strcpy(strSpec, REAL_SPECIFIER);</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;    strcat(strSpec, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;    </div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;    <span class="comment">// collect coefficients and terms</span></div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;        rewind(file);</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> t=0; t&lt;numTerms; t++) {</div>
+<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;                </div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;                <span class="comment">// record coefficient, and validate (closes file and frees h if error)</span></div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;        success = fscanf(file, strSpec, &amp;(h.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a>[t])) == 1;</div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;        <a class="code" href="QuEST__validation_8c.html#a03b219da14463416c174c08b027deb31">validateHamilFileCoeffParsed</a>(success, h, file, fn, __func__);</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160; </div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;                <span class="comment">// record Pauli operations, and validate (closes file and frees h if error)</span></div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> q=0; q&lt;numQubits; q++) {</div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;            <span class="keywordtype">int</span> i = t*numQubits + q;</div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;            </div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;            <span class="comment">// verbose, to avoid type warnings</span></div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;            <span class="keywordtype">int</span> code;</div>
+<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;            success = fscanf(file, <span class="stringliteral">&quot;%d &quot;</span>, &amp;code) == 1;</div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;            h.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>[i] = (<span class="keyword">enum</span> <a class="code" href="group__type.html#ga1c703cf89629e4e9c7023cd402d67028">pauliOpType</a>) code;</div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;            <a class="code" href="QuEST__validation_8c.html#aab522b9871ea39eaf76d36850817e5bc">validateHamilFilePauliParsed</a>(success, h, file, fn, __func__);</div>
+<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;            <a class="code" href="QuEST__validation_8c.html#a23a0025b20f876844320f40fc02cdb69">validateHamilFilePauliCode</a>(h.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>[i], h, file, fn, __func__);</div>
+<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;                }</div>
+<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160; </div>
+<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;                <span class="comment">// the trailing newline is magically eaten</span></div>
+<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;        }</div>
+<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160; </div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;    fclose(file);</div>
+<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;        <span class="keywordflow">return</span> h;</div>
+<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST_8c_source.html#l01361">createPauliHamil()</a>, <a class="el" href="QuEST_8h_source.html#l00281">PauliHamil::pauliCodes</a>, <a class="el" href="QuEST_8h_source.html#l00283">PauliHamil::termCoeffs</a>, <a class="el" href="QuEST__validation_8c_source.html#l00539">validateFileOpened()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00669">validateHamilFileCoeffParsed()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00660">validateHamilFileParams()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00689">validateHamilFilePauliCode()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00679">validateHamilFilePauliParsed()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST_8c_source.html#l01383">createPauliHamil()</a>, <a class="el" href="QuEST_8h_source.html#l00281">PauliHamil::pauliCodes</a>, <a class="el" href="QuEST_8h_source.html#l00283">PauliHamil::termCoeffs</a>, <a class="el" href="QuEST__validation_8c_source.html#l00539">validateFileOpened()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00669">validateHamilFileCoeffParsed()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00660">validateHamilFileParams()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00689">validateHamilFilePauliCode()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00679">validateHamilFilePauliParsed()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="QuEST_8c_source.html#l01521">createDiagonalOpFromPauliHamilFile()</a>, and <a class="el" href="test__data__structures_8cpp_source.html#l00467">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="QuEST_8c_source.html#l01543">createDiagonalOpFromPauliHamilFile()</a>, and <a class="el" href="test__data__structures_8cpp_source.html#l00467">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -1545,26 +1545,26 @@ Tyson Jones (validation, doc) </dd></dl>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01334">1334</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;                                             {</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;    <span class="comment">/* this checks m.real/imag != NULL, which is only ever set when the mallocs </span></div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;<span class="comment">     * in createComplexMatrixN fail, which already prompts an error. Hence </span></div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;<span class="comment">     * this check if useless </span></div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a6a3d99bc780707a90120a78a6e203792">validateMatrixInit</a>(m, __func__);</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;    </div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;    <span class="keywordtype">int</span> numRows = 1 &lt;&lt; m.numQubits;</div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r=0; r &lt; numRows; r++) {</div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;        free(m.real[r]);</div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;        free(m.imag[r]);</div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;    }</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;    free(m.real);</div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;    free(m.imag);</div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01356">1356</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;                                             {</div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;    <span class="comment">/* this checks m.real/imag != NULL, which is only ever set when the mallocs </span></div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;<span class="comment">     * in createComplexMatrixN fail, which already prompts an error. Hence </span></div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;<span class="comment">     * this check if useless </span></div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a6a3d99bc780707a90120a78a6e203792">validateMatrixInit</a>(m, __func__);</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;    </div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;    <span class="keywordtype">int</span> numRows = 1 &lt;&lt; m.numQubits;</div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r=0; r &lt; numRows; r++) {</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;        free(m.real[r]);</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;        free(m.imag[r]);</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;    }</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;    free(m.real);</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;    free(m.imag);</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST_8h_source.html#l00190">ComplexMatrixN::imag</a>, <a class="el" href="QuEST_8h_source.html#l00188">ComplexMatrixN::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00189">ComplexMatrixN::real</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00482">validateMatrixInit()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="QuEST__common_8c_source.html#l00691">densmatr_mixMultiQubitKrausMap()</a>, and <a class="el" href="test__data__structures_8cpp_source.html#l00103">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="QuEST__common_8c_source.html#l00697">densmatr_mixMultiQubitKrausMap()</a>, and <a class="el" href="test__data__structures_8cpp_source.html#l00103">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -1617,13 +1617,13 @@ Tyson Jones (validation, doc) </dd></dl>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01487">1487</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;                                                    {</div>
-<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;    <span class="comment">// env accepted for API consistency</span></div>
-<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ac5bd32bc24176e616a288ae04752fc9c">validateDiagOpInit</a>(op, __func__);</div>
-<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;    </div>
-<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;    <a class="code" href="QuEST__internal_8h.html#af798bb01f922804016c4c5bc8d0a580f">agnostic_destroyDiagonalOp</a>(op);</div>
-<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01509">1509</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;                                                    {</div>
+<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;    <span class="comment">// env accepted for API consistency</span></div>
+<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ac5bd32bc24176e616a288ae04752fc9c">validateDiagOpInit</a>(op, __func__);</div>
+<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;    </div>
+<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;    <a class="code" href="QuEST__internal_8h.html#af798bb01f922804016c4c5bc8d0a580f">agnostic_destroyDiagonalOp</a>(op);</div>
+<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l01357">agnostic_destroyDiagonalOp()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00705">validateDiagOpInit()</a>.</p>
 
@@ -1656,16 +1656,16 @@ Tyson Jones (validation, doc) </dd></dl>
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01377">1377</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;                                     {</div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;    </div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    free(h.termCoeffs);</div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;    free(h.pauliCodes);</div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01399">1399</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;                                     {</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;    </div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;    free(h.termCoeffs);</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;    free(h.pauliCodes);</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST_8h_source.html#l00281">PauliHamil::pauliCodes</a>, and <a class="el" href="QuEST_8h_source.html#l00283">PauliHamil::termCoeffs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="QuEST_8c_source.html#l01521">createDiagonalOpFromPauliHamilFile()</a>, <a class="el" href="test__calculations_8cpp_source.html#l00189">TEST_CASE()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00723">validateDiagPauliHamilFromFile()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00669">validateHamilFileCoeffParsed()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00689">validateHamilFilePauliCode()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00679">validateHamilFilePauliParsed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="QuEST_8c_source.html#l01543">createDiagonalOpFromPauliHamilFile()</a>, <a class="el" href="test__calculations_8cpp_source.html#l00189">TEST_CASE()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00723">validateDiagPauliHamilFromFile()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00669">validateHamilFileCoeffParsed()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00689">validateHamilFilePauliCode()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00679">validateHamilFilePauliParsed()</a>.</p>
 
 </div>
 </div>
@@ -1827,17 +1827,17 @@ initComplexMatrixN(m,
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01350">1350</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;                                                                                                  {</div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a6a3d99bc780707a90120a78a6e203792">validateMatrixInit</a>(m, __func__);</div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;    </div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;    <span class="keywordtype">int</span> dim = 1 &lt;&lt; m.<a class="code" href="structComplexMatrixN.html#a606f7afbc3f65a596bdca21cb43be6a8">numQubits</a>;</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;dim; i++)</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;dim; j++) {</div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;            m.<a class="code" href="structComplexMatrixN.html#a446e8a077597e4f76049d547df0c9738">real</a>[i][j] = re[i][j];</div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;            m.<a class="code" href="structComplexMatrixN.html#afde13e469a3b4f179f45e53d1ec0a7cf">imag</a>[i][j] = im[i][j];</div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;        }</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01372">1372</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;                                                                                                  {</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a6a3d99bc780707a90120a78a6e203792">validateMatrixInit</a>(m, __func__);</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;    </div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;    <span class="keywordtype">int</span> dim = 1 &lt;&lt; m.<a class="code" href="structComplexMatrixN.html#a606f7afbc3f65a596bdca21cb43be6a8">numQubits</a>;</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;dim; i++)</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;dim; j++) {</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;            m.<a class="code" href="structComplexMatrixN.html#a446e8a077597e4f76049d547df0c9738">real</a>[i][j] = re[i][j];</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;            m.<a class="code" href="structComplexMatrixN.html#afde13e469a3b4f179f45e53d1ec0a7cf">imag</a>[i][j] = im[i][j];</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;        }</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST_8h_source.html#l00190">ComplexMatrixN::imag</a>, <a class="el" href="QuEST_8h_source.html#l00188">ComplexMatrixN::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00189">ComplexMatrixN::real</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00482">validateMatrixInit()</a>.</p>
 
@@ -1907,12 +1907,12 @@ initComplexMatrixN(m,
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01500">1500</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;                                                             {</div>
-<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ac5bd32bc24176e616a288ae04752fc9c">validateDiagOpInit</a>(op, __func__);</div>
-<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;    </div>
-<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;    <a class="code" href="QuEST__internal_8h.html#ab58d6d599c7a729255b1f8eeded663f3">agnostic_setDiagonalOpElems</a>(op, 0, real, imag, 1LL &lt;&lt; op.<a class="code" href="structDiagonalOp.html#a5131eeb67aafb4c19ac98270c3266742">numQubits</a>);</div>
-<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01522">1522</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;                                                             {</div>
+<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ac5bd32bc24176e616a288ae04752fc9c">validateDiagOpInit</a>(op, __func__);</div>
+<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;    </div>
+<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;    <a class="code" href="QuEST__internal_8h.html#ab58d6d599c7a729255b1f8eeded663f3">agnostic_setDiagonalOpElems</a>(op, 0, real, imag, 1LL &lt;&lt; op.<a class="code" href="structDiagonalOp.html#a5131eeb67aafb4c19ac98270c3266742">numQubits</a>);</div>
+<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l04188">agnostic_setDiagonalOpElems()</a>, <a class="el" href="QuEST_8h_source.html#l00300">DiagonalOp::numQubits</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00705">validateDiagOpInit()</a>.</p>
 
@@ -1995,14 +1995,14 @@ initComplexMatrixN(m,
 <dd>
 Milos Prokop (serial prototype) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01513">1513</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;                                                                   {</div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a7de9c41e77487a2939ed076f0cf674e7">validateHamilParams</a>(hamil.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>, hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>, __func__);</div>
-<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ac5bd32bc24176e616a288ae04752fc9c">validateDiagOpInit</a>(op, __func__);</div>
-<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a0854ca790899f04a363a97371399e6cb">validateDiagPauliHamil</a>(op, hamil, __func__);</div>
-<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;    </div>
-<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;    <a class="code" href="QuEST__internal_8h.html#a81a87bb0f0805c9dfcb691f6cb15a1b5">agnostic_initDiagonalOpFromPauliHamil</a>(op, hamil);</div>
-<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01535">1535</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;                                                                   {</div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a7de9c41e77487a2939ed076f0cf674e7">validateHamilParams</a>(hamil.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>, hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>, __func__);</div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ac5bd32bc24176e616a288ae04752fc9c">validateDiagOpInit</a>(op, __func__);</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a0854ca790899f04a363a97371399e6cb">validateDiagPauliHamil</a>(op, hamil, __func__);</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;    </div>
+<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;    <a class="code" href="QuEST__internal_8h.html#a81a87bb0f0805c9dfcb691f6cb15a1b5">agnostic_initDiagonalOpFromPauliHamil</a>(op, hamil);</div>
+<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l01366">agnostic_initDiagonalOpFromPauliHamil()</a>, <a class="el" href="QuEST_8h_source.html#l00287">PauliHamil::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00285">PauliHamil::numSumTerms</a>, <a class="el" href="QuEST__validation_8c_source.html#l00705">validateDiagOpInit()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00714">validateDiagPauliHamil()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00647">validateHamilParams()</a>.</p>
 
@@ -2083,20 +2083,20 @@ For example </p><div class="fragment"><div class="line"><span class="keywordtype
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01467">1467</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;                                                                              {</div>
-<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a7de9c41e77487a2939ed076f0cf674e7">validateHamilParams</a>(hamil.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>, hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>, __func__);</div>
-<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;    <a class="code" href="QuEST__validation_8c.html#aa194ba5f5c6e19c6caa4c715b3dbefcc">validatePauliCodes</a>(codes, hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>*hamil.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>, __func__);</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;    </div>
-<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;    <span class="keywordtype">int</span> i=0;</div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> t=0; t&lt;hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>; t++) {</div>
-<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;        hamil.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a>[t] = coeffs[t];</div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> q=0; q&lt;hamil.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>; q++) {</div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;            hamil.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>[i] = codes[i];</div>
-<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;            i++;</div>
-<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;        }</div>
-<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;    }</div>
-<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01489">1489</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;                                                                              {</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a7de9c41e77487a2939ed076f0cf674e7">validateHamilParams</a>(hamil.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>, hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>, __func__);</div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;    <a class="code" href="QuEST__validation_8c.html#aa194ba5f5c6e19c6caa4c715b3dbefcc">validatePauliCodes</a>(codes, hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>*hamil.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>, __func__);</div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;    </div>
+<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;    <span class="keywordtype">int</span> i=0;</div>
+<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> t=0; t&lt;hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>; t++) {</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;        hamil.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a>[t] = coeffs[t];</div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> q=0; q&lt;hamil.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>; q++) {</div>
+<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;            hamil.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>[i] = codes[i];</div>
+<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;            i++;</div>
+<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;        }</div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;    }</div>
+<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST_8h_source.html#l00287">PauliHamil::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00285">PauliHamil::numSumTerms</a>, <a class="el" href="QuEST_8h_source.html#l00281">PauliHamil::pauliCodes</a>, <a class="el" href="QuEST_8h_source.html#l00283">PauliHamil::termCoeffs</a>, <a class="el" href="QuEST__validation_8c_source.html#l00647">validateHamilParams()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00595">validatePauliCodes()</a>.</p>
 
@@ -2193,13 +2193,13 @@ For example, below is the correct way to modify the full 8 elements of <code>op<
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01506">1506</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;                                                                                                                 {</div>
-<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ac5bd32bc24176e616a288ae04752fc9c">validateDiagOpInit</a>(op, __func__);</div>
-<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a1c52594c03d2c136993b27f4dd315c11">validateNumElems</a>(op, startInd, numElems, __func__);</div>
-<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;    </div>
-<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;    <a class="code" href="QuEST__internal_8h.html#ab58d6d599c7a729255b1f8eeded663f3">agnostic_setDiagonalOpElems</a>(op, startInd, real, imag, numElems);</div>
-<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01528">1528</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;                                                                                                                 {</div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ac5bd32bc24176e616a288ae04752fc9c">validateDiagOpInit</a>(op, __func__);</div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a1c52594c03d2c136993b27f4dd315c11">validateNumElems</a>(op, startInd, numElems, __func__);</div>
+<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;    </div>
+<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;    <a class="code" href="QuEST__internal_8h.html#ab58d6d599c7a729255b1f8eeded663f3">agnostic_setDiagonalOpElems</a>(op, startInd, real, imag, numElems);</div>
+<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l04188">agnostic_setDiagonalOpElems()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00705">validateDiagOpInit()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00389">validateNumElems()</a>.</p>
 
@@ -2249,12 +2249,12 @@ For example, below is the correct way to modify the full 8 elements of <code>op<
 </dl>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01494">1494</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;                                   {</div>
-<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ac5bd32bc24176e616a288ae04752fc9c">validateDiagOpInit</a>(op, __func__);</div>
-<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;    </div>
-<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;    <a class="code" href="QuEST__internal_8h.html#a1e8f917ab42d38d8c37ba6816b24f2f5">agnostic_syncDiagonalOp</a>(op);</div>
-<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01516">1516</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;                                   {</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ac5bd32bc24176e616a288ae04752fc9c">validateDiagOpInit</a>(op, __func__);</div>
+<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;    </div>
+<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;    <a class="code" href="QuEST__internal_8h.html#a1e8f917ab42d38d8c37ba6816b24f2f5">agnostic_syncDiagonalOp</a>(op);</div>
+<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l01362">agnostic_syncDiagonalOp()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00705">validateDiagOpInit()</a>.</p>
 
@@ -2266,7 +2266,7 @@ For example, below is the correct way to modify the full 8 elements of <code>op<
 <div class="ttc" id="aQuEST__internal_8h_html_af798bb01f922804016c4c5bc8d0a580f"><div class="ttname"><a href="QuEST__internal_8h.html#af798bb01f922804016c4c5bc8d0a580f">agnostic_destroyDiagonalOp</a></div><div class="ttdeci">void agnostic_destroyDiagonalOp(DiagonalOp op)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu_8c_source.html#l01357">QuEST_cpu.c:1357</a></div></div>
 <div class="ttc" id="agroup__type_html_ggaa7d869b117ba5024d6b84938e8cdfc65acb26952815118f5ced7703302dbeb556"><div class="ttname"><a href="group__type.html#ggaa7d869b117ba5024d6b84938e8cdfc65acb26952815118f5ced7703302dbeb556">INVERSE_PRODUCT</a></div><div class="ttdeci">@ INVERSE_PRODUCT</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00233">QuEST.h:233</a></div></div>
 <div class="ttc" id="agroup__type_html_ga1c703cf89629e4e9c7023cd402d67028"><div class="ttname"><a href="group__type.html#ga1c703cf89629e4e9c7023cd402d67028">pauliOpType</a></div><div class="ttdeci">pauliOpType</div><div class="ttdoc">Codes for specifying Pauli operators.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00096">QuEST.h:96</a></div></div>
-<div class="ttc" id="agroup__type_html_gadbe6701dda1d49168f2f23253e370a7a"><div class="ttname"><a href="group__type.html#gadbe6701dda1d49168f2f23253e370a7a">initPauliHamil</a></div><div class="ttdeci">void initPauliHamil(PauliHamil hamil, qreal *coeffs, enum pauliOpType *codes)</div><div class="ttdoc">Initialise PauliHamil instance hamil with the given term coefficients and Pauli codes (one for every ...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01467">QuEST.c:1467</a></div></div>
+<div class="ttc" id="agroup__type_html_gadbe6701dda1d49168f2f23253e370a7a"><div class="ttname"><a href="group__type.html#gadbe6701dda1d49168f2f23253e370a7a">initPauliHamil</a></div><div class="ttdeci">void initPauliHamil(PauliHamil hamil, qreal *coeffs, enum pauliOpType *codes)</div><div class="ttdoc">Initialise PauliHamil instance hamil with the given term coefficients and Pauli codes (one for every ...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01489">QuEST.c:1489</a></div></div>
 <div class="ttc" id="agroup__debug_html_ga8d31fe2d1ad4d01e2a1f5f6b8bc15b77"><div class="ttname"><a href="group__debug.html#ga8d31fe2d1ad4d01e2a1f5f6b8bc15b77">syncQuESTEnv</a></div><div class="ttdeci">void syncQuESTEnv(QuESTEnv env)</div><div class="ttdoc">Guarantees that all code up to the given point has been executed on all nodes (if running in distribu...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu__distributed_8c_source.html#l00162">QuEST_cpu_distributed.c:162</a></div></div>
 <div class="ttc" id="agroup__type_html_gga1c703cf89629e4e9c7023cd402d67028a085c85cff6ba79c52d8b1e61c42ddddf"><div class="ttname"><a href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a085c85cff6ba79c52d8b1e61c42ddddf">PAULI_Z</a></div><div class="ttdeci">@ PAULI_Z</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00096">QuEST.h:96</a></div></div>
 <div class="ttc" id="agroup__type_html_ggaa7d869b117ba5024d6b84938e8cdfc65a2ad72f168181763513d7793c13bf2a91"><div class="ttname"><a href="group__type.html#ggaa7d869b117ba5024d6b84938e8cdfc65a2ad72f168181763513d7793c13bf2a91">DISTANCE</a></div><div class="ttdeci">@ DISTANCE</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00234">QuEST.h:234</a></div></div>
@@ -2275,8 +2275,8 @@ For example, below is the correct way to modify the full 8 elements of <code>op<
 <div class="ttc" id="aQuEST__validation_8c_html_a7de9c41e77487a2939ed076f0cf674e7"><div class="ttname"><a href="QuEST__validation_8c.html#a7de9c41e77487a2939ed076f0cf674e7">validateHamilParams</a></div><div class="ttdeci">void validateHamilParams(int numQubits, int numTerms, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00647">QuEST_validation.c:647</a></div></div>
 <div class="ttc" id="aQuEST__qasm_8c_html_ae5ef90741274785eb1ebbbe828b7df8a"><div class="ttname"><a href="QuEST__qasm_8c.html#ae5ef90741274785eb1ebbbe828b7df8a">qasm_free</a></div><div class="ttdeci">void qasm_free(Qureg qureg)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__qasm_8c_source.html#l00887">QuEST_qasm.c:887</a></div></div>
 <div class="ttc" id="agroup__type_html_gga1c703cf89629e4e9c7023cd402d67028a63800f45b01ccc2608f754aee850bf4a"><div class="ttname"><a href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a63800f45b01ccc2608f754aee850bf4a">PAULI_I</a></div><div class="ttdeci">@ PAULI_I</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00096">QuEST.h:96</a></div></div>
-<div class="ttc" id="agroup__type_html_ga815103261fb22ea9690e1427571df00e"><div class="ttname"><a href="group__type.html#ga815103261fb22ea9690e1427571df00e">createComplexMatrixN</a></div><div class="ttdeci">ComplexMatrixN createComplexMatrixN(int numQubits)</div><div class="ttdoc">Allocate dynamic memory for a square complex matrix of any size, which can be passed to functions lik...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01313">QuEST.c:1313</a></div></div>
-<div class="ttc" id="agroup__type_html_gab75d5cdc622d2778bad24e3a8130aab9"><div class="ttname"><a href="group__type.html#gab75d5cdc622d2778bad24e3a8130aab9">syncDiagonalOp</a></div><div class="ttdeci">void syncDiagonalOp(DiagonalOp op)</div><div class="ttdoc">Update the GPU memory with the current values in op.real and op.imag.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01494">QuEST.c:1494</a></div></div>
+<div class="ttc" id="agroup__type_html_ga815103261fb22ea9690e1427571df00e"><div class="ttname"><a href="group__type.html#ga815103261fb22ea9690e1427571df00e">createComplexMatrixN</a></div><div class="ttdeci">ComplexMatrixN createComplexMatrixN(int numQubits)</div><div class="ttdoc">Allocate dynamic memory for a square complex matrix of any size, which can be passed to functions lik...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01335">QuEST.c:1335</a></div></div>
+<div class="ttc" id="agroup__type_html_gab75d5cdc622d2778bad24e3a8130aab9"><div class="ttname"><a href="group__type.html#gab75d5cdc622d2778bad24e3a8130aab9">syncDiagonalOp</a></div><div class="ttdeci">void syncDiagonalOp(DiagonalOp op)</div><div class="ttdoc">Update the GPU memory with the current values in op.real and op.imag.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01516">QuEST.c:1516</a></div></div>
 <div class="ttc" id="aQuEST__validation_8c_html_a45428d4a49b8798a8d25a7155f622238"><div class="ttname"><a href="QuEST__validation_8c.html#a45428d4a49b8798a8d25a7155f622238">validateNumQubitsInQureg</a></div><div class="ttdeci">void validateNumQubitsInQureg(int numQubits, int numRanks, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00345">QuEST_validation.c:345</a></div></div>
 <div class="ttc" id="agroup__type_html_gga9c91c41aa42ae537995e89ffc616afe1a9aa2a35d92976c7de970506c4d19a96c"><div class="ttname"><a href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a9aa2a35d92976c7de970506c4d19a96c">TWOS_COMPLEMENT</a></div><div class="ttdeci">@ TWOS_COMPLEMENT</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00269">QuEST.h:269</a></div></div>
 <div class="ttc" id="aQuEST__validation_8c_html_aab522b9871ea39eaf76d36850817e5bc"><div class="ttname"><a href="QuEST__validation_8c.html#aab522b9871ea39eaf76d36850817e5bc">validateHamilFilePauliParsed</a></div><div class="ttdeci">void validateHamilFilePauliParsed(int parsed, PauliHamil h, FILE *file, char *fn, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00679">QuEST_validation.c:679</a></div></div>
@@ -2287,9 +2287,9 @@ For example, below is the correct way to modify the full 8 elements of <code>op<
 <div class="ttc" id="agroup__type_html_ggaa7d869b117ba5024d6b84938e8cdfc65ae5114537389194302c7a619e35e6e227"><div class="ttname"><a href="group__type.html#ggaa7d869b117ba5024d6b84938e8cdfc65ae5114537389194302c7a619e35e6e227">SCALED_INVERSE_DISTANCE</a></div><div class="ttdeci">@ SCALED_INVERSE_DISTANCE</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00234">QuEST.h:234</a></div></div>
 <div class="ttc" id="astructQuESTEnv_html"><div class="ttname"><a href="structQuESTEnv.html">QuESTEnv</a></div><div class="ttdoc">Information about the environment the program is running in.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00361">QuEST.h:361</a></div></div>
 <div class="ttc" id="agroup__type_html_gga9c91c41aa42ae537995e89ffc616afe1a7165f9a47792f47c718ca128556fb3ae"><div class="ttname"><a href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a7165f9a47792f47c718ca128556fb3ae">UNSIGNED</a></div><div class="ttdeci">@ UNSIGNED</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00269">QuEST.h:269</a></div></div>
-<div class="ttc" id="agroup__type_html_gaa77376c5e3518186eb085f37826d6008"><div class="ttname"><a href="group__type.html#gaa77376c5e3518186eb085f37826d6008">createPauliHamilFromFile</a></div><div class="ttdeci">PauliHamil createPauliHamilFromFile(char *fn)</div><div class="ttdoc">Creates a PauliHamil instance, a real-weighted sum of products of Pauli operators,...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01383">QuEST.c:1383</a></div></div>
-<div class="ttc" id="agroup__type_html_gafabb15a6c1cf49f8ecb67e1f35c77c1e"><div class="ttname"><a href="group__type.html#gafabb15a6c1cf49f8ecb67e1f35c77c1e">setDiagonalOpElems</a></div><div class="ttdeci">void setDiagonalOpElems(DiagonalOp op, long long int startInd, qreal *real, qreal *imag, long long int numElems)</div><div class="ttdoc">Modifies a subset (starting at index startInd, and ending at index startInd + numElems) of the elemen...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01506">QuEST.c:1506</a></div></div>
-<div class="ttc" id="aQuEST__common_8c_html_ad67cb67877c941189b0de2c2e67e2026"><div class="ttname"><a href="QuEST__common_8c.html#ad67cb67877c941189b0de2c2e67e2026">bindArraysToStackComplexMatrixN</a></div><div class="ttdeci">ComplexMatrixN bindArraysToStackComplexMatrixN(int numQubits, qreal re[][1&lt;&lt; numQubits], qreal im[][1&lt;&lt; numQubits], qreal **reStorage, qreal **imStorage)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__common_8c_source.html#l00655">QuEST_common.c:655</a></div></div>
+<div class="ttc" id="agroup__type_html_gaa77376c5e3518186eb085f37826d6008"><div class="ttname"><a href="group__type.html#gaa77376c5e3518186eb085f37826d6008">createPauliHamilFromFile</a></div><div class="ttdeci">PauliHamil createPauliHamilFromFile(char *fn)</div><div class="ttdoc">Creates a PauliHamil instance, a real-weighted sum of products of Pauli operators,...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01405">QuEST.c:1405</a></div></div>
+<div class="ttc" id="agroup__type_html_gafabb15a6c1cf49f8ecb67e1f35c77c1e"><div class="ttname"><a href="group__type.html#gafabb15a6c1cf49f8ecb67e1f35c77c1e">setDiagonalOpElems</a></div><div class="ttdeci">void setDiagonalOpElems(DiagonalOp op, long long int startInd, qreal *real, qreal *imag, long long int numElems)</div><div class="ttdoc">Modifies a subset (starting at index startInd, and ending at index startInd + numElems) of the elemen...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01528">QuEST.c:1528</a></div></div>
+<div class="ttc" id="aQuEST__common_8c_html_ad67cb67877c941189b0de2c2e67e2026"><div class="ttname"><a href="QuEST__common_8c.html#ad67cb67877c941189b0de2c2e67e2026">bindArraysToStackComplexMatrixN</a></div><div class="ttdeci">ComplexMatrixN bindArraysToStackComplexMatrixN(int numQubits, qreal re[][1&lt;&lt; numQubits], qreal im[][1&lt;&lt; numQubits], qreal **reStorage, qreal **imStorage)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__common_8c_source.html#l00661">QuEST_common.c:661</a></div></div>
 <div class="ttc" id="astructComplexMatrixN_html"><div class="ttname"><a href="structComplexMatrixN.html">ComplexMatrixN</a></div><div class="ttdoc">Represents a general 2^N by 2^N matrix of complex numbers.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00186">QuEST.h:186</a></div></div>
 <div class="ttc" id="agroup__type_html_ggaa7d869b117ba5024d6b84938e8cdfc65a6313e6ff48163c11c47866c4fda4bfa0"><div class="ttname"><a href="group__type.html#ggaa7d869b117ba5024d6b84938e8cdfc65a6313e6ff48163c11c47866c4fda4bfa0">INVERSE_DISTANCE</a></div><div class="ttdeci">@ INVERSE_DISTANCE</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00234">QuEST.h:234</a></div></div>
 <div class="ttc" id="agroup__type_html_ga7740e349b4f8bae6451547680f0ce2d6"><div class="ttname"><a href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a></div><div class="ttdeci">#define qreal</div></div>
@@ -2330,7 +2330,7 @@ For example, below is the correct way to modify the full 8 elements of <code>op<
 <div class="ttc" id="aQuEST__validation_8c_html_ac5bd32bc24176e616a288ae04752fc9c"><div class="ttname"><a href="QuEST__validation_8c.html#ac5bd32bc24176e616a288ae04752fc9c">validateDiagOpInit</a></div><div class="ttdeci">void validateDiagOpInit(DiagonalOp op, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00705">QuEST_validation.c:705</a></div></div>
 <div class="ttc" id="agroup__debug_html_gaa8437ef3bf135231e2916e64dde1c94e"><div class="ttname"><a href="group__debug.html#gaa8437ef3bf135231e2916e64dde1c94e">seedQuESTDefault</a></div><div class="ttdeci">void seedQuESTDefault()</div><div class="ttdoc">Seed the Mersenne Twister used for random number generation in the QuEST environment with an example ...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu__distributed_8c_source.html#l01384">QuEST_cpu_distributed.c:1384</a></div></div>
 <div class="ttc" id="astructDiagonalOp_html_a2c6eab631ef48b4978db026c98180eee"><div class="ttname"><a href="structDiagonalOp.html#a2c6eab631ef48b4978db026c98180eee">DiagonalOp::numElemsPerChunk</a></div><div class="ttdeci">long long int numElemsPerChunk</div><div class="ttdoc">The number of the 2^numQubits amplitudes stored on each distributed node.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00302">QuEST.h:302</a></div></div>
-<div class="ttc" id="agroup__type_html_ga2ecd67e0de9efcbbe37afbad28a8ffad"><div class="ttname"><a href="group__type.html#ga2ecd67e0de9efcbbe37afbad28a8ffad">initDiagonalOpFromPauliHamil</a></div><div class="ttdeci">void initDiagonalOpFromPauliHamil(DiagonalOp op, PauliHamil hamil)</div><div class="ttdoc">Populates the diagonal operator op to be equivalent to the given Pauli Hamiltonian hamil,...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01513">QuEST.c:1513</a></div></div>
+<div class="ttc" id="agroup__type_html_ga2ecd67e0de9efcbbe37afbad28a8ffad"><div class="ttname"><a href="group__type.html#ga2ecd67e0de9efcbbe37afbad28a8ffad">initDiagonalOpFromPauliHamil</a></div><div class="ttdeci">void initDiagonalOpFromPauliHamil(DiagonalOp op, PauliHamil hamil)</div><div class="ttdoc">Populates the diagonal operator op to be equivalent to the given Pauli Hamiltonian hamil,...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01535">QuEST.c:1535</a></div></div>
 <div class="ttc" id="astructQureg_html_acf78445e9435d09f44f0cc832c6aee79"><div class="ttname"><a href="structQureg.html#acf78445e9435d09f44f0cc832c6aee79">Qureg::isDensityMatrix</a></div><div class="ttdeci">int isDensityMatrix</div><div class="ttdoc">Whether this instance is a density-state representation.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00325">QuEST.h:325</a></div></div>
 <div class="ttc" id="astructComplexMatrixN_html_a606f7afbc3f65a596bdca21cb43be6a8"><div class="ttname"><a href="structComplexMatrixN.html#a606f7afbc3f65a596bdca21cb43be6a8">ComplexMatrixN::numQubits</a></div><div class="ttdeci">int numQubits</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00188">QuEST.h:188</a></div></div>
 <div class="ttc" id="aQuEST__validation_8c_html_a73bb5e6a5dcfba274ce93355d4a04db4"><div class="ttname"><a href="QuEST__validation_8c.html#a73bb5e6a5dcfba274ce93355d4a04db4">validateHamilFileParams</a></div><div class="ttdeci">void validateHamilFileParams(int numQubits, int numTerms, FILE *file, char *fn, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00660">QuEST_validation.c:660</a></div></div>
@@ -2340,7 +2340,7 @@ For example, below is the correct way to modify the full 8 elements of <code>op<
 <div class="ttc" id="agroup__type_html_ggaa7d869b117ba5024d6b84938e8cdfc65ace23d4b924240a245d83193f0ce398d4"><div class="ttname"><a href="group__type.html#ggaa7d869b117ba5024d6b84938e8cdfc65ace23d4b924240a245d83193f0ce398d4">SCALED_DISTANCE</a></div><div class="ttdeci">@ SCALED_DISTANCE</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00234">QuEST.h:234</a></div></div>
 <div class="ttc" id="astructDiagonalOp_html_a1d66088bed235d524cd452b107694d5c"><div class="ttname"><a href="structDiagonalOp.html#a1d66088bed235d524cd452b107694d5c">DiagonalOp::real</a></div><div class="ttdeci">qreal * real</div><div class="ttdoc">The real values of the 2^numQubits complex elements.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00308">QuEST.h:308</a></div></div>
 <div class="ttc" id="agroup__type_html_ga3392816c0643414165c2f5caeec17df0"><div class="ttname"><a href="group__type.html#ga3392816c0643414165c2f5caeec17df0">createQureg</a></div><div class="ttdeci">Qureg createQureg(int numQubits, QuESTEnv env)</div><div class="ttdoc">Creates a state-vector Qureg object representing a set of qubits which will remain in a pure state.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l00036">QuEST.c:36</a></div></div>
-<div class="ttc" id="agroup__type_html_gac1c8ed909b33bd55ae680901006051b6"><div class="ttname"><a href="group__type.html#gac1c8ed909b33bd55ae680901006051b6">destroyPauliHamil</a></div><div class="ttdeci">void destroyPauliHamil(PauliHamil h)</div><div class="ttdoc">Destroy a PauliHamil instance, created with either createPauliHamil() or createPauliHamilFromFile().</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01377">QuEST.c:1377</a></div></div>
+<div class="ttc" id="agroup__type_html_gac1c8ed909b33bd55ae680901006051b6"><div class="ttname"><a href="group__type.html#gac1c8ed909b33bd55ae680901006051b6">destroyPauliHamil</a></div><div class="ttdeci">void destroyPauliHamil(PauliHamil h)</div><div class="ttdoc">Destroy a PauliHamil instance, created with either createPauliHamil() or createPauliHamilFromFile().</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01399">QuEST.c:1399</a></div></div>
 <div class="ttc" id="aQuEST__internal_8h_html_ab58d6d599c7a729255b1f8eeded663f3"><div class="ttname"><a href="QuEST__internal_8h.html#ab58d6d599c7a729255b1f8eeded663f3">agnostic_setDiagonalOpElems</a></div><div class="ttdeci">void agnostic_setDiagonalOpElems(DiagonalOp op, long long int startInd, qreal *real, qreal *imag, long long int numElems)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu_8c_source.html#l04188">QuEST_cpu.c:4188</a></div></div>
 <div class="ttc" id="aQuEST__validation_8c_html_a7891142f169db6d440a4145501cd1d4c"><div class="ttname"><a href="QuEST__validation_8c.html#a7891142f169db6d440a4145501cd1d4c">validateNumQubitsInDiagOp</a></div><div class="ttdeci">void validateNumQubitsInDiagOp(int numQubits, int numRanks, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00361">QuEST_validation.c:361</a></div></div>
 <div class="ttc" id="aQuEST__validation_8c_html_ad893327ebd2123508493d445868bfcd7"><div class="ttname"><a href="QuEST__validation_8c.html#ad893327ebd2123508493d445868bfcd7">validateNumRanks</a></div><div class="ttdeci">void validateNumRanks(int numRanks, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00331">QuEST_validation.c:331</a></div></div>
@@ -2351,8 +2351,8 @@ For example, below is the correct way to modify the full 8 elements of <code>op<
 <div class="ttc" id="aQuEST__qasm_8c_html_aa5f05644a6cea13e00f828658bcf7a68"><div class="ttname"><a href="QuEST__qasm_8c.html#aa5f05644a6cea13e00f828658bcf7a68">qasm_setup</a></div><div class="ttdeci">void qasm_setup(Qureg *qureg)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__qasm_8c_source.html#l00061">QuEST_qasm.c:61</a></div></div>
 <div class="ttc" id="aQuEST__validation_8c_html_aa194ba5f5c6e19c6caa4c715b3dbefcc"><div class="ttname"><a href="QuEST__validation_8c.html#aa194ba5f5c6e19c6caa4c715b3dbefcc">validatePauliCodes</a></div><div class="ttdeci">void validatePauliCodes(enum pauliOpType *pauliCodes, int numPauliCodes, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00595">QuEST_validation.c:595</a></div></div>
 <div class="ttc" id="aQuEST__internal_8h_html_a365bbb1b80cb00405c8bf1a4fa1ea8e5"><div class="ttname"><a href="QuEST__internal_8h.html#a365bbb1b80cb00405c8bf1a4fa1ea8e5">statevec_createQureg</a></div><div class="ttdeci">void statevec_createQureg(Qureg *qureg, int numQubits, QuESTEnv env)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu_8c_source.html#l01279">QuEST_cpu.c:1279</a></div></div>
-<div class="ttc" id="agroup__type_html_ga35b28710877c462927366fa602e591cb"><div class="ttname"><a href="group__type.html#ga35b28710877c462927366fa602e591cb">createPauliHamil</a></div><div class="ttdeci">PauliHamil createPauliHamil(int numQubits, int numSumTerms)</div><div class="ttdoc">Dynamically allocates a Hamiltonian expressed as a real-weighted sum of products of Pauli operators.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01361">QuEST.c:1361</a></div></div>
-<div class="ttc" id="agroup__type_html_gaebf896dd8d5eeaf9fd896f6cc8e334fe"><div class="ttname"><a href="group__type.html#gaebf896dd8d5eeaf9fd896f6cc8e334fe">createDiagonalOp</a></div><div class="ttdeci">DiagonalOp createDiagonalOp(int numQubits, QuESTEnv env)</div><div class="ttdoc">Creates a DiagonalOp representing a diagonal operator on the full Hilbert space of a Qureg.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01481">QuEST.c:1481</a></div></div>
+<div class="ttc" id="agroup__type_html_ga35b28710877c462927366fa602e591cb"><div class="ttname"><a href="group__type.html#ga35b28710877c462927366fa602e591cb">createPauliHamil</a></div><div class="ttdeci">PauliHamil createPauliHamil(int numQubits, int numSumTerms)</div><div class="ttdoc">Dynamically allocates a Hamiltonian expressed as a real-weighted sum of products of Pauli operators.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01383">QuEST.c:1383</a></div></div>
+<div class="ttc" id="agroup__type_html_gaebf896dd8d5eeaf9fd896f6cc8e334fe"><div class="ttname"><a href="group__type.html#gaebf896dd8d5eeaf9fd896f6cc8e334fe">createDiagonalOp</a></div><div class="ttdeci">DiagonalOp createDiagonalOp(int numQubits, QuESTEnv env)</div><div class="ttdoc">Creates a DiagonalOp representing a diagonal operator on the full Hilbert space of a Qureg.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8c_source.html#l01503">QuEST.c:1503</a></div></div>
 <div class="ttc" id="agroup__type_html_ggaa7d869b117ba5024d6b84938e8cdfc65ae8c96906c1ec109d295c491e572d01e2"><div class="ttname"><a href="group__type.html#ggaa7d869b117ba5024d6b84938e8cdfc65ae8c96906c1ec109d295c491e572d01e2">SCALED_INVERSE_NORM</a></div><div class="ttdeci">@ SCALED_INVERSE_NORM</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00232">QuEST.h:232</a></div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
