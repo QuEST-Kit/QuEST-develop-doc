@@ -93,7 +93,7 @@ Private Attributes</h2></td></tr>
 class SequenceGenerator&lt; T &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01315">1315</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01359">1359</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6d12b227503c9080c098f5e2c4487a64"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d12b227503c9080c098f5e2c4487a64">&#9670;&nbsp;</a></span>SequenceGenerator()</h2>
@@ -131,19 +131,19 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01322">1322</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;                                                  {</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;        <a class="code" href="classSequenceGenerator.html#aeb2c19e6ac47327f8b50727ab5587da7">ind</a> = 0;</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;        <a class="code" href="classSequenceGenerator.html#a3ca8812efe1a973c6421ff4362348577">len</a> = numDigits;</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;        <a class="code" href="classSequenceGenerator.html#af468d68297c3ac2973dbcb546b51ca1c">maxDigit</a> = maxDigit_;</div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;        <a class="code" href="classSequenceGenerator.html#a6778dd4a13709246b965f1d8e82c01da">seqLen</a> = (int) pow(1 + (<span class="keywordtype">int</span>) <a class="code" href="classSequenceGenerator.html#af468d68297c3ac2973dbcb546b51ca1c">maxDigit</a>, <a class="code" href="classSequenceGenerator.html#a3ca8812efe1a973c6421ff4362348577">len</a>);</div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;        <a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a> = (T*) malloc(numDigits * <span class="keyword">sizeof</span> *<a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>);</div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;numDigits; i++)</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;            <a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>[i] = (T) 0;</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;        <a class="code" href="classSequenceGenerator.html#aeb2c19e6ac47327f8b50727ab5587da7">ind</a>++;</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01366">1366</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;                                                  {</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;        <a class="code" href="classSequenceGenerator.html#aeb2c19e6ac47327f8b50727ab5587da7">ind</a> = 0;</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;        <a class="code" href="classSequenceGenerator.html#a3ca8812efe1a973c6421ff4362348577">len</a> = numDigits;</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;        <a class="code" href="classSequenceGenerator.html#af468d68297c3ac2973dbcb546b51ca1c">maxDigit</a> = maxDigit_;</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;        <a class="code" href="classSequenceGenerator.html#a6778dd4a13709246b965f1d8e82c01da">seqLen</a> = (int) pow(1 + (<span class="keywordtype">int</span>) <a class="code" href="classSequenceGenerator.html#af468d68297c3ac2973dbcb546b51ca1c">maxDigit</a>, <a class="code" href="classSequenceGenerator.html#a3ca8812efe1a973c6421ff4362348577">len</a>);</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;        <a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a> = (T*) malloc(numDigits * <span class="keyword">sizeof</span> *<a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>);</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;numDigits; i++)</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;            <a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>[i] = (T) 0;</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;        <a class="code" href="classSequenceGenerator.html#aeb2c19e6ac47327f8b50727ab5587da7">ind</a>++;</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l01316">SequenceGenerator&lt; T &gt;::digits</a>, <a class="el" href="utilities_8cpp_source.html#l01319">SequenceGenerator&lt; T &gt;::ind</a>, <a class="el" href="utilities_8cpp_source.html#l01317">SequenceGenerator&lt; T &gt;::len</a>, <a class="el" href="utilities_8cpp_source.html#l01318">SequenceGenerator&lt; T &gt;::maxDigit</a>, and <a class="el" href="utilities_8cpp_source.html#l01320">SequenceGenerator&lt; T &gt;::seqLen</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l01360">SequenceGenerator&lt; T &gt;::digits</a>, <a class="el" href="utilities_8cpp_source.html#l01363">SequenceGenerator&lt; T &gt;::ind</a>, <a class="el" href="utilities_8cpp_source.html#l01361">SequenceGenerator&lt; T &gt;::len</a>, <a class="el" href="utilities_8cpp_source.html#l01362">SequenceGenerator&lt; T &gt;::maxDigit</a>, and <a class="el" href="utilities_8cpp_source.html#l01364">SequenceGenerator&lt; T &gt;::seqLen</a>.</p>
 
 </div>
 </div>
@@ -172,12 +172,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01348">1348</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;                         {</div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;        free(<a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>);</div>
-<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01392">1392</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;                         {</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;        free(<a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>);</div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l01316">SequenceGenerator&lt; T &gt;::digits</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l01360">SequenceGenerator&lt; T &gt;::digits</a>.</p>
 
 </div>
 </div>
@@ -207,12 +207,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01333">1333</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;                                   {</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>;</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01377">1377</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;                                   {</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>;</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l01316">SequenceGenerator&lt; T &gt;::digits</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l01360">SequenceGenerator&lt; T &gt;::digits</a>.</p>
 
 </div>
 </div>
@@ -241,19 +241,19 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01337">1337</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;                         {</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;        <span class="keywordtype">bool</span> isNext = (<a class="code" href="classSequenceGenerator.html#aeb2c19e6ac47327f8b50727ab5587da7">ind</a>++) &lt; <a class="code" href="classSequenceGenerator.html#a6778dd4a13709246b965f1d8e82c01da">seqLen</a>;</div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;        <span class="keywordflow">if</span> (isNext) {</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;            <span class="keywordtype">int</span> i=0;</div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;            <span class="keywordflow">while</span> (<a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>[i] == <a class="code" href="classSequenceGenerator.html#af468d68297c3ac2973dbcb546b51ca1c">maxDigit</a>)</div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;                <a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>[i++] = (T) 0;</div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;            <a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>[i] = (T) ((<span class="keywordtype">int</span>) <a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>[i] + 1);</div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;        }</div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;        <span class="keywordflow">return</span> isNext;</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01381">1381</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;                         {</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;        <span class="keywordtype">bool</span> isNext = (<a class="code" href="classSequenceGenerator.html#aeb2c19e6ac47327f8b50727ab5587da7">ind</a>++) &lt; <a class="code" href="classSequenceGenerator.html#a6778dd4a13709246b965f1d8e82c01da">seqLen</a>;</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;        <span class="keywordflow">if</span> (isNext) {</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;            <span class="keywordtype">int</span> i=0;</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;            <span class="keywordflow">while</span> (<a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>[i] == <a class="code" href="classSequenceGenerator.html#af468d68297c3ac2973dbcb546b51ca1c">maxDigit</a>)</div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;                <a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>[i++] = (T) 0;</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;            <a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>[i] = (T) ((<span class="keywordtype">int</span>) <a class="code" href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">digits</a>[i] + 1);</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;        }</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;        <span class="keywordflow">return</span> isNext;</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l01316">SequenceGenerator&lt; T &gt;::digits</a>, <a class="el" href="utilities_8cpp_source.html#l01319">SequenceGenerator&lt; T &gt;::ind</a>, <a class="el" href="utilities_8cpp_source.html#l01318">SequenceGenerator&lt; T &gt;::maxDigit</a>, and <a class="el" href="utilities_8cpp_source.html#l01320">SequenceGenerator&lt; T &gt;::seqLen</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l01360">SequenceGenerator&lt; T &gt;::digits</a>, <a class="el" href="utilities_8cpp_source.html#l01363">SequenceGenerator&lt; T &gt;::ind</a>, <a class="el" href="utilities_8cpp_source.html#l01362">SequenceGenerator&lt; T &gt;::maxDigit</a>, and <a class="el" href="utilities_8cpp_source.html#l01364">SequenceGenerator&lt; T &gt;::seqLen</a>.</p>
 
 </div>
 </div>
@@ -280,9 +280,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01316">1316</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01360">1360</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01333">SequenceGenerator&lt; T &gt;::get()</a>, <a class="el" href="utilities_8cpp_source.html#l01337">SequenceGenerator&lt; T &gt;::next()</a>, <a class="el" href="utilities_8cpp_source.html#l01322">SequenceGenerator&lt; T &gt;::SequenceGenerator()</a>, and <a class="el" href="utilities_8cpp_source.html#l01348">SequenceGenerator&lt; T &gt;::~SequenceGenerator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01377">SequenceGenerator&lt; T &gt;::get()</a>, <a class="el" href="utilities_8cpp_source.html#l01381">SequenceGenerator&lt; T &gt;::next()</a>, <a class="el" href="utilities_8cpp_source.html#l01366">SequenceGenerator&lt; T &gt;::SequenceGenerator()</a>, and <a class="el" href="utilities_8cpp_source.html#l01392">SequenceGenerator&lt; T &gt;::~SequenceGenerator()</a>.</p>
 
 </div>
 </div>
@@ -308,9 +308,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01319">1319</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01363">1363</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01337">SequenceGenerator&lt; T &gt;::next()</a>, and <a class="el" href="utilities_8cpp_source.html#l01322">SequenceGenerator&lt; T &gt;::SequenceGenerator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01381">SequenceGenerator&lt; T &gt;::next()</a>, and <a class="el" href="utilities_8cpp_source.html#l01366">SequenceGenerator&lt; T &gt;::SequenceGenerator()</a>.</p>
 
 </div>
 </div>
@@ -336,9 +336,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01317">1317</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01361">1361</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01322">SequenceGenerator&lt; T &gt;::SequenceGenerator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01366">SequenceGenerator&lt; T &gt;::SequenceGenerator()</a>.</p>
 
 </div>
 </div>
@@ -364,9 +364,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01318">1318</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01362">1362</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01337">SequenceGenerator&lt; T &gt;::next()</a>, and <a class="el" href="utilities_8cpp_source.html#l01322">SequenceGenerator&lt; T &gt;::SequenceGenerator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01381">SequenceGenerator&lt; T &gt;::next()</a>, and <a class="el" href="utilities_8cpp_source.html#l01366">SequenceGenerator&lt; T &gt;::SequenceGenerator()</a>.</p>
 
 </div>
 </div>
@@ -392,9 +392,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01320">1320</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01364">1364</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01337">SequenceGenerator&lt; T &gt;::next()</a>, and <a class="el" href="utilities_8cpp_source.html#l01322">SequenceGenerator&lt; T &gt;::SequenceGenerator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01381">SequenceGenerator&lt; T &gt;::next()</a>, and <a class="el" href="utilities_8cpp_source.html#l01366">SequenceGenerator&lt; T &gt;::SequenceGenerator()</a>.</p>
 
 </div>
 </div>
@@ -402,11 +402,11 @@ template&lt;typename T &gt; </div>
 <li><a class="el" href="utilities_8cpp_source.html">utilities.cpp</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclassSequenceGenerator_html_aa3244dd6ec80f875cd63847d13311ead"><div class="ttname"><a href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">SequenceGenerator::digits</a></div><div class="ttdeci">T * digits</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01316">utilities.cpp:1316</a></div></div>
-<div class="ttc" id="aclassSequenceGenerator_html_af468d68297c3ac2973dbcb546b51ca1c"><div class="ttname"><a href="classSequenceGenerator.html#af468d68297c3ac2973dbcb546b51ca1c">SequenceGenerator::maxDigit</a></div><div class="ttdeci">T maxDigit</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01318">utilities.cpp:1318</a></div></div>
-<div class="ttc" id="aclassSequenceGenerator_html_a3ca8812efe1a973c6421ff4362348577"><div class="ttname"><a href="classSequenceGenerator.html#a3ca8812efe1a973c6421ff4362348577">SequenceGenerator::len</a></div><div class="ttdeci">int len</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01317">utilities.cpp:1317</a></div></div>
-<div class="ttc" id="aclassSequenceGenerator_html_a6778dd4a13709246b965f1d8e82c01da"><div class="ttname"><a href="classSequenceGenerator.html#a6778dd4a13709246b965f1d8e82c01da">SequenceGenerator::seqLen</a></div><div class="ttdeci">int seqLen</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01320">utilities.cpp:1320</a></div></div>
-<div class="ttc" id="aclassSequenceGenerator_html_aeb2c19e6ac47327f8b50727ab5587da7"><div class="ttname"><a href="classSequenceGenerator.html#aeb2c19e6ac47327f8b50727ab5587da7">SequenceGenerator::ind</a></div><div class="ttdeci">int ind</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01319">utilities.cpp:1319</a></div></div>
+<div class="ttc" id="aclassSequenceGenerator_html_aa3244dd6ec80f875cd63847d13311ead"><div class="ttname"><a href="classSequenceGenerator.html#aa3244dd6ec80f875cd63847d13311ead">SequenceGenerator::digits</a></div><div class="ttdeci">T * digits</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01360">utilities.cpp:1360</a></div></div>
+<div class="ttc" id="aclassSequenceGenerator_html_af468d68297c3ac2973dbcb546b51ca1c"><div class="ttname"><a href="classSequenceGenerator.html#af468d68297c3ac2973dbcb546b51ca1c">SequenceGenerator::maxDigit</a></div><div class="ttdeci">T maxDigit</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01362">utilities.cpp:1362</a></div></div>
+<div class="ttc" id="aclassSequenceGenerator_html_a3ca8812efe1a973c6421ff4362348577"><div class="ttname"><a href="classSequenceGenerator.html#a3ca8812efe1a973c6421ff4362348577">SequenceGenerator::len</a></div><div class="ttdeci">int len</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01361">utilities.cpp:1361</a></div></div>
+<div class="ttc" id="aclassSequenceGenerator_html_a6778dd4a13709246b965f1d8e82c01da"><div class="ttname"><a href="classSequenceGenerator.html#a6778dd4a13709246b965f1d8e82c01da">SequenceGenerator::seqLen</a></div><div class="ttdeci">int seqLen</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01364">utilities.cpp:1364</a></div></div>
+<div class="ttc" id="aclassSequenceGenerator_html_aeb2c19e6ac47327f8b50727ab5587da7"><div class="ttname"><a href="classSequenceGenerator.html#aeb2c19e6ac47327f8b50727ab5587da7">SequenceGenerator::ind</a></div><div class="ttdeci">int ind</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01363">utilities.cpp:1363</a></div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 </div>

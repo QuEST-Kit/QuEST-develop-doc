@@ -126,13 +126,13 @@ Functions</h2></td></tr>
 <p>Return whether two given wavefunctions are equivalent within a given precision Global phase included in equivalence check. </p>
 <p>For debugging purposes. </p>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01431">1431</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;                                                               {</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a87d22240ccfd81827a2a34b8d569d347">validateMatchingQuregDims</a>(qureg1, qureg2, __func__);</div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="QuEST__internal_8h.html#ae6cecbad32a03416138b321cdc1a2c33">statevec_compareStates</a>(qureg1, qureg2, precision);</div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01536">1536</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;                                                               {</div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a87d22240ccfd81827a2a34b8d569d347">validateMatchingQuregDims</a>(qureg1, qureg2, __func__);</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="QuEST__internal_8h.html#ae6cecbad32a03416138b321cdc1a2c33">statevec_compareStates</a>(qureg1, qureg2, precision);</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l01668">statevec_compareStates()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00523">validateMatchingQuregDims()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l01730">statevec_compareStates()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00527">validateMatchingQuregDims()</a>.</p>
 
 </div>
 </div>
@@ -197,13 +197,13 @@ Functions</h2></td></tr>
 <p>Initialises the wavefunction amplitudes according to those specified in a file. </p>
 <p>For debugging purpsoses </p>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01440">1440</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;                                                                             {</div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;    <span class="keywordtype">int</span> success = <a class="code" href="QuEST__internal_8h.html#a05756b45f10135bb2eeb07380f806c20">statevec_initStateFromSingleFile</a>(qureg, filename, env);</div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a6b9523909701f7bd79f2ab7b56a8e6bd">validateFileOpened</a>(success, filename, __func__);</div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01545">1545</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;                                                                             {</div>
+<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;    <span class="keywordtype">int</span> success = <a class="code" href="QuEST__internal_8h.html#a05756b45f10135bb2eeb07380f806c20">statevec_initStateFromSingleFile</a>(qureg, filename, env);</div>
+<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a6b9523909701f7bd79f2ab7b56a8e6bd">validateFileOpened</a>(success, filename, __func__);</div>
+<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l01618">statevec_initStateFromSingleFile()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00535">validateFileOpened()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l01680">statevec_initStateFromSingleFile()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00539">validateFileOpened()</a>.</p>
 
 </div>
 </div>
@@ -249,15 +249,15 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01445">1445</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;                                                                    {</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a72feec2aaa05f98aed7f3c3fee141251">validateStateVecQureg</a>(*qureg, __func__);</div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ac31c45c5a31c523be0eb26abba6cf598">validateTarget</a>(*qureg, qubitId, __func__);</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ad613c75ff252a88e54f911053bd2032c">validateOutcome</a>(outcome, __func__);</div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;    <a class="code" href="QuEST__internal_8h.html#a923906770cac0da9e3459bae58de9e64">statevec_initStateOfSingleQubit</a>(qureg, qubitId, outcome);</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l01550">1550</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;                                                                    {</div>
+<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;    <a class="code" href="QuEST__validation_8c.html#a72feec2aaa05f98aed7f3c3fee141251">validateStateVecQureg</a>(*qureg, __func__);</div>
+<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ac31c45c5a31c523be0eb26abba6cf598">validateTarget</a>(*qureg, qubitId, __func__);</div>
+<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;    <a class="code" href="QuEST__validation_8c.html#ad613c75ff252a88e54f911053bd2032c">validateOutcome</a>(outcome, __func__);</div>
+<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;    <a class="code" href="QuEST__internal_8h.html#a923906770cac0da9e3459bae58de9e64">statevec_initStateOfSingleQubit</a>(qureg, qubitId, outcome);</div>
+<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l01538">statevec_initStateOfSingleQubit()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00515">validateOutcome()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00507">validateStateVecQureg()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00392">validateTarget()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l01600">statevec_initStateOfSingleQubit()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00519">validateOutcome()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00511">validateStateVecQureg()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00396">validateTarget()</a>.</p>
 
 </div>
 </div>
@@ -316,30 +316,30 @@ Functions</h2></td></tr>
 <p>Set elements in the underlying state vector represenation of a density matrix. </p>
 <p>Not exposed in the public API as this requires an understanding of how the state vector is used to represent a density matrix. Currently can only be used to set all amps. </p>
 
-<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l00909">909</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;                                                             {</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> numAmps = qureg.<a class="code" href="structQureg.html#adef4935cac95763c29164cf99b144ed4">numAmpsTotal</a>; </div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;    <a class="code" href="QuEST__internal_8h.html#aa121d55f2ca09c06a96ddcd433c60b0f">statevec_setAmps</a>(qureg, 0, reals, imags, numAmps);</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;    </div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    <a class="code" href="QuEST__qasm_8c.html#a9a385fde708958617bbeb599064b8dcb">qasm_recordComment</a>(qureg, <span class="stringliteral">&quot;Here, some amplitudes in the density matrix were manually edited.&quot;</span>);</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST_8c_source.html#l00995">995</a> of file <a class="el" href="QuEST_8c_source.html">QuEST.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;                                                             {</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> numAmps = qureg.<a class="code" href="structQureg.html#adef4935cac95763c29164cf99b144ed4">numAmpsTotal</a>; </div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;    <a class="code" href="QuEST__internal_8h.html#aa121d55f2ca09c06a96ddcd433c60b0f">statevec_setAmps</a>(qureg, 0, reals, imags, numAmps);</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;    </div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    <a class="code" href="QuEST__qasm_8c.html#a9a385fde708958617bbeb599064b8dcb">qasm_recordComment</a>(qureg, <span class="stringliteral">&quot;Here, some amplitudes in the density matrix were manually edited.&quot;</span>);</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00331">Qureg::numAmpsTotal</a>, <a class="el" href="QuEST__qasm_8c_source.html#l00121">qasm_recordComment()</a>, and <a class="el" href="QuEST__cpu_8c_source.html#l01237">statevec_setAmps()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00334">Qureg::numAmpsTotal</a>, <a class="el" href="QuEST__qasm_8c_source.html#l00121">qasm_recordComment()</a>, and <a class="el" href="QuEST__cpu_8c_source.html#l01237">statevec_setAmps()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="aQuEST__validation_8c_html_ac31c45c5a31c523be0eb26abba6cf598"><div class="ttname"><a href="QuEST__validation_8c.html#ac31c45c5a31c523be0eb26abba6cf598">validateTarget</a></div><div class="ttdeci">void validateTarget(Qureg qureg, int targetQubit, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00392">QuEST_validation.c:392</a></div></div>
-<div class="ttc" id="aQuEST__validation_8c_html_ad613c75ff252a88e54f911053bd2032c"><div class="ttname"><a href="QuEST__validation_8c.html#ad613c75ff252a88e54f911053bd2032c">validateOutcome</a></div><div class="ttdeci">void validateOutcome(int outcome, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00515">QuEST_validation.c:515</a></div></div>
-<div class="ttc" id="aQuEST__validation_8c_html_a72feec2aaa05f98aed7f3c3fee141251"><div class="ttname"><a href="QuEST__validation_8c.html#a72feec2aaa05f98aed7f3c3fee141251">validateStateVecQureg</a></div><div class="ttdeci">void validateStateVecQureg(Qureg qureg, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00507">QuEST_validation.c:507</a></div></div>
-<div class="ttc" id="aQuEST__internal_8h_html_a923906770cac0da9e3459bae58de9e64"><div class="ttname"><a href="QuEST__internal_8h.html#a923906770cac0da9e3459bae58de9e64">statevec_initStateOfSingleQubit</a></div><div class="ttdeci">void statevec_initStateOfSingleQubit(Qureg *qureg, int qubitId, int outcome)</div><div class="ttdoc">Initialise the state vector of probability amplitudes such that one qubit is set to 'outcome' and all...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu_8c_source.html#l01538">QuEST_cpu.c:1538</a></div></div>
-<div class="ttc" id="aQuEST__validation_8c_html_a6b9523909701f7bd79f2ab7b56a8e6bd"><div class="ttname"><a href="QuEST__validation_8c.html#a6b9523909701f7bd79f2ab7b56a8e6bd">validateFileOpened</a></div><div class="ttdeci">void validateFileOpened(int opened, char *fn, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00535">QuEST_validation.c:535</a></div></div>
+<div class="ttc" id="aQuEST__validation_8c_html_ac31c45c5a31c523be0eb26abba6cf598"><div class="ttname"><a href="QuEST__validation_8c.html#ac31c45c5a31c523be0eb26abba6cf598">validateTarget</a></div><div class="ttdeci">void validateTarget(Qureg qureg, int targetQubit, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00396">QuEST_validation.c:396</a></div></div>
+<div class="ttc" id="aQuEST__validation_8c_html_ad613c75ff252a88e54f911053bd2032c"><div class="ttname"><a href="QuEST__validation_8c.html#ad613c75ff252a88e54f911053bd2032c">validateOutcome</a></div><div class="ttdeci">void validateOutcome(int outcome, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00519">QuEST_validation.c:519</a></div></div>
+<div class="ttc" id="aQuEST__validation_8c_html_a72feec2aaa05f98aed7f3c3fee141251"><div class="ttname"><a href="QuEST__validation_8c.html#a72feec2aaa05f98aed7f3c3fee141251">validateStateVecQureg</a></div><div class="ttdeci">void validateStateVecQureg(Qureg qureg, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00511">QuEST_validation.c:511</a></div></div>
+<div class="ttc" id="aQuEST__internal_8h_html_a923906770cac0da9e3459bae58de9e64"><div class="ttname"><a href="QuEST__internal_8h.html#a923906770cac0da9e3459bae58de9e64">statevec_initStateOfSingleQubit</a></div><div class="ttdeci">void statevec_initStateOfSingleQubit(Qureg *qureg, int qubitId, int outcome)</div><div class="ttdoc">Initialise the state vector of probability amplitudes such that one qubit is set to 'outcome' and all...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu_8c_source.html#l01600">QuEST_cpu.c:1600</a></div></div>
+<div class="ttc" id="aQuEST__validation_8c_html_a6b9523909701f7bd79f2ab7b56a8e6bd"><div class="ttname"><a href="QuEST__validation_8c.html#a6b9523909701f7bd79f2ab7b56a8e6bd">validateFileOpened</a></div><div class="ttdeci">void validateFileOpened(int opened, char *fn, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00539">QuEST_validation.c:539</a></div></div>
 <div class="ttc" id="aQuEST__internal_8h_html_aa121d55f2ca09c06a96ddcd433c60b0f"><div class="ttname"><a href="QuEST__internal_8h.html#aa121d55f2ca09c06a96ddcd433c60b0f">statevec_setAmps</a></div><div class="ttdeci">void statevec_setAmps(Qureg qureg, long long int startInd, qreal *reals, qreal *imags, long long int numAmps)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu_8c_source.html#l01237">QuEST_cpu.c:1237</a></div></div>
-<div class="ttc" id="aQuEST__validation_8c_html_a87d22240ccfd81827a2a34b8d569d347"><div class="ttname"><a href="QuEST__validation_8c.html#a87d22240ccfd81827a2a34b8d569d347">validateMatchingQuregDims</a></div><div class="ttdeci">void validateMatchingQuregDims(Qureg qureg1, Qureg qureg2, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00523">QuEST_validation.c:523</a></div></div>
+<div class="ttc" id="aQuEST__validation_8c_html_a87d22240ccfd81827a2a34b8d569d347"><div class="ttname"><a href="QuEST__validation_8c.html#a87d22240ccfd81827a2a34b8d569d347">validateMatchingQuregDims</a></div><div class="ttdeci">void validateMatchingQuregDims(Qureg qureg1, Qureg qureg2, const char *caller)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__validation_8c_source.html#l00527">QuEST_validation.c:527</a></div></div>
 <div class="ttc" id="aQuEST__qasm_8c_html_a9a385fde708958617bbeb599064b8dcb"><div class="ttname"><a href="QuEST__qasm_8c.html#a9a385fde708958617bbeb599064b8dcb">qasm_recordComment</a></div><div class="ttdeci">void qasm_recordComment(Qureg qureg, char *comment,...)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__qasm_8c_source.html#l00121">QuEST_qasm.c:121</a></div></div>
-<div class="ttc" id="aQuEST__internal_8h_html_a05756b45f10135bb2eeb07380f806c20"><div class="ttname"><a href="QuEST__internal_8h.html#a05756b45f10135bb2eeb07380f806c20">statevec_initStateFromSingleFile</a></div><div class="ttdeci">int statevec_initStateFromSingleFile(Qureg *qureg, char filename[200], QuESTEnv env)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu_8c_source.html#l01618">QuEST_cpu.c:1618</a></div></div>
-<div class="ttc" id="astructQureg_html_adef4935cac95763c29164cf99b144ed4"><div class="ttname"><a href="structQureg.html#adef4935cac95763c29164cf99b144ed4">Qureg::numAmpsTotal</a></div><div class="ttdeci">long long int numAmpsTotal</div><div class="ttdoc">Total number of amplitudes, which are possibly distributed among machines.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00331">QuEST.h:331</a></div></div>
-<div class="ttc" id="aQuEST__internal_8h_html_ae6cecbad32a03416138b321cdc1a2c33"><div class="ttname"><a href="QuEST__internal_8h.html#ae6cecbad32a03416138b321cdc1a2c33">statevec_compareStates</a></div><div class="ttdeci">int statevec_compareStates(Qureg mq1, Qureg mq2, qreal precision)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu_8c_source.html#l01668">QuEST_cpu.c:1668</a></div></div>
+<div class="ttc" id="aQuEST__internal_8h_html_a05756b45f10135bb2eeb07380f806c20"><div class="ttname"><a href="QuEST__internal_8h.html#a05756b45f10135bb2eeb07380f806c20">statevec_initStateFromSingleFile</a></div><div class="ttdeci">int statevec_initStateFromSingleFile(Qureg *qureg, char filename[200], QuESTEnv env)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu_8c_source.html#l01680">QuEST_cpu.c:1680</a></div></div>
+<div class="ttc" id="astructQureg_html_adef4935cac95763c29164cf99b144ed4"><div class="ttname"><a href="structQureg.html#adef4935cac95763c29164cf99b144ed4">Qureg::numAmpsTotal</a></div><div class="ttdeci">long long int numAmpsTotal</div><div class="ttdoc">Total number of amplitudes, which are possibly distributed among machines.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00334">QuEST.h:334</a></div></div>
+<div class="ttc" id="aQuEST__internal_8h_html_ae6cecbad32a03416138b321cdc1a2c33"><div class="ttname"><a href="QuEST__internal_8h.html#ae6cecbad32a03416138b321cdc1a2c33">statevec_compareStates</a></div><div class="ttdeci">int statevec_compareStates(Qureg mq1, Qureg mq2, qreal precision)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu_8c_source.html#l01730">QuEST_cpu.c:1730</a></div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 </div>

@@ -162,6 +162,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga267884197cf7f1d428021cb12a57360c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga267884197cf7f1d428021cb12a57360c">calcLog2</a> (long unsigned int res)</td></tr>
 <tr class="memdesc:ga267884197cf7f1d428021cb12a57360c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns log2 of numbers which must be gauranteed to be 2^n.  <a href="group__testutilities.html#ga267884197cf7f1d428021cb12a57360c">More...</a><br /></td></tr>
 <tr class="separator:ga267884197cf7f1d428021cb12a57360c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2d2691472dbd81bc4b893160a560c50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#gad2d2691472dbd81bc4b893160a560c50">deleteFilesWithPrefixSynch</a> (char *prefix)</td></tr>
+<tr class="memdesc:gad2d2691472dbd81bc4b893160a560c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all files with filename starting with prefix.  <a href="group__testutilities.html#gad2d2691472dbd81bc4b893160a560c50">More...</a><br /></td></tr>
+<tr class="separator:gad2d2691472dbd81bc4b893160a560c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3cf199a7de3bbcb3546503f25be9245a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga3cf199a7de3bbcb3546503f25be9245a">getConjugateTranspose</a> (<a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> a)</td></tr>
 <tr class="memdesc:ga3cf199a7de3bbcb3546503f25be9245a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the conjugate transpose of the complex square matrix <code>a</code>.  <a href="group__testutilities.html#ga3cf199a7de3bbcb3546503f25be9245a">More...</a><br /></td></tr>
 <tr class="separator:ga3cf199a7de3bbcb3546503f25be9245a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,6 +234,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf57b4b82c98e98918f74476741f60e37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#gaf57b4b82c98e98918f74476741f60e37">setDiagMatrixOverrides</a> (<a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> &amp;matr, int *numQubitsPerReg, int numRegs, enum <a class="el" href="group__type.html#ga9c91c41aa42ae537995e89ffc616afe1">bitEncoding</a> encoding, long long int *overrideInds, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a> *overridePhases, int numOverrides)</td></tr>
 <tr class="memdesc:gaf57b4b82c98e98918f74476741f60e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the given diagonal matrix such that the diagonal elements which correspond to the coordinates in overrideInds are replaced with exp(i phase), as prescribed by overridePhases.  <a href="group__testutilities.html#gaf57b4b82c98e98918f74476741f60e37">More...</a><br /></td></tr>
 <tr class="separator:gaf57b4b82c98e98918f74476741f60e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga887d1cd8befe710189cab7f535db3910"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga887d1cd8befe710189cab7f535db3910">setRandomDiagPauliHamil</a> (<a class="el" href="structPauliHamil.html">PauliHamil</a> hamil)</td></tr>
+<tr class="memdesc:ga887d1cd8befe710189cab7f535db3910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates <code>hamil</code> with random coefficients and a random amount number of PAULI_I and PAULI_Z operators.  <a href="group__testutilities.html#ga887d1cd8befe710189cab7f535db3910">More...</a><br /></td></tr>
+<tr class="separator:ga887d1cd8befe710189cab7f535db3910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafaecff2462bd0b490edff484911d831e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#gafaecff2462bd0b490edff484911d831e">setRandomPauliSum</a> (<a class="el" href="structPauliHamil.html">PauliHamil</a> hamil)</td></tr>
 <tr class="memdesc:gafaecff2462bd0b490edff484911d831e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates <code>hamil</code> with random coefficients and pauli codes.  <a href="group__testutilities.html#gafaecff2462bd0b490edff484911d831e">More...</a><br /></td></tr>
 <tr class="separator:gafaecff2462bd0b490edff484911d831e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,6 +246,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga75966a02c618790c1de5f0102ab8398f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga75966a02c618790c1de5f0102ab8398f">setSubMatrix</a> (<a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> &amp;dest, <a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> sub, size_t r, size_t c)</td></tr>
 <tr class="memdesc:ga75966a02c618790c1de5f0102ab8398f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies <code>dest</code> by overwriting its submatrix (from top-left corner (<code>r</code>, <code>c</code>) to bottom-right corner (<code>r</code> + <code>dest.size()</code>, <code>c</code> + <code>dest.size()</code>) with the complete elements of sub.  <a href="group__testutilities.html#ga75966a02c618790c1de5f0102ab8398f">More...</a><br /></td></tr>
 <tr class="separator:ga75966a02c618790c1de5f0102ab8398f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c35b1d233b0fb5b42de3bceee26e7e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga7c35b1d233b0fb5b42de3bceee26e7e5">setUniqueFilename</a> (char *outFn, char *prefix)</td></tr>
+<tr class="memdesc:ga7c35b1d233b0fb5b42de3bceee26e7e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies outFn to be a filename of format prefix_NUM.txt where NUM is a new unique integer so far.  <a href="group__testutilities.html#ga7c35b1d233b0fb5b42de3bceee26e7e5">More...</a><br /></td></tr>
+<tr class="separator:ga7c35b1d233b0fb5b42de3bceee26e7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab724b72e679a9be95ff5e01b076928df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utilities_8hpp.html#a8cc85fff30c23faa2cbed6ca0c01ce39">CatchGen</a>&lt; int * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#gab724b72e679a9be95ff5e01b076928df">sublists</a> (<a class="el" href="utilities_8hpp.html#a8cc85fff30c23faa2cbed6ca0c01ce39">CatchGen</a>&lt; int &gt; &amp;&amp;gen, int numSamps, const int *exclude, int numExclude)</td></tr>
 <tr class="memdesc:gab724b72e679a9be95ff5e01b076928df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a Catch2 generator of every length-<code>sublen</code> sublist of the elements generated by <code>gen</code>, which exclude all elements in <code>exclude</code>, in increasing lexographic order.  <a href="group__testutilities.html#gab724b72e679a9be95ff5e01b076928df">More...</a><br /></td></tr>
 <tr class="separator:gab724b72e679a9be95ff5e01b076928df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,6 +306,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gade0e7c37811a69f1c21c88c11943a19f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__testutilities.html#gac9263a65c96a458b810b20baa81c5b94">QVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#gade0e7c37811a69f1c21c88c11943a19f">toQVector</a> (<a class="el" href="structQureg.html">Qureg</a> qureg)</td></tr>
 <tr class="memdesc:gade0e7c37811a69f1c21c88c11943a19f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an equal-size copy of the given state-vector <code>qureg</code>.  <a href="group__testutilities.html#gade0e7c37811a69f1c21c88c11943a19f">More...</a><br /></td></tr>
 <tr class="separator:gade0e7c37811a69f1c21c88c11943a19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8efe977bb581c8bc760d2ce2419161d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga8efe977bb581c8bc760d2ce2419161d7">writeToFileSynch</a> (char *fn, const string &amp;contents)</td></tr>
+<tr class="memdesc:ga8efe977bb581c8bc760d2ce2419161d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes contents to the file with filename fn, which is created and/or overwritten.  <a href="group__testutilities.html#ga8efe977bb581c8bc760d2ce2419161d7">More...</a><br /></td></tr>
+<tr class="separator:ga8efe977bb581c8bc760d2ce2419161d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions used in the unit testing. These are mostly unoptimised, analytic implementations of the complex linear algebra that QuEST ultimately effects on quantum states. These are not part of the QuEST API, and require C++14. </p>
@@ -529,7 +541,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the density matrix <code>state</code> to be the result of applying the multi-target operator matrix <code>op</code>, with the specified control and target qubits (in <code>ctrls</code> and <code>targs</code> respectively). </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_266.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_294.png"/>
 </p>
 <p> even if <code>op</code> is not unitary (which is useful for applying Kraus operators).</p>
 <p><code>op</code> must be a 2^<code>numTargs-by-2^<code>numTargs</code> matrix</code>. Furthermore, every element of <code>targs</code> must not appear in <code>ctrls</code> (and vice-versa), though this is not explicitly checked. Elements of <code>targs</code> and <code>ctrls</code> should be unique.</p>
@@ -600,7 +612,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the density matrix <code>state</code> to be the result of applying the two-target operator matrix <code>op</code>, with the specified control qubits (in <code>ctrls</code>). </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_266.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_294.png"/>
 </p>
 <p> even if <code>op</code> is not unitary (which is useful for applying Kraus operators).</p>
 <p><code>op</code> must be a 4-by-4 matrix. Both <code>targ1</code> and <code>targ2</code> must not appear in <code>ctrls</code>, though this is not explicitly checked. Elements of <code>ctrls</code>, and <code>targ1</code> and <code>targ2</code>, should be unique.</p>
@@ -663,7 +675,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the density matrix <code>state</code> to be the result of applying the single-target operator matrix <code>op</code>, with the specified control qubits (in <code>ctrls</code>). </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_266.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_294.png"/>
 </p>
 <p> even if <code>op</code> is not unitary (which is useful for applying Kraus operators).</p>
 <p><code>op</code> must be a 2-by-2 matrix. <code>target</code> must not appear in <code>ctrls</code>, though this is not explicitly checked.</p>
@@ -720,7 +732,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the density matrix <code>state</code> to be the result of applying the multi-target operator matrix <code>op</code>, with no control qubits. </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_266.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_294.png"/>
 </p>
 <p> even if <code>op</code> is not unitary (which is useful for applying Kraus operators).</p>
 <p><code>op</code> must be a 2^<code>numTargs-by-2^<code>numTargs</code> matrix</code>. Every element in <code>targs</code> should be unique, though this is not explicitly checked.</p>
@@ -782,7 +794,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the density matrix <code>state</code> to be the result of applying the multi-target operator matrix <code>op</code>, with a single control qubit <code>ctrl</code>. </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_266.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_294.png"/>
 </p>
 <p> even if <code>op</code> is not unitary (which is useful for applying Kraus operators).</p>
 <p><code>op</code> must be a 2^<code>numTargs-by-2^<code>numTargs</code> matrix</code>, and <code>ctrl</code> must not appear in <code>targs</code> (though this is not explicitly checked).</p>
@@ -839,7 +851,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the density matrix <code>state</code> to be the result of applying the single-control single-target operator matrix <code>op</code>. </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_266.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_294.png"/>
 </p>
 <p> even if <code>op</code> is not unitary (which is useful for applying Kraus operators).</p>
 <p><code>op</code> must be a 2-by-2 matrix, and <code>ctrl</code> and <code>targ</code> should be different.</p>
@@ -903,7 +915,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the density matrix <code>state</code> to be the result of applying the two-target operator matrix <code>op</code>, with a single control qubit <code>ctrl</code>. </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_266.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_294.png"/>
 </p>
 <p> even if <code>op</code> is not unitary (which is useful for applying Kraus operators).</p>
 <p><code>op</code> must be a 4-by-4 matrix, and <code>ctrl</code>, <code>targ1</code> and <code>targ2</code> must be unique.</p>
@@ -955,7 +967,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the density matrix <code>state</code> to be the result of applying the single-target operator matrix <code>op</code>, with no control qubit. </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_266.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \, \text{op}^\dagger \]" src="form_294.png"/>
 </p>
 <p> even if <code>op</code> is not unitary (which is useful for applying Kraus operators).</p>
 <p><code>op</code> must be a 2-by-2 matrix.</p>
@@ -1024,7 +1036,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the state-vector <code>state</code> to be the result of applying the multi-target operator matrix <code>op</code>, with the specified control and target qubits (in <code>ctrls</code> and <code>targs</code> respectively). </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_267.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_295.png"/>
 </p>
 <p> even if <code>op</code> is not unitary.</p>
 <p><code>op</code> must be a 2^<code>numTargs-by-2^<code>numTargs</code> matrix</code>. Furthermore, every element of <code>targs</code> must not appear in <code>ctrls</code> (and vice-versa), though this is not explicitly checked. Elements of <code>targs</code> and <code>ctrls</code> should be unique.</p>
@@ -1096,7 +1108,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the state-vector <code>state</code> to be the result of applying the two-target operator matrix <code>op</code>, with the specified control qubits (in <code>ctrls</code>). </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_267.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_295.png"/>
 </p>
 <p> even if <code>op</code> is not unitary.</p>
 <p><code>op</code> must be a 4-by-4 matrix. Furthermore, <code>ctrls</code>, <code>targ1</code> and <code>targ2</code> should all be unique.</p>
@@ -1159,7 +1171,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the state-vector <code>state</code> to be the result of applying the single-target operator matrix <code>op</code>, with the specified control qubits (in <code>ctrls</code>). </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_267.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_295.png"/>
 </p>
 <p> even if <code>op</code> is not unitary.</p>
 <p><code>op</code> must be a 2-by-2 matrix. Furthermore, elements in <code>ctrls</code> and <code>target</code> should all be unique.</p>
@@ -1216,7 +1228,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the state-vector <code>state</code> to be the result of applying the multi-target operator matrix <code>op</code>, with no contorl qubits. </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_267.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_295.png"/>
 </p>
 <p> even if <code>op</code> is not unitary.</p>
 <p><code>op</code> must be a 2^<code>numTargs-by-2^<code>numTargs</code> matrix</code>. Furthermore, elements in <code>targs</code> should be unique.</p>
@@ -1278,7 +1290,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the state-vector <code>state</code> to be the result of applying the multi-target operator matrix <code>op</code>, with a single control qubit (<code>ctrl</code>) This updates <code>state</code> under. </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_267.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_295.png"/>
 </p>
 <p> even if <code>op</code> is not unitary.</p>
 <p><code>op</code> must be a 2^<code>numTargs-by-2^<code>numTargs</code> matrix</code>. Furthermore, elements in <code>targs</code> and <code>ctrl</code> should be unique.</p>
@@ -1335,7 +1347,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the state-vector <code>state</code> to be the result of applying the single-target operator matrix <code>op</code>, with a single control qubit (<code>ctrl</code>). </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_267.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_295.png"/>
 </p>
 <p> even if <code>op</code> is not unitary.</p>
 <p><code>op</code> must be a 2-by-2 matrix. Furthermore, <code>ctrl</code> and <code>targ</code> must be different.</p>
@@ -1399,7 +1411,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the state-vector <code>state</code> to be the result of applying the two-target operator matrix <code>op</code>, with a single control qubit (<code>ctrl</code>). </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_267.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_295.png"/>
 </p>
 <p> even if <code>op</code> is not unitary.</p>
 <p><code>op</code> must be a 4-by-4 matrix. Furthermore, <code>ctrl</code>, <code>targ1</code> and <code>targ2</code> should all be unique.</p>
@@ -1451,7 +1463,7 @@ Functions</h2></td></tr>
 
 <p>Modifies the state-vector <code>state</code> to be the result of applying the single-target operator matrix <code>op</code>, with no contorl qubits. </p>
 <p>This updates <code>state</code> under </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_267.png"/>
+<img class="formulaDsp" alt="\[ \text{state} \to \text{op} \, \text{state} \]" src="form_295.png"/>
 </p>
 <p> even if <code>op</code> is not unitary.</p>
 <p><code>op</code> must be a 2-by-2 matrix.</p>
@@ -1646,7 +1658,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <span class="keywordflow">return</span> allAmpsAgree;</div>
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00333">Qureg::chunkId</a>, <a class="el" href="QuEST__cpu_8c_source.html#l00039">copyStateFromGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00322">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00329">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00331">Qureg::numAmpsTotal</a>, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00338">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00336">Qureg::chunkId</a>, <a class="el" href="QuEST__cpu_8c_source.html#l00039">copyStateFromGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00325">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00332">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00334">Qureg::numAmpsTotal</a>, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00341">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
 
 </div>
 </div>
@@ -1770,7 +1782,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <span class="keywordflow">return</span> allAmpsAgree;</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00333">Qureg::chunkId</a>, <a class="el" href="QuEST__cpu_8c_source.html#l00039">copyStateFromGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00322">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00329">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00331">Qureg::numAmpsTotal</a>, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00338">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00336">Qureg::chunkId</a>, <a class="el" href="QuEST__cpu_8c_source.html#l00039">copyStateFromGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00325">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00332">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00334">Qureg::numAmpsTotal</a>, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00341">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
 
 </div>
 </div>
@@ -1876,7 +1888,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <span class="keywordflow">return</span> allAmpsAgree;</div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l00039">copyStateFromGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00322">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00329">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00331">Qureg::numAmpsTotal</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00338">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l00039">copyStateFromGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00325">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00332">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00334">Qureg::numAmpsTotal</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00341">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
 
 </div>
 </div>
@@ -2046,14 +2058,14 @@ Functions</h2></td></tr>
 </pre><p>to produce {0,0,0}, {1,0,0}, {0,1,0}, {1,1,0}, {0,0,1}, {1,0,1}, {0,1,1}, {1,1,1}.</p>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01352">1352</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;                                                           {    </div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSequenceGenerator.html">SequenceGenerator&lt;int&gt;</a>(1, numBits)));</div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01396">1396</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;                                                           {    </div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSequenceGenerator.html">SequenceGenerator&lt;int&gt;</a>(1, numBits)));</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="test__unitaries_8cpp_source.html#l01772">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="test__unitaries_8cpp_source.html#l02050">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -2077,15 +2089,55 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones</dd></dl>
 <p>Returns log2 of numbers which must be gauranteed to be 2^n. </p>
 
-<p class="definition">Definition at line <a class="el" href="QuEST__validation_8c_source.html#l00320">320</a> of file <a class="el" href="QuEST__validation_8c_source.html">QuEST_validation.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                                             {</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> l = 0;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">while</span> (num &gt;&gt;= 1)</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        l++;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">return</span> l;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="QuEST__validation_8c_source.html#l00324">324</a> of file <a class="el" href="QuEST__validation_8c_source.html">QuEST_validation.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                             {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> l = 0;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordflow">while</span> (num &gt;&gt;= 1)</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        l++;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordflow">return</span> l;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l00693">applyReferenceMatrix()</a>, <a class="el" href="utilities_8cpp_source.html#l00574">applyReferenceOp()</a>, <a class="el" href="test__data__structures_8cpp_source.html#l00131">TEST_CASE()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00357">validateNumQubitsInDiagOp()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00341">validateNumQubitsInQureg()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l00693">applyReferenceMatrix()</a>, <a class="el" href="utilities_8cpp_source.html#l00574">applyReferenceOp()</a>, <a class="el" href="test__data__structures_8cpp_source.html#l00131">TEST_CASE()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00723">validateDiagPauliHamilFromFile()</a>, <a class="el" href="QuEST__validation_8c_source.html#l00361">validateNumQubitsInDiagOp()</a>, and <a class="el" href="QuEST__validation_8c_source.html#l00345">validateNumQubitsInQureg()</a>.</p>
+
+</div>
+</div>
+<a id="gad2d2691472dbd81bc4b893160a560c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2d2691472dbd81bc4b893160a560c50">&#9670;&nbsp;</a></span>deleteFilesWithPrefixSynch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deleteFilesWithPrefixSynch </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>prefix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes all files with filename starting with prefix. </p>
+<p>In distributed mode, the master node deletes while the other nodes wait until complete.</p>
+<dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01214">1214</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;                                              {</div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;    </div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;    <span class="comment">// master node deletes all files</span></div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8cpp.html#a718130cc1fc36cde991aff3d4c85c47d">QUEST_ENV</a>.<a class="code" href="structQuESTEnv.html#aa648bb336cf8598467cb62db00b9cee8">rank</a> == 0) {</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;        <span class="keywordtype">char</span> cmd[200];</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;        sprintf(cmd, <span class="stringliteral">&quot;exec rm %s*&quot;</span>, prefix);</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;        system(cmd);</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;    }</div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;    </div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;    <span class="comment">// other nodes wait </span></div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;    <a class="code" href="group__debug.html#ga8d31fe2d1ad4d01e2a1f5f6b8bc15b77">syncQuESTEnv</a>(<a class="code" href="main_8cpp.html#a718130cc1fc36cde991aff3d4c85c47d">QUEST_ENV</a>);</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00363">QuESTEnv::rank</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="test__data__structures_8cpp_source.html#l00255">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -2163,7 +2215,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="test__unitaries_8cpp_source.html#l01698">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="test__unitaries_8cpp_source.html#l01285">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -2206,7 +2258,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00151">getIdentityMatrix()</a>, and <a class="el" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="test__unitaries_8cpp_source.html#l01594">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="test__unitaries_8cpp_source.html#l01122">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -2461,7 +2513,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00143">getZeroMatrix()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l00294">getFullOperatorMatrix()</a>, <a class="el" href="utilities_8cpp_source.html#l00220">getSwapMatrix()</a>, <a class="el" href="test__calculations_8cpp_source.html#l00302">TEST_CASE()</a>, and <a class="el" href="utilities_8cpp_source.html#l01087">toQMatrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l00294">getFullOperatorMatrix()</a>, <a class="el" href="utilities_8cpp_source.html#l00220">getSwapMatrix()</a>, <a class="el" href="test__calculations_8cpp_source.html#l00302">TEST_CASE()</a>, and <a class="el" href="utilities_8cpp_source.html#l01099">toQMatrix()</a>.</p>
 
 </div>
 </div>
@@ -2803,7 +2855,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, and <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l00458">getRandomDensityMatrix()</a>, <a class="el" href="utilities_8cpp_source.html#l00482">getRandomInt()</a>, <a class="el" href="utilities_8cpp_source.html#l00534">getRandomKrausMap()</a>, <a class="el" href="utilities_8cpp_source.html#l00421">getRandomQVector()</a>, <a class="el" href="utilities_8cpp_source.html#l01075">setRandomPauliSum()</a>, and <a class="el" href="test__calculations_8cpp_source.html#l00117">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l00458">getRandomDensityMatrix()</a>, <a class="el" href="utilities_8cpp_source.html#l00482">getRandomInt()</a>, <a class="el" href="utilities_8cpp_source.html#l00534">getRandomKrausMap()</a>, <a class="el" href="utilities_8cpp_source.html#l00421">getRandomQVector()</a>, <a class="el" href="utilities_8cpp_source.html#l01087">setRandomDiagPauliHamil()</a>, <a class="el" href="utilities_8cpp_source.html#l01075">setRandomPauliSum()</a>, and <a class="el" href="test__calculations_8cpp_source.html#l00117">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -3034,18 +3086,18 @@ Functions</h2></td></tr>
 <p>The returned number lies in [-2^(numBits-1), 2^(numBits-1)-1]</p>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01120">1120</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;                                                                    {</div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( decimal &gt;= 0 );</div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( numBits &gt;= 2 );</div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( decimal &lt; (1LL &lt;&lt; numBits) );</div>
-<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;    </div>
-<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> maxMag = 1LL &lt;&lt; (numBits-1);</div>
-<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;    <span class="keywordflow">if</span> (decimal &gt;= maxMag)</div>
-<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;        <span class="keywordflow">return</span> -maxMag + (decimal - maxMag);</div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;        <span class="keywordflow">return</span> decimal;</div>
-<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01132">1132</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;                                                                    {</div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( decimal &gt;= 0 );</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( numBits &gt;= 2 );</div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( decimal &lt; (1LL &lt;&lt; numBits) );</div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;    </div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> maxMag = 1LL &lt;&lt; (numBits-1);</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;    <span class="keywordflow">if</span> (decimal &gt;= maxMag)</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;        <span class="keywordflow">return</span> -maxMag + (decimal - maxMag);</div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;        <span class="keywordflow">return</span> decimal;</div>
+<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>.</p>
 
@@ -3083,21 +3135,21 @@ Functions</h2></td></tr>
 <p>The returned number lies in [0, 2^(numBits)-1]</p>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01132">1132</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;                                                               {</div>
-<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( numBits &gt;= 2 );</div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( twosComp &lt; (1LL &lt;&lt; (numBits-1)) );</div>
-<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( twosComp &gt;= - (1LL &lt;&lt; (numBits-1)) );</div>
-<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;    </div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;    <span class="keywordflow">if</span> (twosComp &gt;= 0)</div>
-<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;        <span class="keywordflow">return</span> twosComp;</div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;        <span class="keywordflow">return</span> (1&lt;&lt;numBits) + twosComp;</div>
-<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01144">1144</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;                                                               {</div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( numBits &gt;= 2 );</div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( twosComp &lt; (1LL &lt;&lt; (numBits-1)) );</div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( twosComp &gt;= - (1LL &lt;&lt; (numBits-1)) );</div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;    </div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;    <span class="keywordflow">if</span> (twosComp &gt;= 0)</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;        <span class="keywordflow">return</span> twosComp;</div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;        <span class="keywordflow">return</span> (1&lt;&lt;numBits) + twosComp;</div>
+<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01143">setDiagMatrixOverrides()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01155">setDiagMatrixOverrides()</a>.</p>
 
 </div>
 </div>
@@ -3157,12 +3209,12 @@ Functions</h2></td></tr>
 </pre><p>to produce {I,I}, {X,I}, {Y,I}, {Z,I}, {I,X}, {X,X}, {Y,X}, {Z,X}, {I,Y}, {X,Y}, {Y,Y}, {Z,Y}, {I,Z}, {X,Z}, {Y,Z}, {Z,Z}/</p>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01362">1362</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;                                                                       {    </div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;pauliOpType*&gt;(</div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;pauliOpType*&gt;&gt;(</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSequenceGenerator.html">SequenceGenerator&lt;pauliOpType&gt;</a>(<a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a085c85cff6ba79c52d8b1e61c42ddddf">PAULI_Z</a>, numPaulis)));</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01406">1406</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;                                                                       {    </div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;pauliOpType*&gt;(</div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;pauliOpType*&gt;&gt;(</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSequenceGenerator.html">SequenceGenerator&lt;pauliOpType&gt;</a>(<a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a085c85cff6ba79c52d8b1e61c42ddddf">PAULI_Z</a>, numPaulis)));</div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="QuEST_8h_source.html#l00096">PAULI_Z</a>.</p>
 
@@ -3202,12 +3254,12 @@ int* seq = GENERATE_COPY( sequences(base, numDigits) );
 </pre><p>to produce {0,0}, {1,0}, {2,0}, {0,1}, {1,1}, {2,1}, {0,2}, {1,2}, {2,2}.</p>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01357">1357</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;                                                                         {    </div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSequenceGenerator.html">SequenceGenerator&lt;int&gt;</a>(base-1, numDigits)));</div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01401">1401</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;                                                                         {    </div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSequenceGenerator.html">SequenceGenerator&lt;int&gt;</a>(base-1, numDigits)));</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3268,53 +3320,91 @@ int* seq = GENERATE_COPY( sequences(base, numDigits) );
 </div><div class="memdoc">
 
 <p>Modifies the given diagonal matrix such that the diagonal elements which correspond to the coordinates in overrideInds are replaced with exp(i phase), as prescribed by overridePhases. </p>
-<p>This function assumes that the given registers are contiguous, are in order of increasing significance, and that the matrix is proportionately sized and structured to act on the space of all registers combined. Overrides can be repeated, and only the first encountered for a given index will be effected (much like <a class="el" href="group__operator.html#ga8dca543fb4d1ee1cd8b4c5d6028b3075" title="Induces a phase change upon each amplitude of state-vector qureg, determined by a multi-variable expo...">applyMultiVarPhaseFuncOverrides()</a>).</p>
+<p>This function assumes that the given registers are contiguous, are in order of increasing significance, and that the matrix is proportionately sized and structured to act on the space of all registers combined. Overrides can be repeated, and only the first encountered for a given index will be effected (much like <a class="el" href="group__operator.html#ga8dca543fb4d1ee1cd8b4c5d6028b3075" title="Induces a phase change upon each amplitude of qureg, determined by a multi-variable exponential polyn...">applyMultiVarPhaseFuncOverrides()</a>).</p>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01143">1143</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;                                                                                                                                                                               {</div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( (encoding == <a class="code" href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a7165f9a47792f47c718ca128556fb3ae">UNSIGNED</a> || encoding == <a class="code" href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a9aa2a35d92976c7de970506c4d19a96c">TWOS_COMPLEMENT</a>) );</div>
-<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( numRegs &gt; 0 );</div>
-<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( numOverrides &gt;= 0 );</div>
-<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;    </div>
-<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;    <span class="keywordtype">int</span> totalQb = 0;</div>
-<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r=0; r&lt;numRegs; r++) {</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;        <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( numQubitsPerReg[r] &gt; 0 );</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;        totalQb += numQubitsPerReg[r];</div>
-<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;    }</div>
-<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( matr.size() == (1 &lt;&lt; totalQb) );</div>
-<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;    </div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;    <span class="comment">// record whether a diagonal index has been already overriden</span></div>
-<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;    <span class="keywordtype">int</span> hasBeenOverriden[1 &lt;&lt; totalQb];</div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;(1 &lt;&lt; totalQb); i++)</div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;        hasBeenOverriden[i] = 0;</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01155">1155</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;                                                                                                                                                                               {</div>
+<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( (encoding == <a class="code" href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a7165f9a47792f47c718ca128556fb3ae">UNSIGNED</a> || encoding == <a class="code" href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a9aa2a35d92976c7de970506c4d19a96c">TWOS_COMPLEMENT</a>) );</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( numRegs &gt; 0 );</div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( numOverrides &gt;= 0 );</div>
 <div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;    </div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;    <span class="keywordtype">int</span> flatInd = 0;</div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> v=0; v&lt;numOverrides; v++) {</div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;        <span class="keywordtype">int</span> matrInd = 0;</div>
-<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;        <span class="keywordtype">int</span> numQubitsLeft = 0;</div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;        </div>
-<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r=0; r&lt;numRegs; r++) {</div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;            </div>
-<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;            <span class="keywordflow">if</span> (encoding == <a class="code" href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a7165f9a47792f47c718ca128556fb3ae">UNSIGNED</a>)</div>
-<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;                matrInd += overrideInds[flatInd] * (1 &lt;&lt; numQubitsLeft);</div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (encoding == <a class="code" href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a9aa2a35d92976c7de970506c4d19a96c">TWOS_COMPLEMENT</a>)</div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;                matrInd += <a class="code" href="group__testutilities.html#gaf084dee612d6930a9515c43d716af453">getUnsigned</a>(overrideInds[flatInd], numQubitsPerReg[r]) * (1 &lt;&lt; numQubitsLeft);</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;                </div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;            numQubitsLeft += numQubitsPerReg[r];</div>
-<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;            flatInd += 1;</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;        }</div>
-<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;        </div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;        <span class="keywordflow">if</span> (!hasBeenOverriden[matrInd]) {</div>
-<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;            matr[matrInd][matrInd] = <a class="code" href="utilities_8cpp.html#a9dc43d4a0827b56cd004270a9c5b2604">expI</a>(overridePhases[v]);</div>
-<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;            hasBeenOverriden[matrInd] = 1;</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;        }</div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;    }</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;}</div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;    <span class="keywordtype">int</span> totalQb = 0;</div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r=0; r&lt;numRegs; r++) {</div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;        <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( numQubitsPerReg[r] &gt; 0 );</div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;        totalQb += numQubitsPerReg[r];</div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;    }</div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;    <a class="code" href="utilities_8cpp.html#aba8ab64f4403dbfbd5a38902939535ff">DEMAND</a>( matr.size() == (1 &lt;&lt; totalQb) );</div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;    </div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;    <span class="comment">// record whether a diagonal index has been already overriden</span></div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;    <span class="keywordtype">int</span> hasBeenOverriden[1 &lt;&lt; totalQb];</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;(1 &lt;&lt; totalQb); i++)</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;        hasBeenOverriden[i] = 0;</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;    </div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;    <span class="keywordtype">int</span> flatInd = 0;</div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> v=0; v&lt;numOverrides; v++) {</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;        <span class="keywordtype">int</span> matrInd = 0;</div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;        <span class="keywordtype">int</span> numQubitsLeft = 0;</div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;        </div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r=0; r&lt;numRegs; r++) {</div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;            </div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;            <span class="keywordflow">if</span> (encoding == <a class="code" href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a7165f9a47792f47c718ca128556fb3ae">UNSIGNED</a>)</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;                matrInd += overrideInds[flatInd] * (1 &lt;&lt; numQubitsLeft);</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (encoding == <a class="code" href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a9aa2a35d92976c7de970506c4d19a96c">TWOS_COMPLEMENT</a>)</div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;                matrInd += <a class="code" href="group__testutilities.html#gaf084dee612d6930a9515c43d716af453">getUnsigned</a>(overrideInds[flatInd], numQubitsPerReg[r]) * (1 &lt;&lt; numQubitsLeft);</div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;                </div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;            numQubitsLeft += numQubitsPerReg[r];</div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;            flatInd += 1;</div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;        }</div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;        </div>
+<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;        <span class="keywordflow">if</span> (!hasBeenOverriden[matrInd]) {</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;            matr[matrInd][matrInd] = <a class="code" href="utilities_8cpp.html#a9dc43d4a0827b56cd004270a9c5b2604">expI</a>(overridePhases[v]);</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;            hasBeenOverriden[matrInd] = 1;</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;        }</div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;    }</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="utilities_8cpp_source.html#l00407">expI()</a>, <a class="el" href="utilities_8cpp_source.html#l01132">getUnsigned()</a>, <a class="el" href="QuEST_8h_source.html#l00266">TWOS_COMPLEMENT</a>, and <a class="el" href="QuEST_8h_source.html#l00266">UNSIGNED</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="utilities_8cpp_source.html#l00407">expI()</a>, <a class="el" href="utilities_8cpp_source.html#l01144">getUnsigned()</a>, <a class="el" href="QuEST_8h_source.html#l00269">TWOS_COMPLEMENT</a>, and <a class="el" href="QuEST_8h_source.html#l00269">UNSIGNED</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="test__operators_8cpp_source.html#l00673">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="test__operators_8cpp_source.html#l00672">TEST_CASE()</a>.</p>
+
+</div>
+</div>
+<a id="ga887d1cd8befe710189cab7f535db3910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga887d1cd8befe710189cab7f535db3910">&#9670;&nbsp;</a></span>setRandomDiagPauliHamil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRandomDiagPauliHamil </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPauliHamil.html">PauliHamil</a>&#160;</td>
+          <td class="paramname"><em>hamil</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Populates <code>hamil</code> with random coefficients and a random amount number of PAULI_I and PAULI_Z operators. </p>
+<dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01087">1087</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;                                               {</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;    <span class="keywordtype">int</span> i=0;</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n=0; n&lt;hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>; n++) {</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;        hamil.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a>[n] = <a class="code" href="group__testutilities.html#gacd5aadbe10ecdedaa625f85171c0a3cd">getRandomReal</a>(-5, 5);</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> q=0; q&lt;hamil.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>; q++)</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="group__testutilities.html#gacd5aadbe10ecdedaa625f85171c0a3cd">getRandomReal</a>(-1,1) &gt; 0)</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;                hamil.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>[i++] = <a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a085c85cff6ba79c52d8b1e61c42ddddf">PAULI_Z</a>;</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;                hamil.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>[i++] = <a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a63800f45b01ccc2608f754aee850bf4a">PAULI_I</a>;</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;    }</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00411">getRandomReal()</a>, <a class="el" href="QuEST_8h_source.html#l00287">PauliHamil::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00285">PauliHamil::numSumTerms</a>, <a class="el" href="QuEST_8h_source.html#l00096">PAULI_I</a>, <a class="el" href="QuEST_8h_source.html#l00096">PAULI_Z</a>, <a class="el" href="QuEST_8h_source.html#l00281">PauliHamil::pauliCodes</a>, and <a class="el" href="QuEST_8h_source.html#l00283">PauliHamil::termCoeffs</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="test__data__structures_8cpp_source.html#l00255">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -3342,7 +3432,7 @@ int* seq = GENERATE_COPY( sequences(base, numDigits) );
 <div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    <a class="code" href="group__testutilities.html#ga11c465ce1a5c238946a9e09d61c94c58">setRandomPauliSum</a>(hamil.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a>, hamil.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>, hamil.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>, hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>);</div>
 <div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00284">PauliHamil::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00282">PauliHamil::numSumTerms</a>, <a class="el" href="QuEST_8h_source.html#l00278">PauliHamil::pauliCodes</a>, <a class="el" href="utilities_8cpp_source.html#l01075">setRandomPauliSum()</a>, and <a class="el" href="QuEST_8h_source.html#l00280">PauliHamil::termCoeffs</a>.</p>
+<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00287">PauliHamil::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00285">PauliHamil::numSumTerms</a>, <a class="el" href="QuEST_8h_source.html#l00281">PauliHamil::pauliCodes</a>, <a class="el" href="utilities_8cpp_source.html#l01075">setRandomPauliSum()</a>, and <a class="el" href="QuEST_8h_source.html#l00283">PauliHamil::termCoeffs</a>.</p>
 
 </div>
 </div>
@@ -3457,6 +3547,47 @@ int* seq = GENERATE_COPY( sequences(base, numDigits) );
 <p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l00294">getFullOperatorMatrix()</a>, and <a class="el" href="utilities_8cpp_source.html#l00220">getSwapMatrix()</a>.</p>
+
+</div>
+</div>
+<a id="ga7c35b1d233b0fb5b42de3bceee26e7e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7c35b1d233b0fb5b42de3bceee26e7e5">&#9670;&nbsp;</a></span>setUniqueFilename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setUniqueFilename </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>outFn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modifies outFn to be a filename of format prefix_NUM.txt where NUM is a new unique integer so far. </p>
+<p>This is useful for getting unique filenames for independent test cases of functions requiring reading/writing to file, to avoid IO locks (especially common in distributed mode).</p>
+<dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01197">1197</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;                                                  {</div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;    sprintf(outFn, <span class="stringliteral">&quot;%s_%d.txt&quot;</span>, prefix, <a class="code" href="utilities_8cpp.html#a3aeb6139139efae30679a5009b0a20c7">fn_unique_suffix_id</a>++);</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l01195">fn_unique_suffix_id</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="test__data__structures_8cpp_source.html#l00255">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -3629,12 +3760,12 @@ int* sublist = GENERATE_COPY( sublists(list, 4, sublen) );
 </pre><p>to generate {1,2}, {1,3}, {1,4}, {2,1}, {2,3}, {2,4}, {3,1}, {3,2}, {3, 4}, {4,1}, {4,2}, {4, 3}.</p>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01283">1283</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;  {    </div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
-<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(list, len, sublen)));</div>
-<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01327">1327</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;  {    </div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(list, len, sublen)));</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="test__calculations_8cpp_source.html#l00302">TEST_CASE()</a>.</p>
 
@@ -3821,7 +3952,7 @@ int* sublist = GENERATE_COPY( sublists(list, 4, sublen) );
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00143">getZeroMatrix()</a>, and <a class="el" href="utilities_8cpp_source.html#l00885">macro_copyComplexMatrix</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="test__calculations_8cpp_source.html#l00117">TEST_CASE()</a>, and <a class="el" href="utilities_8cpp_source.html#l01116">toQMatrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="test__calculations_8cpp_source.html#l00117">TEST_CASE()</a>, and <a class="el" href="utilities_8cpp_source.html#l01128">toQMatrix()</a>.</p>
 
 </div>
 </div>
@@ -3915,7 +4046,7 @@ int* sublist = GENERATE_COPY( sublists(list, 4, sublen) );
 <div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;    <span class="keywordflow">return</span> mat;</div>
 <div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00143">getZeroMatrix()</a>, <a class="el" href="QuEST_8h_source.html#l00297">DiagonalOp::numQubits</a>, and <a class="el" href="utilities_8cpp_source.html#l00959">toQVector()</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00143">getZeroMatrix()</a>, <a class="el" href="QuEST_8h_source.html#l00300">DiagonalOp::numQubits</a>, and <a class="el" href="utilities_8cpp_source.html#l00959">toQVector()</a>.</p>
 
 </div>
 </div>
@@ -3938,12 +4069,12 @@ int* sublist = GENERATE_COPY( sublists(list, 4, sublen) );
 <p>Returns a 2^<code>N-by-2^<code>N</code> Hermitian</code> matrix form of the <a class="el" href="structPauliHamil.html" title="A Pauli Hamiltonian, expressed as a real-weighted sum of pauli products, and which can hence represen...">PauliHamil</a>. </p>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01116">1116</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;                                    {</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__testutilities.html#ga253946523907014c4f198d2bb38d4913">toQMatrix</a>(hamil.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a>, hamil.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>, hamil.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>, hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>);</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01128">1128</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;                                    {</div>
+<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__testutilities.html#ga253946523907014c4f198d2bb38d4913">toQMatrix</a>(hamil.<a class="code" href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">termCoeffs</a>, hamil.<a class="code" href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">pauliCodes</a>, hamil.<a class="code" href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">numQubits</a>, hamil.<a class="code" href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">numSumTerms</a>);</div>
+<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00284">PauliHamil::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00282">PauliHamil::numSumTerms</a>, <a class="el" href="QuEST_8h_source.html#l00278">PauliHamil::pauliCodes</a>, <a class="el" href="QuEST_8h_source.html#l00280">PauliHamil::termCoeffs</a>, and <a class="el" href="utilities_8cpp_source.html#l00890">toQMatrix()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00287">PauliHamil::numQubits</a>, <a class="el" href="QuEST_8h_source.html#l00285">PauliHamil::numSumTerms</a>, <a class="el" href="QuEST_8h_source.html#l00281">PauliHamil::pauliCodes</a>, <a class="el" href="QuEST_8h_source.html#l00283">PauliHamil::termCoeffs</a>, and <a class="el" href="utilities_8cpp_source.html#l00890">toQMatrix()</a>.</p>
 
 </div>
 </div>
@@ -3988,38 +4119,38 @@ int* sublist = GENERATE_COPY( sublists(list, 4, sublen) );
 <p>Returns a 2^<code>N-by-2^<code>N</code> Hermitian</code> matrix form of the specified weighted sum of Pauli products. </p>
 <dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01087">1087</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;                                                                                   {</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;    </div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;    <span class="comment">// produce a numTargs-big matrix &#39;pauliSum&#39; by pauli-matrix tensoring and summing</span></div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;    <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> iMatr{{1,0},{0,1}};</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;    <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> xMatr{{0,1},{1,0}};</div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;    <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> yMatr{{0,-<a class="code" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>(0,1)},{<a class="code" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>(0,1),0}};</div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;    <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> zMatr{{1,0},{0,-1}};</div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;    <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> pauliSum = <a class="code" href="group__testutilities.html#ga6ccbb15b0f234e926be96a153181b63a">getZeroMatrix</a>(1&lt;&lt;<a class="code" href="utilities_8hpp.html#a2f52338126bb8cdf7fcf68eaf01c546a">NUM_QUBITS</a>);</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;    </div>
-<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> t=0; t&lt;numTerms; t++) {</div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;        <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> pauliProd = <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a>{{1}};</div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;        </div>
-<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> q=0; q&lt;numQubits; q++) {</div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;            <span class="keywordtype">int</span> i = q + t*numQubits;</div>
-<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;            </div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;            <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> fac;</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;            <a class="code" href="group__type.html#ga1c703cf89629e4e9c7023cd402d67028">pauliOpType</a> code = paulis[i];</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;            <span class="keywordflow">if</span> (code == <a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a63800f45b01ccc2608f754aee850bf4a">PAULI_I</a>) fac = iMatr;</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;            <span class="keywordflow">if</span> (code == <a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a7abac7bb5b71e17382014c443244ad5c">PAULI_X</a>) fac = xMatr;</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;            <span class="keywordflow">if</span> (code == <a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a2c64a9aaee27f6bcfef894d159e759bd">PAULI_Y</a>) fac = yMatr;</div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;            <span class="keywordflow">if</span> (code == <a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a085c85cff6ba79c52d8b1e61c42ddddf">PAULI_Z</a>) fac = zMatr;</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;            pauliProd = <a class="code" href="group__testutilities.html#ga50616e813b0d0aa4f8220785d780cdff">getKroneckerProduct</a>(fac, pauliProd);</div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;        }</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;        pauliSum += coeffs[t] * pauliProd;</div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;    }</div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;    </div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;    <span class="comment">// a now 2^numQubits by 2^numQubits Hermitian matrix</span></div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;    <span class="keywordflow">return</span> pauliSum;</div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01099">1099</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;                                                                                   {</div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;    </div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;    <span class="comment">// produce a numTargs-big matrix &#39;pauliSum&#39; by pauli-matrix tensoring and summing</span></div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;    <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> iMatr{{1,0},{0,1}};</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;    <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> xMatr{{0,1},{1,0}};</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;    <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> yMatr{{0,-<a class="code" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>(0,1)},{<a class="code" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>(0,1),0}};</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> zMatr{{1,0},{0,-1}};</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;    <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> pauliSum = <a class="code" href="group__testutilities.html#ga6ccbb15b0f234e926be96a153181b63a">getZeroMatrix</a>(1&lt;&lt;numQubits);</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;    </div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> t=0; t&lt;numTerms; t++) {</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;        <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> pauliProd = <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a>{{1}};</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;        </div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> q=0; q&lt;numQubits; q++) {</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;            <span class="keywordtype">int</span> i = q + t*numQubits;</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;            </div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;            <a class="code" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> fac;</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;            <a class="code" href="group__type.html#ga1c703cf89629e4e9c7023cd402d67028">pauliOpType</a> code = paulis[i];</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;            <span class="keywordflow">if</span> (code == <a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a63800f45b01ccc2608f754aee850bf4a">PAULI_I</a>) fac = iMatr;</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;            <span class="keywordflow">if</span> (code == <a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a7abac7bb5b71e17382014c443244ad5c">PAULI_X</a>) fac = xMatr;</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;            <span class="keywordflow">if</span> (code == <a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a2c64a9aaee27f6bcfef894d159e759bd">PAULI_Y</a>) fac = yMatr;</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;            <span class="keywordflow">if</span> (code == <a class="code" href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a085c85cff6ba79c52d8b1e61c42ddddf">PAULI_Z</a>) fac = zMatr;</div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;            pauliProd = <a class="code" href="group__testutilities.html#ga50616e813b0d0aa4f8220785d780cdff">getKroneckerProduct</a>(fac, pauliProd);</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;        }</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;        pauliSum += coeffs[t] * pauliProd;</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    }</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;    </div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;    <span class="comment">// a now 2^numQubits by 2^numQubits Hermitian matrix</span></div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;    <span class="keywordflow">return</span> pauliSum;</div>
+<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00169">getKroneckerProduct()</a>, <a class="el" href="utilities_8cpp_source.html#l00143">getZeroMatrix()</a>, <a class="el" href="utilities_8hpp_source.html#l00036">NUM_QUBITS</a>, <a class="el" href="QuEST_8h_source.html#l00096">PAULI_I</a>, <a class="el" href="QuEST_8h_source.html#l00096">PAULI_X</a>, <a class="el" href="QuEST_8h_source.html#l00096">PAULI_Y</a>, <a class="el" href="QuEST_8h_source.html#l00096">PAULI_Z</a>, and <a class="el" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00169">getKroneckerProduct()</a>, <a class="el" href="utilities_8cpp_source.html#l00143">getZeroMatrix()</a>, <a class="el" href="QuEST_8h_source.html#l00096">PAULI_I</a>, <a class="el" href="QuEST_8h_source.html#l00096">PAULI_X</a>, <a class="el" href="QuEST_8h_source.html#l00096">PAULI_Y</a>, <a class="el" href="QuEST_8h_source.html#l00096">PAULI_Z</a>, and <a class="el" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>.</p>
 
 </div>
 </div>
@@ -4086,7 +4217,7 @@ int* sublist = GENERATE_COPY( sublists(list, 4, sublen) );
 <div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;    <span class="keywordflow">return</span> matr;</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l00039">copyStateFromGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="utilities_8cpp_source.html#l00143">getZeroMatrix()</a>, <a class="el" href="QuEST_8h_source.html#l00322">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00329">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00331">Qureg::numAmpsTotal</a>, <a class="el" href="QuEST_8h_source.html#l00324">Qureg::numQubitsRepresented</a>, <a class="el" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00338">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l00039">copyStateFromGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="utilities_8cpp_source.html#l00143">getZeroMatrix()</a>, <a class="el" href="QuEST_8h_source.html#l00325">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00332">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00334">Qureg::numAmpsTotal</a>, <a class="el" href="QuEST_8h_source.html#l00327">Qureg::numQubitsRepresented</a>, <a class="el" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00341">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
 
 </div>
 </div>
@@ -4136,7 +4267,7 @@ int* sublist = GENERATE_COPY( sublists(list, 4, sublen) );
 <div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;    <a class="code" href="group__debug.html#ga11448560006dd165128e404b54ebb2f7">copyStateToGPU</a>(qureg);</div>
 <div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00333">Qureg::chunkId</a>, <a class="el" href="QuEST__cpu_8c_source.html#l00036">copyStateToGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00322">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00329">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00324">Qureg::numQubitsRepresented</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00338">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00336">Qureg::chunkId</a>, <a class="el" href="QuEST__cpu_8c_source.html#l00036">copyStateToGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00325">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00332">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00327">Qureg::numQubitsRepresented</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00341">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
 
 </div>
 </div>
@@ -4185,7 +4316,7 @@ int* sublist = GENERATE_COPY( sublists(list, 4, sublen) );
 <div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;    <a class="code" href="group__debug.html#ga11448560006dd165128e404b54ebb2f7">copyStateToGPU</a>(qureg);</div>
 <div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00333">Qureg::chunkId</a>, <a class="el" href="QuEST__cpu_8c_source.html#l00036">copyStateToGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00322">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00329">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00331">Qureg::numAmpsTotal</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00338">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST_8h_source.html#l00336">Qureg::chunkId</a>, <a class="el" href="QuEST__cpu_8c_source.html#l00036">copyStateToGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00325">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00332">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00334">Qureg::numAmpsTotal</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00341">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="test__calculations_8cpp_source.html#l00021">TEST_CASE()</a>.</p>
 
@@ -4250,7 +4381,7 @@ int* sublist = GENERATE_COPY( sublists(list, 4, sublen) );
 <div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;    <span class="keywordflow">return</span> vec;</div>
 <div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00307">DiagonalOp::imag</a>, <a class="el" href="QuEST_8h_source.html#l00299">DiagonalOp::numElemsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00297">DiagonalOp::numQubits</a>, <a class="el" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a>, and <a class="el" href="QuEST_8h_source.html#l00305">DiagonalOp::real</a>.</p>
+<p class="reference">References <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00310">DiagonalOp::imag</a>, <a class="el" href="QuEST_8h_source.html#l00302">DiagonalOp::numElemsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00300">DiagonalOp::numQubits</a>, <a class="el" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a>, and <a class="el" href="QuEST_8h_source.html#l00308">DiagonalOp::real</a>.</p>
 
 </div>
 </div>
@@ -4317,70 +4448,121 @@ int* sublist = GENERATE_COPY( sublists(list, 4, sublen) );
 <div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;    <span class="keywordflow">return</span> vec;</div>
 <div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l00039">copyStateFromGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00322">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00329">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00331">Qureg::numAmpsTotal</a>, <a class="el" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00338">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
+<p class="reference">References <a class="el" href="QuEST__cpu_8c_source.html#l00039">copyStateFromGPU()</a>, <a class="el" href="utilities_8cpp_source.html#l00024">DEMAND</a>, <a class="el" href="QuEST_8h_source.html#l00325">Qureg::isDensityMatrix</a>, <a class="el" href="QuEST_8h_source.html#l00332">Qureg::numAmpsPerChunk</a>, <a class="el" href="QuEST_8h_source.html#l00334">Qureg::numAmpsTotal</a>, <a class="el" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a>, <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00341">Qureg::stateVec</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="test__calculations_8cpp_source.html#l00117">TEST_CASE()</a>, and <a class="el" href="utilities_8cpp_source.html#l01039">toQMatrix()</a>.</p>
+
+</div>
+</div>
+<a id="ga8efe977bb581c8bc760d2ce2419161d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8efe977bb581c8bc760d2ce2419161d7">&#9670;&nbsp;</a></span>writeToFileSynch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeToFileSynch </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>contents</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes contents to the file with filename fn, which is created and/or overwritten. </p>
+<p>In distributed mode, the master node writes while the other nodes wait until complete.</p>
+<dl class="section author"><dt>Author</dt><dd>Tyson Jones </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01201">1201</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;                                                        {</div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;    </div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;    <span class="comment">// master node writes</span></div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8cpp.html#a718130cc1fc36cde991aff3d4c85c47d">QUEST_ENV</a>.<a class="code" href="structQuESTEnv.html#aa648bb336cf8598467cb62db00b9cee8">rank</a> == 0) {</div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;        FILE* file = fopen(fn, <span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;        fputs(contents.c_str(), file);</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;        fclose(file);</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;    }</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;    </div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;    <span class="comment">// other nodes wait</span></div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;    <a class="code" href="group__debug.html#ga8d31fe2d1ad4d01e2a1f5f6b8bc15b77">syncQuESTEnv</a>(<a class="code" href="main_8cpp.html#a718130cc1fc36cde991aff3d4c85c47d">QUEST_ENV</a>);</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="main_8cpp_source.html#l00020">QUEST_ENV</a>, <a class="el" href="QuEST_8h_source.html#l00363">QuESTEnv::rank</a>, and <a class="el" href="QuEST__cpu__distributed_8c_source.html#l00162">syncQuESTEnv()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="test__data__structures_8cpp_source.html#l00255">TEST_CASE()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <div class="ttc" id="agroup__type_html_ga1c703cf89629e4e9c7023cd402d67028"><div class="ttname"><a href="group__type.html#ga1c703cf89629e4e9c7023cd402d67028">pauliOpType</a></div><div class="ttdeci">pauliOpType</div><div class="ttdoc">Codes for specifying Pauli operators.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00096">QuEST.h:96</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_ga20f041452b43026d876fde17a5999265"><div class="ttname"><a href="group__testutilities.html#ga20f041452b43026d876fde17a5999265">getFullOperatorMatrix</a></div><div class="ttdeci">QMatrix getFullOperatorMatrix(int *ctrls, int numCtrls, int *targs, int numTargs, QMatrix op, int numQubits)</div><div class="ttdoc">Takes a 2^numTargs-by-2^numTargs matrix op and a returns a 2^numQubits-by-2^numQubits matrix where op...</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00294">utilities.cpp:294</a></div></div>
-<div class="ttc" id="agroup__testutilities_html_gaf084dee612d6930a9515c43d716af453"><div class="ttname"><a href="group__testutilities.html#gaf084dee612d6930a9515c43d716af453">getUnsigned</a></div><div class="ttdeci">long long int getUnsigned(long long int twosComp, int numBits)</div><div class="ttdoc">Return the unsigned value of a number, made of #numBits bits, which under two's complement,...</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01132">utilities.cpp:1132</a></div></div>
+<div class="ttc" id="agroup__testutilities_html_gaf084dee612d6930a9515c43d716af453"><div class="ttname"><a href="group__testutilities.html#gaf084dee612d6930a9515c43d716af453">getUnsigned</a></div><div class="ttdeci">long long int getUnsigned(long long int twosComp, int numBits)</div><div class="ttdoc">Return the unsigned value of a number, made of #numBits bits, which under two's complement,...</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01144">utilities.cpp:1144</a></div></div>
 <div class="ttc" id="agroup__debug_html_ga924ef2dbda6b733b4041270077c76ece"><div class="ttname"><a href="group__debug.html#ga924ef2dbda6b733b4041270077c76ece">copyStateFromGPU</a></div><div class="ttdeci">void copyStateFromGPU(Qureg qureg)</div><div class="ttdoc">In GPU mode, this copies the state-vector (or density matrix) from GPU memory (qureg....</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu_8c_source.html#l00039">QuEST_cpu.c:39</a></div></div>
 <div class="ttc" id="amain_8cpp_html_a718130cc1fc36cde991aff3d4c85c47d"><div class="ttname"><a href="main_8cpp.html#a718130cc1fc36cde991aff3d4c85c47d">QUEST_ENV</a></div><div class="ttdeci">QuESTEnv QUEST_ENV</div><div class="ttdoc">The global QuESTEnv instance, to be created and destroyed once in this main(), so that the MPI enviro...</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00020">main.cpp:20</a></div></div>
 <div class="ttc" id="agroup__debug_html_ga8d31fe2d1ad4d01e2a1f5f6b8bc15b77"><div class="ttname"><a href="group__debug.html#ga8d31fe2d1ad4d01e2a1f5f6b8bc15b77">syncQuESTEnv</a></div><div class="ttdeci">void syncQuESTEnv(QuESTEnv env)</div><div class="ttdoc">Guarantees that all code up to the given point has been executed on all nodes (if running in distribu...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu__distributed_8c_source.html#l00162">QuEST_cpu_distributed.c:162</a></div></div>
 <div class="ttc" id="agroup__type_html_gga1c703cf89629e4e9c7023cd402d67028a085c85cff6ba79c52d8b1e61c42ddddf"><div class="ttname"><a href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a085c85cff6ba79c52d8b1e61c42ddddf">PAULI_Z</a></div><div class="ttdeci">@ PAULI_Z</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00096">QuEST.h:96</a></div></div>
-<div class="ttc" id="aclassSubListGenerator_html"><div class="ttname"><a href="classSubListGenerator.html">SubListGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01183">utilities.cpp:1183</a></div></div>
+<div class="ttc" id="aclassSubListGenerator_html"><div class="ttname"><a href="classSubListGenerator.html">SubListGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01227">utilities.cpp:1227</a></div></div>
+<div class="ttc" id="astructQuESTEnv_html_aa648bb336cf8598467cb62db00b9cee8"><div class="ttname"><a href="structQuESTEnv.html#aa648bb336cf8598467cb62db00b9cee8">QuESTEnv::rank</a></div><div class="ttdeci">int rank</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00363">QuEST.h:363</a></div></div>
 <div class="ttc" id="autilities_8cpp_html_a21e0fa8d57dc566ad149077be8f67a82"><div class="ttname"><a href="utilities_8cpp.html#a21e0fa8d57dc566ad149077be8f67a82">macro_copyComplexMatrix</a></div><div class="ttdeci">#define macro_copyComplexMatrix(dest, src)</div><div class="ttdoc">Copies ComplexMatrix structures into a QMatrix.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00885">utilities.cpp:885</a></div></div>
 <div class="ttc" id="agroup__type_html_gga1c703cf89629e4e9c7023cd402d67028a63800f45b01ccc2608f754aee850bf4a"><div class="ttname"><a href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a63800f45b01ccc2608f754aee850bf4a">PAULI_I</a></div><div class="ttdeci">@ PAULI_I</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00096">QuEST.h:96</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_ga3cf199a7de3bbcb3546503f25be9245a"><div class="ttname"><a href="group__testutilities.html#ga3cf199a7de3bbcb3546503f25be9245a">getConjugateTranspose</a></div><div class="ttdeci">QMatrix getConjugateTranspose(QMatrix a)</div><div class="ttdoc">Returns the conjugate transpose of the complex square matrix a.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00179">utilities.cpp:179</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_ga7125d0747a44db58115899727ac5f6be"><div class="ttname"><a href="group__testutilities.html#ga7125d0747a44db58115899727ac5f6be">getRandomInt</a></div><div class="ttdeci">int getRandomInt(int min, int max)</div><div class="ttdoc">Returns a random integer between min (inclusive) and max (exclusive), from the uniform distribution.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00482">utilities.cpp:482</a></div></div>
-<div class="ttc" id="autilities_8hpp_html_a2f52338126bb8cdf7fcf68eaf01c546a"><div class="ttname"><a href="utilities_8hpp.html#a2f52338126bb8cdf7fcf68eaf01c546a">NUM_QUBITS</a></div><div class="ttdeci">#define NUM_QUBITS</div><div class="ttdoc">The default number of qubits in the registers created for unit testing (both statevectors and density...</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8hpp_source.html#l00036">utilities.hpp:36</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_ga37e0f375a6c50721aaf68153f750e842"><div class="ttname"><a href="group__testutilities.html#ga37e0f375a6c50721aaf68153f750e842">getSwapMatrix</a></div><div class="ttdeci">QMatrix getSwapMatrix(int qb1, int qb2, int numQb)</div><div class="ttdoc">Returns the 2^numQb-by-2^numQb unitary matrix which swaps qubits qb1 and qb2; the SWAP gate of not-ne...</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00220">utilities.cpp:220</a></div></div>
-<div class="ttc" id="agroup__type_html_gga9c91c41aa42ae537995e89ffc616afe1a9aa2a35d92976c7de970506c4d19a96c"><div class="ttname"><a href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a9aa2a35d92976c7de970506c4d19a96c">TWOS_COMPLEMENT</a></div><div class="ttdeci">@ TWOS_COMPLEMENT</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00266">QuEST.h:266</a></div></div>
+<div class="ttc" id="agroup__type_html_gga9c91c41aa42ae537995e89ffc616afe1a9aa2a35d92976c7de970506c4d19a96c"><div class="ttname"><a href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a9aa2a35d92976c7de970506c4d19a96c">TWOS_COMPLEMENT</a></div><div class="ttdeci">@ TWOS_COMPLEMENT</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00269">QuEST.h:269</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_ga1a5e9b668716b91dd8527ce00f7500cf"><div class="ttname"><a href="group__testutilities.html#ga1a5e9b668716b91dd8527ce00f7500cf">getRandomUnitary</a></div><div class="ttdeci">QMatrix getRandomUnitary(int numQb)</div><div class="ttdoc">Returns a uniformly random (under Haar) 2^numQb-by-2^numQb unitary matrix.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00486">utilities.cpp:486</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_gacd5aadbe10ecdedaa625f85171c0a3cd"><div class="ttname"><a href="group__testutilities.html#gacd5aadbe10ecdedaa625f85171c0a3cd">getRandomReal</a></div><div class="ttdeci">qreal getRandomReal(qreal min, qreal max)</div><div class="ttdoc">Returns a random real between min (inclusive) and max (exclusive), from the uniform distribution.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00411">utilities.cpp:411</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_ga2de7d3b138728b6beb7753b82df61803"><div class="ttname"><a href="group__testutilities.html#ga2de7d3b138728b6beb7753b82df61803">getKetBra</a></div><div class="ttdeci">QMatrix getKetBra(QVector ket, QVector bra)</div><div class="ttdoc">Returns the matrix |ket&gt;&lt;bra|, with ith-jth element ket(i) conj(bra(j)), since |ket&gt;&lt;bra| = sum_i a_i...</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00159">utilities.cpp:159</a></div></div>
 <div class="ttc" id="astructComplexMatrix4_html"><div class="ttname"><a href="structComplexMatrix4.html">ComplexMatrix4</a></div><div class="ttdoc">Represents a 4x4 matrix of complex numbers.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00175">QuEST.h:175</a></div></div>
-<div class="ttc" id="agroup__type_html_gga9c91c41aa42ae537995e89ffc616afe1a7165f9a47792f47c718ca128556fb3ae"><div class="ttname"><a href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a7165f9a47792f47c718ca128556fb3ae">UNSIGNED</a></div><div class="ttdeci">@ UNSIGNED</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00266">QuEST.h:266</a></div></div>
+<div class="ttc" id="agroup__type_html_gga9c91c41aa42ae537995e89ffc616afe1a7165f9a47792f47c718ca128556fb3ae"><div class="ttname"><a href="group__type.html#gga9c91c41aa42ae537995e89ffc616afe1a7165f9a47792f47c718ca128556fb3ae">UNSIGNED</a></div><div class="ttdeci">@ UNSIGNED</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00269">QuEST.h:269</a></div></div>
 <div class="ttc" id="agroup__type_html_ga7740e349b4f8bae6451547680f0ce2d6"><div class="ttname"><a href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a></div><div class="ttdeci">#define qreal</div></div>
 <div class="ttc" id="agroup__testutilities_html_ga253946523907014c4f198d2bb38d4913"><div class="ttname"><a href="group__testutilities.html#ga253946523907014c4f198d2bb38d4913">toQMatrix</a></div><div class="ttdeci">QMatrix toQMatrix(ComplexMatrix2 src)</div><div class="ttdoc">Returns a copy of the given 2-by-2 matrix.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00890">utilities.cpp:890</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_ga267884197cf7f1d428021cb12a57360c"><div class="ttname"><a href="group__testutilities.html#ga267884197cf7f1d428021cb12a57360c">calcLog2</a></div><div class="ttdeci">unsigned int calcLog2(long unsigned int res)</div><div class="ttdoc">Returns log2 of numbers which must be gauranteed to be 2^n.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00362">utilities.cpp:362</a></div></div>
 <div class="ttc" id="agroup__type_html_gga1c703cf89629e4e9c7023cd402d67028a7abac7bb5b71e17382014c443244ad5c"><div class="ttname"><a href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a7abac7bb5b71e17382014c443244ad5c">PAULI_X</a></div><div class="ttdeci">@ PAULI_X</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00096">QuEST.h:96</a></div></div>
+<div class="ttc" id="autilities_8cpp_html_a3aeb6139139efae30679a5009b0a20c7"><div class="ttname"><a href="utilities_8cpp.html#a3aeb6139139efae30679a5009b0a20c7">fn_unique_suffix_id</a></div><div class="ttdeci">static int fn_unique_suffix_id</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01195">utilities.cpp:1195</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_ga11c465ce1a5c238946a9e09d61c94c58"><div class="ttname"><a href="group__testutilities.html#ga11c465ce1a5c238946a9e09d61c94c58">setRandomPauliSum</a></div><div class="ttdeci">void setRandomPauliSum(qreal *coeffs, pauliOpType *codes, int numQubits, int numTerms)</div><div class="ttdoc">Populates the coeffs array with random qreals in (-5, 5), and populates codes with random Pauli codes...</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01075">utilities.cpp:1075</a></div></div>
-<div class="ttc" id="astructQureg_html_ac2929e681d3d95591c18cf168dbbe4f0"><div class="ttname"><a href="structQureg.html#ac2929e681d3d95591c18cf168dbbe4f0">Qureg::chunkId</a></div><div class="ttdeci">int chunkId</div><div class="ttdoc">The position of the chunk of the state vector held by this process in the full state vector.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00333">QuEST.h:333</a></div></div>
+<div class="ttc" id="astructQureg_html_ac2929e681d3d95591c18cf168dbbe4f0"><div class="ttname"><a href="structQureg.html#ac2929e681d3d95591c18cf168dbbe4f0">Qureg::chunkId</a></div><div class="ttdeci">int chunkId</div><div class="ttdoc">The position of the chunk of the state vector held by this process in the full state vector.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00336">QuEST.h:336</a></div></div>
 <div class="ttc" id="autilities_8cpp_html_a9dc43d4a0827b56cd004270a9c5b2604"><div class="ttname"><a href="utilities_8cpp.html#a9dc43d4a0827b56cd004270a9c5b2604">expI</a></div><div class="ttdeci">qcomp expI(qreal phase)</div><div class="ttdoc">Returns the unit-norm complex number exp(i*phase).</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00407">utilities.cpp:407</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_gac9263a65c96a458b810b20baa81c5b94"><div class="ttname"><a href="group__testutilities.html#gac9263a65c96a458b810b20baa81c5b94">QVector</a></div><div class="ttdeci">std::vector&lt; qcomp &gt; QVector</div><div class="ttdoc">A complex vector, which can be zero-initialised with QVector(numAmps).</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8hpp_source.html#l00060">utilities.hpp:60</a></div></div>
-<div class="ttc" id="astructDiagonalOp_html_a85c3f52533efe831bbe40b9a48602388"><div class="ttname"><a href="structDiagonalOp.html#a85c3f52533efe831bbe40b9a48602388">DiagonalOp::imag</a></div><div class="ttdeci">qreal * imag</div><div class="ttdoc">The imaginary values of the 2^numQubits complex elements.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00307">QuEST.h:307</a></div></div>
+<div class="ttc" id="astructDiagonalOp_html_a85c3f52533efe831bbe40b9a48602388"><div class="ttname"><a href="structDiagonalOp.html#a85c3f52533efe831bbe40b9a48602388">DiagonalOp::imag</a></div><div class="ttdeci">qreal * imag</div><div class="ttdoc">The imaginary values of the 2^numQubits complex elements.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00310">QuEST.h:310</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_ga75966a02c618790c1de5f0102ab8398f"><div class="ttname"><a href="group__testutilities.html#ga75966a02c618790c1de5f0102ab8398f">setSubMatrix</a></div><div class="ttdeci">void setSubMatrix(QMatrix &amp;dest, QMatrix sub, size_t r, size_t c)</div><div class="ttdoc">Modifies dest by overwriting its submatrix (from top-left corner (r, c) to bottom-right corner (r + d...</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00212">utilities.cpp:212</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_gade0e7c37811a69f1c21c88c11943a19f"><div class="ttname"><a href="group__testutilities.html#gade0e7c37811a69f1c21c88c11943a19f">toQVector</a></div><div class="ttdeci">QVector toQVector(Qureg qureg)</div><div class="ttdoc">Returns an equal-size copy of the given state-vector qureg.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00959">utilities.cpp:959</a></div></div>
-<div class="ttc" id="astructQureg_html_ab0ea0358482b62f43fdd781469607d97"><div class="ttname"><a href="structQureg.html#ab0ea0358482b62f43fdd781469607d97">Qureg::numAmpsPerChunk</a></div><div class="ttdeci">long long int numAmpsPerChunk</div><div class="ttdoc">Number of probability amplitudes held in stateVec by this process In the non-MPI version,...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00329">QuEST.h:329</a></div></div>
-<div class="ttc" id="astructPauliHamil_html_ac1c6c9f6299cf83bbba88123216c3cac"><div class="ttname"><a href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">PauliHamil::termCoeffs</a></div><div class="ttdeci">qreal * termCoeffs</div><div class="ttdoc">The real coefficient of each Pauli product. This is an array of length PauliHamil....</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00280">QuEST.h:280</a></div></div>
+<div class="ttc" id="astructQureg_html_ab0ea0358482b62f43fdd781469607d97"><div class="ttname"><a href="structQureg.html#ab0ea0358482b62f43fdd781469607d97">Qureg::numAmpsPerChunk</a></div><div class="ttdeci">long long int numAmpsPerChunk</div><div class="ttdoc">Number of probability amplitudes held in stateVec by this process In the non-MPI version,...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00332">QuEST.h:332</a></div></div>
+<div class="ttc" id="astructPauliHamil_html_ac1c6c9f6299cf83bbba88123216c3cac"><div class="ttname"><a href="structPauliHamil.html#ac1c6c9f6299cf83bbba88123216c3cac">PauliHamil::termCoeffs</a></div><div class="ttdeci">qreal * termCoeffs</div><div class="ttdoc">The real coefficient of each Pauli product. This is an array of length PauliHamil....</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00283">QuEST.h:283</a></div></div>
 <div class="ttc" id="agroup__type_html_gad863c5878a01051a2726ce94bf365428"><div class="ttname"><a href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a></div><div class="ttdeci">#define qcomp</div></div>
-<div class="ttc" id="astructPauliHamil_html_a4b8d38c403553c07ceddcd40c46ce6c8"><div class="ttname"><a href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">PauliHamil::pauliCodes</a></div><div class="ttdeci">enum pauliOpType * pauliCodes</div><div class="ttdoc">The Pauli operators acting on each qubit, flattened over every operator.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00278">QuEST.h:278</a></div></div>
+<div class="ttc" id="astructPauliHamil_html_a4b8d38c403553c07ceddcd40c46ce6c8"><div class="ttname"><a href="structPauliHamil.html#a4b8d38c403553c07ceddcd40c46ce6c8">PauliHamil::pauliCodes</a></div><div class="ttdeci">enum pauliOpType * pauliCodes</div><div class="ttdoc">The Pauli operators acting on each qubit, flattened over every operator.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00281">QuEST.h:281</a></div></div>
 <div class="ttc" id="agroup__debug_html_ga11448560006dd165128e404b54ebb2f7"><div class="ttname"><a href="group__debug.html#ga11448560006dd165128e404b54ebb2f7">copyStateToGPU</a></div><div class="ttdeci">void copyStateToGPU(Qureg qureg)</div><div class="ttdoc">In GPU mode, this copies the state-vector (or density matrix) from RAM (qureg.stateVec) to VRAM / GPU...</div><div class="ttdef"><b>Definition:</b> <a href="QuEST__cpu_8c_source.html#l00036">QuEST_cpu.c:36</a></div></div>
-<div class="ttc" id="astructDiagonalOp_html_a5131eeb67aafb4c19ac98270c3266742"><div class="ttname"><a href="structDiagonalOp.html#a5131eeb67aafb4c19ac98270c3266742">DiagonalOp::numQubits</a></div><div class="ttdeci">int numQubits</div><div class="ttdoc">The number of qubits this operator can act on (informing its size)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00297">QuEST.h:297</a></div></div>
-<div class="ttc" id="astructPauliHamil_html_a737e46b40ef8990cf004d22eb9dbe2e4"><div class="ttname"><a href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">PauliHamil::numSumTerms</a></div><div class="ttdeci">int numSumTerms</div><div class="ttdoc">The number of terms in the weighted sum, or the number of Pauli products.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00282">QuEST.h:282</a></div></div>
+<div class="ttc" id="astructDiagonalOp_html_a5131eeb67aafb4c19ac98270c3266742"><div class="ttname"><a href="structDiagonalOp.html#a5131eeb67aafb4c19ac98270c3266742">DiagonalOp::numQubits</a></div><div class="ttdeci">int numQubits</div><div class="ttdoc">The number of qubits this operator can act on (informing its size)</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00300">QuEST.h:300</a></div></div>
+<div class="ttc" id="astructPauliHamil_html_a737e46b40ef8990cf004d22eb9dbe2e4"><div class="ttname"><a href="structPauliHamil.html#a737e46b40ef8990cf004d22eb9dbe2e4">PauliHamil::numSumTerms</a></div><div class="ttdeci">int numSumTerms</div><div class="ttdoc">The number of terms in the weighted sum, or the number of Pauli products.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00285">QuEST.h:285</a></div></div>
 <div class="ttc" id="agroup__type_html_gga1c703cf89629e4e9c7023cd402d67028a2c64a9aaee27f6bcfef894d159e759bd"><div class="ttname"><a href="group__type.html#gga1c703cf89629e4e9c7023cd402d67028a2c64a9aaee27f6bcfef894d159e759bd">PAULI_Y</a></div><div class="ttdeci">@ PAULI_Y</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00096">QuEST.h:96</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_gae1d2eb70b50267f8186cbd53e300d94f"><div class="ttname"><a href="group__testutilities.html#gae1d2eb70b50267f8186cbd53e300d94f">getRandomStateVector</a></div><div class="ttdeci">QVector getRandomStateVector(int numQb)</div><div class="ttdoc">Returns a random numQb-length L2-normalised state-vector from an undisclosed distribution.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00454">utilities.cpp:454</a></div></div>
 <div class="ttc" id="astructComplexMatrixN_html_a446e8a077597e4f76049d547df0c9738"><div class="ttname"><a href="structComplexMatrixN.html#a446e8a077597e4f76049d547df0c9738">ComplexMatrixN::real</a></div><div class="ttdeci">qreal ** real</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00189">QuEST.h:189</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_gaa2e8b958e0cba07e01de9f91a5ce3c9c"><div class="ttname"><a href="group__testutilities.html#gaa2e8b958e0cba07e01de9f91a5ce3c9c">getRandomQMatrix</a></div><div class="ttdeci">QMatrix getRandomQMatrix(int dim)</div><div class="ttdoc">Returns a dim-by-dim complex matrix, where the real and imaginary value of each element are independe...</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00369">utilities.cpp:369</a></div></div>
 <div class="ttc" id="astructComplexMatrixN_html_afde13e469a3b4f179f45e53d1ec0a7cf"><div class="ttname"><a href="structComplexMatrixN.html#afde13e469a3b4f179f45e53d1ec0a7cf">ComplexMatrixN::imag</a></div><div class="ttdeci">qreal ** imag</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00190">QuEST.h:190</a></div></div>
-<div class="ttc" id="astructQureg_html_a441e4cacef6bd17adb9813c7442d42fe"><div class="ttname"><a href="structQureg.html#a441e4cacef6bd17adb9813c7442d42fe">Qureg::stateVec</a></div><div class="ttdeci">ComplexArray stateVec</div><div class="ttdoc">Computational state amplitudes - a subset thereof in the MPI version.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00338">QuEST.h:338</a></div></div>
-<div class="ttc" id="astructDiagonalOp_html_a2c6eab631ef48b4978db026c98180eee"><div class="ttname"><a href="structDiagonalOp.html#a2c6eab631ef48b4978db026c98180eee">DiagonalOp::numElemsPerChunk</a></div><div class="ttdeci">long long int numElemsPerChunk</div><div class="ttdoc">The number of the 2^numQubits amplitudes stored on each distributed node.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00299">QuEST.h:299</a></div></div>
-<div class="ttc" id="astructQureg_html_acf78445e9435d09f44f0cc832c6aee79"><div class="ttname"><a href="structQureg.html#acf78445e9435d09f44f0cc832c6aee79">Qureg::isDensityMatrix</a></div><div class="ttdeci">int isDensityMatrix</div><div class="ttdoc">Whether this instance is a density-state representation.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00322">QuEST.h:322</a></div></div>
+<div class="ttc" id="astructQureg_html_a441e4cacef6bd17adb9813c7442d42fe"><div class="ttname"><a href="structQureg.html#a441e4cacef6bd17adb9813c7442d42fe">Qureg::stateVec</a></div><div class="ttdeci">ComplexArray stateVec</div><div class="ttdoc">Computational state amplitudes - a subset thereof in the MPI version.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00341">QuEST.h:341</a></div></div>
+<div class="ttc" id="astructDiagonalOp_html_a2c6eab631ef48b4978db026c98180eee"><div class="ttname"><a href="structDiagonalOp.html#a2c6eab631ef48b4978db026c98180eee">DiagonalOp::numElemsPerChunk</a></div><div class="ttdeci">long long int numElemsPerChunk</div><div class="ttdoc">The number of the 2^numQubits amplitudes stored on each distributed node.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00302">QuEST.h:302</a></div></div>
+<div class="ttc" id="astructQureg_html_acf78445e9435d09f44f0cc832c6aee79"><div class="ttname"><a href="structQureg.html#acf78445e9435d09f44f0cc832c6aee79">Qureg::isDensityMatrix</a></div><div class="ttdeci">int isDensityMatrix</div><div class="ttdoc">Whether this instance is a density-state representation.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00325">QuEST.h:325</a></div></div>
 <div class="ttc" id="astructComplexMatrixN_html_a606f7afbc3f65a596bdca21cb43be6a8"><div class="ttname"><a href="structComplexMatrixN.html#a606f7afbc3f65a596bdca21cb43be6a8">ComplexMatrixN::numQubits</a></div><div class="ttdeci">int numQubits</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00188">QuEST.h:188</a></div></div>
 <div class="ttc" id="autilities_8cpp_html_a5a70927d32d5ddd0f704767919d8ed01"><div class="ttname"><a href="utilities_8cpp.html#a5a70927d32d5ddd0f704767919d8ed01">updateIndices</a></div><div class="ttdeci">void updateIndices(int oldEl, int newEl, int *list1, int len1, int *list2, int len2)</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00277">utilities.cpp:277</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_gabbc686f5f40eff22e08a2b2012ac4e41"><div class="ttname"><a href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; qcomp &gt; &gt; QMatrix</div><div class="ttdoc">A complex square matrix.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8hpp_source.html#l00049">utilities.hpp:49</a></div></div>
-<div class="ttc" id="astructPauliHamil_html_acb49fff0e3160ea1904c9ca34408b4e1"><div class="ttname"><a href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">PauliHamil::numQubits</a></div><div class="ttdeci">int numQubits</div><div class="ttdoc">The number of qubits informing the Hilbert dimension of the Hamiltonian.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00284">QuEST.h:284</a></div></div>
+<div class="ttc" id="astructPauliHamil_html_acb49fff0e3160ea1904c9ca34408b4e1"><div class="ttname"><a href="structPauliHamil.html#acb49fff0e3160ea1904c9ca34408b4e1">PauliHamil::numQubits</a></div><div class="ttdeci">int numQubits</div><div class="ttdoc">The number of qubits informing the Hilbert dimension of the Hamiltonian.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00287">QuEST.h:287</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_ga5438455c2c8ecf5948ca22875313a590"><div class="ttname"><a href="group__testutilities.html#ga5438455c2c8ecf5948ca22875313a590">getNormalised</a></div><div class="ttdeci">QVector getNormalised(QVector vec)</div><div class="ttdoc">Returns an L2-normalised copy of vec, using Kahan summation for improved accuracy.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00432">utilities.cpp:432</a></div></div>
-<div class="ttc" id="astructQureg_html_ad08dff5316b8937f4b2a1417591543dc"><div class="ttname"><a href="structQureg.html#ad08dff5316b8937f4b2a1417591543dc">Qureg::numQubitsRepresented</a></div><div class="ttdeci">int numQubitsRepresented</div><div class="ttdoc">The number of qubits represented in either the state-vector or density matrix.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00324">QuEST.h:324</a></div></div>
-<div class="ttc" id="astructQureg_html_adef4935cac95763c29164cf99b144ed4"><div class="ttname"><a href="structQureg.html#adef4935cac95763c29164cf99b144ed4">Qureg::numAmpsTotal</a></div><div class="ttdeci">long long int numAmpsTotal</div><div class="ttdoc">Total number of amplitudes, which are possibly distributed among machines.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00331">QuEST.h:331</a></div></div>
-<div class="ttc" id="astructDiagonalOp_html_a1d66088bed235d524cd452b107694d5c"><div class="ttname"><a href="structDiagonalOp.html#a1d66088bed235d524cd452b107694d5c">DiagonalOp::real</a></div><div class="ttdeci">qreal * real</div><div class="ttdoc">The real values of the 2^numQubits complex elements.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00305">QuEST.h:305</a></div></div>
+<div class="ttc" id="astructQureg_html_ad08dff5316b8937f4b2a1417591543dc"><div class="ttname"><a href="structQureg.html#ad08dff5316b8937f4b2a1417591543dc">Qureg::numQubitsRepresented</a></div><div class="ttdeci">int numQubitsRepresented</div><div class="ttdoc">The number of qubits represented in either the state-vector or density matrix.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00327">QuEST.h:327</a></div></div>
+<div class="ttc" id="astructQureg_html_adef4935cac95763c29164cf99b144ed4"><div class="ttname"><a href="structQureg.html#adef4935cac95763c29164cf99b144ed4">Qureg::numAmpsTotal</a></div><div class="ttdeci">long long int numAmpsTotal</div><div class="ttdoc">Total number of amplitudes, which are possibly distributed among machines.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00334">QuEST.h:334</a></div></div>
+<div class="ttc" id="astructDiagonalOp_html_a1d66088bed235d524cd452b107694d5c"><div class="ttname"><a href="structDiagonalOp.html#a1d66088bed235d524cd452b107694d5c">DiagonalOp::real</a></div><div class="ttdeci">qreal * real</div><div class="ttdoc">The real values of the 2^numQubits complex elements.</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00308">QuEST.h:308</a></div></div>
 <div class="ttc" id="astructComplex_html_ab5b2e2eca02131fc74b289a83636cbe3"><div class="ttname"><a href="structComplex.html#ab5b2e2eca02131fc74b289a83636cbe3">Complex::real</a></div><div class="ttdeci">qreal real</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00105">QuEST.h:105</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_gac0c6339c28256f2aae86d443fae44455"><div class="ttname"><a href="group__testutilities.html#gac0c6339c28256f2aae86d443fae44455">getIdentityMatrix</a></div><div class="ttdeci">QMatrix getIdentityMatrix(size_t dim)</div><div class="ttdoc">Returns a dim-by-dim identity matrix.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00151">utilities.cpp:151</a></div></div>
-<div class="ttc" id="aclassSequenceGenerator_html"><div class="ttname"><a href="classSequenceGenerator.html">SequenceGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01315">utilities.cpp:1315</a></div></div>
+<div class="ttc" id="aclassSequenceGenerator_html"><div class="ttname"><a href="classSequenceGenerator.html">SequenceGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01359">utilities.cpp:1359</a></div></div>
 <div class="ttc" id="astructComplex_html_a84f5439aad0ef495efdd3b4c1c02d27e"><div class="ttname"><a href="structComplex.html#a84f5439aad0ef495efdd3b4c1c02d27e">Complex::imag</a></div><div class="ttdeci">qreal imag</div><div class="ttdef"><b>Definition:</b> <a href="QuEST_8h_source.html#l00106">QuEST.h:106</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_ga50616e813b0d0aa4f8220785d780cdff"><div class="ttname"><a href="group__testutilities.html#ga50616e813b0d0aa4f8220785d780cdff">getKroneckerProduct</a></div><div class="ttdeci">QMatrix getKroneckerProduct(QMatrix a, QMatrix b)</div><div class="ttdoc">Returns the kronecker product of a and b, where a and b are square but possibly differently-sized com...</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00169">utilities.cpp:169</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_ga6ccbb15b0f234e926be96a153181b63a"><div class="ttname"><a href="group__testutilities.html#ga6ccbb15b0f234e926be96a153181b63a">getZeroMatrix</a></div><div class="ttdeci">QMatrix getZeroMatrix(size_t dim)</div><div class="ttdoc">Returns a dim-by-dim square complex matrix, initialised to all zeroes.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00143">utilities.cpp:143</a></div></div>

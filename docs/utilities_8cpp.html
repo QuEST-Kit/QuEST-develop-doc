@@ -57,7 +57,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">utilities.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -180,6 +181,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga267884197cf7f1d428021cb12a57360c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga267884197cf7f1d428021cb12a57360c">calcLog2</a> (long unsigned int res)</td></tr>
 <tr class="memdesc:ga267884197cf7f1d428021cb12a57360c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns log2 of numbers which must be gauranteed to be 2^n.  <a href="group__testutilities.html#ga267884197cf7f1d428021cb12a57360c">More...</a><br /></td></tr>
 <tr class="separator:ga267884197cf7f1d428021cb12a57360c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2d2691472dbd81bc4b893160a560c50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#gad2d2691472dbd81bc4b893160a560c50">deleteFilesWithPrefixSynch</a> (char *prefix)</td></tr>
+<tr class="memdesc:gad2d2691472dbd81bc4b893160a560c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all files with filename starting with prefix.  <a href="group__testutilities.html#gad2d2691472dbd81bc4b893160a560c50">More...</a><br /></td></tr>
+<tr class="separator:gad2d2691472dbd81bc4b893160a560c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dc43d4a0827b56cd004270a9c5b2604"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utilities_8cpp.html#a9dc43d4a0827b56cd004270a9c5b2604">expI</a> (<a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a> phase)</td></tr>
 <tr class="memdesc:a9dc43d4a0827b56cd004270a9c5b2604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unit-norm complex number exp(i*<code>phase</code>).  <a href="utilities_8cpp.html#a9dc43d4a0827b56cd004270a9c5b2604">More...</a><br /></td></tr>
 <tr class="separator:a9dc43d4a0827b56cd004270a9c5b2604"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,6 +300,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf57b4b82c98e98918f74476741f60e37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#gaf57b4b82c98e98918f74476741f60e37">setDiagMatrixOverrides</a> (<a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> &amp;matr, int *numQubitsPerReg, int numRegs, enum <a class="el" href="group__type.html#ga9c91c41aa42ae537995e89ffc616afe1">bitEncoding</a> encoding, long long int *overrideInds, <a class="el" href="group__type.html#ga7740e349b4f8bae6451547680f0ce2d6">qreal</a> *overridePhases, int numOverrides)</td></tr>
 <tr class="memdesc:gaf57b4b82c98e98918f74476741f60e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the given diagonal matrix such that the diagonal elements which correspond to the coordinates in overrideInds are replaced with exp(i phase), as prescribed by overridePhases.  <a href="group__testutilities.html#gaf57b4b82c98e98918f74476741f60e37">More...</a><br /></td></tr>
 <tr class="separator:gaf57b4b82c98e98918f74476741f60e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga887d1cd8befe710189cab7f535db3910"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga887d1cd8befe710189cab7f535db3910">setRandomDiagPauliHamil</a> (<a class="el" href="structPauliHamil.html">PauliHamil</a> hamil)</td></tr>
+<tr class="memdesc:ga887d1cd8befe710189cab7f535db3910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates <code>hamil</code> with random coefficients and a random amount number of PAULI_I and PAULI_Z operators.  <a href="group__testutilities.html#ga887d1cd8befe710189cab7f535db3910">More...</a><br /></td></tr>
+<tr class="separator:ga887d1cd8befe710189cab7f535db3910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafaecff2462bd0b490edff484911d831e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#gafaecff2462bd0b490edff484911d831e">setRandomPauliSum</a> (<a class="el" href="structPauliHamil.html">PauliHamil</a> hamil)</td></tr>
 <tr class="memdesc:gafaecff2462bd0b490edff484911d831e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates <code>hamil</code> with random coefficients and pauli codes.  <a href="group__testutilities.html#gafaecff2462bd0b490edff484911d831e">More...</a><br /></td></tr>
 <tr class="separator:gafaecff2462bd0b490edff484911d831e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,6 +312,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga75966a02c618790c1de5f0102ab8398f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga75966a02c618790c1de5f0102ab8398f">setSubMatrix</a> (<a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> &amp;dest, <a class="el" href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a> sub, size_t r, size_t c)</td></tr>
 <tr class="memdesc:ga75966a02c618790c1de5f0102ab8398f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies <code>dest</code> by overwriting its submatrix (from top-left corner (<code>r</code>, <code>c</code>) to bottom-right corner (<code>r</code> + <code>dest.size()</code>, <code>c</code> + <code>dest.size()</code>) with the complete elements of sub.  <a href="group__testutilities.html#ga75966a02c618790c1de5f0102ab8398f">More...</a><br /></td></tr>
 <tr class="separator:ga75966a02c618790c1de5f0102ab8398f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c35b1d233b0fb5b42de3bceee26e7e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga7c35b1d233b0fb5b42de3bceee26e7e5">setUniqueFilename</a> (char *outFn, char *prefix)</td></tr>
+<tr class="memdesc:ga7c35b1d233b0fb5b42de3bceee26e7e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies outFn to be a filename of format prefix_NUM.txt where NUM is a new unique integer so far.  <a href="group__testutilities.html#ga7c35b1d233b0fb5b42de3bceee26e7e5">More...</a><br /></td></tr>
+<tr class="separator:ga7c35b1d233b0fb5b42de3bceee26e7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a454924f12712fda06dad76d455dbc08e"><td class="memItemLeft" align="right" valign="top">Catch::Generators::GeneratorWrapper&lt; int * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utilities_8cpp.html#a454924f12712fda06dad76d455dbc08e">sublists</a> (Catch::Generators::GeneratorWrapper&lt; int &gt; &amp;&amp;gen, int numSamps)</td></tr>
 <tr class="separator:a454924f12712fda06dad76d455dbc08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd439d42d66d2c407c57c15ac379aa01"><td class="memItemLeft" align="right" valign="top">Catch::Generators::GeneratorWrapper&lt; int * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utilities_8cpp.html#abd439d42d66d2c407c57c15ac379aa01">sublists</a> (Catch::Generators::GeneratorWrapper&lt; int &gt; &amp;&amp;gen, int numSamps, const int *exclude, int numExclude)</td></tr>
@@ -361,6 +371,14 @@ Functions</h2></td></tr>
 <tr class="separator:gade0e7c37811a69f1c21c88c11943a19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a70927d32d5ddd0f704767919d8ed01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utilities_8cpp.html#a5a70927d32d5ddd0f704767919d8ed01">updateIndices</a> (int oldEl, int newEl, int *list1, int len1, int *list2, int len2)</td></tr>
 <tr class="separator:a5a70927d32d5ddd0f704767919d8ed01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8efe977bb581c8bc760d2ce2419161d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__testutilities.html#ga8efe977bb581c8bc760d2ce2419161d7">writeToFileSynch</a> (char *fn, const string &amp;contents)</td></tr>
+<tr class="memdesc:ga8efe977bb581c8bc760d2ce2419161d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes contents to the file with filename fn, which is created and/or overwritten.  <a href="group__testutilities.html#ga8efe977bb581c8bc760d2ce2419161d7">More...</a><br /></td></tr>
+<tr class="separator:ga8efe977bb581c8bc760d2ce2419161d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3aeb6139139efae30679a5009b0a20c7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utilities_8cpp.html#a3aeb6139139efae30679a5009b0a20c7">fn_unique_suffix_id</a> = 0</td></tr>
+<tr class="separator:a3aeb6139139efae30679a5009b0a20c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Unoptimised, analytic implementations of matrix operations used by QuEST_unit_tests</p>
@@ -490,7 +508,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01143">setDiagMatrixOverrides()</a>, and <a class="el" href="test__operators_8cpp_source.html#l00471">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01155">setDiagMatrixOverrides()</a>, and <a class="el" href="test__operators_8cpp_source.html#l00471">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -1310,13 +1328,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01305">1305</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;  {</div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;    <span class="keywordtype">int</span> exclude[] = {};  </div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
-<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(std::move(gen), numSamps, exclude, 0)));</div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01349">1349</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;  {</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;    <span class="keywordtype">int</span> exclude[] = {};  </div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(std::move(gen), numSamps, exclude, 0)));</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1358,12 +1376,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01290">1290</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;  {    </div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(std::move(gen), numSamps, exclude, numExclude)));</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01334">1334</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;  {    </div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(std::move(gen), numSamps, exclude, numExclude)));</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1399,13 +1417,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01297">1297</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;  {</div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;    <span class="keywordtype">int</span> exclude[] = {excluded};  </div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(std::move(gen), numSamps, exclude, 1)));</div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01341">1341</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;  {</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;    <span class="keywordtype">int</span> exclude[] = {excluded};  </div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;    <span class="keywordflow">return</span> Catch::Generators::GeneratorWrapper&lt;int*&gt;(</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;        std::unique_ptr&lt;Catch::Generators::IGenerator&lt;int*&gt;&gt;(</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;            <span class="keyword">new</span> <a class="code" href="classSubListGenerator.html">SubListGenerator</a>(std::move(gen), numSamps, exclude, 1)));</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1481,8 +1499,35 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a3aeb6139139efae30679a5009b0a20c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aeb6139139efae30679a5009b0a20c7">&#9670;&nbsp;</a></span>fn_unique_suffix_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fn_unique_suffix_id = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="utilities_8cpp_source.html#l01195">1195</a> of file <a class="el" href="utilities_8cpp_source.html">utilities.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="utilities_8cpp_source.html#l01197">setUniqueFilename()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
-<div class="ttc" id="aclassSubListGenerator_html"><div class="ttname"><a href="classSubListGenerator.html">SubListGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01183">utilities.cpp:1183</a></div></div>
+<div class="ttc" id="aclassSubListGenerator_html"><div class="ttname"><a href="classSubListGenerator.html">SubListGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l01227">utilities.cpp:1227</a></div></div>
 <div class="ttc" id="agroup__testutilities_html_gac9263a65c96a458b810b20baa81c5b94"><div class="ttname"><a href="group__testutilities.html#gac9263a65c96a458b810b20baa81c5b94">QVector</a></div><div class="ttdeci">std::vector&lt; qcomp &gt; QVector</div><div class="ttdoc">A complex vector, which can be zero-initialised with QVector(numAmps).</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8hpp_source.html#l00060">utilities.hpp:60</a></div></div>
 <div class="ttc" id="agroup__type_html_gad863c5878a01051a2726ce94bf365428"><div class="ttname"><a href="group__type.html#gad863c5878a01051a2726ce94bf365428">qcomp</a></div><div class="ttdeci">#define qcomp</div></div>
 <div class="ttc" id="agroup__testutilities_html_gabbc686f5f40eff22e08a2b2012ac4e41"><div class="ttname"><a href="group__testutilities.html#gabbc686f5f40eff22e08a2b2012ac4e41">QMatrix</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; qcomp &gt; &gt; QMatrix</div><div class="ttdoc">A complex square matrix.</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8hpp_source.html#l00049">utilities.hpp:49</a></div></div>
